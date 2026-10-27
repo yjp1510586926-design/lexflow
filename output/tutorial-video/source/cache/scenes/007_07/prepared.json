@@ -1,0 +1,69 @@
+{
+  "id": "07",
+  "chapter": "登录与工作区",
+  "title": "区分机构角色和案件权限",
+  "subtitle": "有业务角色，也要有目标案件的授权",
+  "bullets": [
+    "管理员管理机构设置",
+    "律师仍需加入目标案件",
+    "只读成员只能读取授权内容"
+  ],
+  "narration": "系统初始提供律所管理员、律师和只读成员。律师具备业务操作能力，但仍需成为目标案件成员。只读成员不能写入案件或文件。页面上能看到按钮并不代表拥有权限，服务端会再次检查；遇到无权提示，应请管理员核对真实授权。",
+  "visual": "members",
+  "crop": [
+    270,
+    135,
+    1140,
+    560
+  ],
+  "index": 6,
+  "segments": [
+    {
+      "text": "系统初始提供律所管理员、律师和只读成员。律师具备业务操作能力，",
+      "spoken_text": "系统初始提供律所管理员、律师和只读成员。律师具备业务操作能力，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/cf991f63339859b5c7c05caa.aiff",
+      "voice_duration": 7.697868,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.897868,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/frame_01.png"
+    },
+    {
+      "text": "但仍需成为目标案件成员。只读成员不能写入案件或文件。",
+      "spoken_text": "但仍需成为目标案件成员。只读成员不能写入案件或文件。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/a88dd251762d7e73000da84e.aiff",
+      "voice_duration": 6.374649,
+      "pause": 0.2,
+      "start": 7.897868,
+      "duration": 6.574649,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/frame_02.png"
+    },
+    {
+      "text": "页面上能看到按钮并不代表拥有权限，服务端会再次检查；",
+      "spoken_text": "页面上能看到按钮并不代表拥有权限，服务端会再次检查；",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f2d2e7c2d2bb4026b5357d5e.aiff",
+      "voice_duration": 6.677052,
+      "pause": 0.2,
+      "start": 14.472517,
+      "duration": 6.877052,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/frame_03.png"
+    },
+    {
+      "text": "遇到无权提示，应请管理员核对真实授权。",
+      "spoken_text": "遇到无权提示，应请管理员核对真实授权。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/55a2525f90dd750ca686a9ae.aiff",
+      "voice_duration": 4.958458,
+      "pause": 0.34,
+      "start": 21.349569,
+      "duration": 5.298514000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/frame_04.png"
+    }
+  ],
+  "duration": 26.648083,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/007_07/scene.mp4",
+  "fingerprint": "1e3c6bf5afa8e64184212f7244d81b5b36cca0e87b131c4ae5dfe55c9d7a94e7",
+  "visual_type": "真实前端截图"
+}

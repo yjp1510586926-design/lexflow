@@ -1,0 +1,59 @@
+{
+  "id": "51",
+  "chapter": "管理员设置",
+  "title": "管理机构账号与角色",
+  "subtitle": "机构身份和案件授权分别维护",
+  "bullets": [
+    "从侧栏进入成员与权限",
+    "添加律所成员并设置角色",
+    "再到案件配置成员资格"
+  ],
+  "narration": "管理员从侧栏成员与权限进入，添加律所成员，设置用户名、初始密码、姓名和角色，再到案件授予具体资格。通过编辑权限调整角色和启用状态，操作前核对目标。系统不允许停用或降级最后一名有效管理员，也不会把同名账号静默加入其他律所。",
+  "visual": "org",
+  "crop": [
+    270,
+    80,
+    1160,
+    580
+  ],
+  "index": 50,
+  "segments": [
+    {
+      "text": "管理员从侧栏成员与权限进入，添加律所成员，设置用户名、初始密码、姓名和角色，",
+      "spoken_text": "管理员从侧栏成员与权限进入，添加律所成员，设置用户名、初始密码、姓名和角色，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/423429223117d786952e983f.aiff",
+      "voice_duration": 10.317732,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.517731999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/frame_01.png"
+    },
+    {
+      "text": "再到案件授予具体资格。通过编辑权限调整角色和启用状态，操作前核对目标。",
+      "spoken_text": "再到案件授予具体资格。通过编辑权限调整角色和启用状态，操作前核对目标。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/4f8dbfc93891e67dc02cfadc.aiff",
+      "voice_duration": 9.202494,
+      "pause": 0.2,
+      "start": 10.517731999999999,
+      "duration": 9.402493999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/frame_02.png"
+    },
+    {
+      "text": "系统不允许停用或降级最后一名有效管理员，也不会把同名账号静默加入其他律所。",
+      "spoken_text": "系统不允许停用或降级最后一名有效管理员，也不会把同名账号静默加入其他律所。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c99f3e477cd3a29e9529afeb.aiff",
+      "voice_duration": 9.334875,
+      "pause": 0.34,
+      "start": 19.920226,
+      "duration": 9.674941,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/frame_03.png"
+    }
+  ],
+  "duration": 29.595167,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/051_51/scene.mp4",
+  "fingerprint": "6ffa36c85412980c9b01591de47129d2aba1d897614b060196fc7b475f501d1b",
+  "visual_type": "真实前端截图"
+}

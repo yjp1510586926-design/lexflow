@@ -1,0 +1,87 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "install-admin-e84f8377f129" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "案件" [level=1] [ref=e295]
+        - paragraph [ref=e110]: 创建案件、添加成员、整理材料
+      - generic [ref=e111]:
+        - button "刷新当前数据" [active] [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e398]:
+        - generic [ref=e399]:
+          - generic [ref=e400]:
+            - textbox "搜索案件编号或标题..." [ref=e402]
+            - tablist [ref=e403]:
+              - button "全部状态" [ref=e404] [cursor=pointer]
+              - button "进行中" [ref=e405] [cursor=pointer]
+              - button "草稿" [ref=e406] [cursor=pointer]
+              - button "已归档" [ref=e407] [cursor=pointer]
+            - combobox [ref=e408]:
+              - option "全部业务类型" [selected]
+              - option "民事诉讼"
+              - option "商事仲裁"
+              - option "刑事辩护"
+              - option "知识产权"
+              - option "劳动争议"
+              - option "公司合规与并购"
+              - option "常年法律顾问"
+              - option "其他业务"
+            - combobox "案件负责人" [ref=e409]:
+              - option "全部负责人" [selected]
+              - option "install-admin-e84f8377f129"
+            - button "筛选" [ref=e410] [cursor=pointer]
+          - button "立案新建" [ref=e413] [cursor=pointer]
+        - generic [ref=e418]:
+          - table [ref=e420]:
+            - rowgroup [ref=e421]:
+              - row [ref=e422]:
+                - columnheader "案件编号" [ref=e423]
+                - columnheader "案件标题" [ref=e424]
+                - columnheader "业务类别" [ref=e425]
+                - columnheader "案卷状态" [ref=e426]
+                - columnheader "修订版本" [ref=e427]
+                - columnheader "操作" [ref=e428]
+            - rowgroup [ref=e429]:
+              - row [ref=e430]:
+                - cell "INSTALL-e84f8377" [ref=e431]
+                - cell [ref=e432]:
+                  - text: 空数据安装验收案件
+                  - paragraph [ref=e433]: 当前主机新空数据实例的合成验收记录
+                - cell "CIVIL" [ref=e434]
+                - cell "草稿" [ref=e435]
+                - cell "v0" [ref=e437]
+                - cell [ref=e439]:
+                  - button "案件工作台" [ref=e440] [cursor=pointer]
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - text: 共
+              - strong [ref=e444]: "1"
+              - text: 条记录 · 当前第 1 / 1 页
+            - generic [ref=e445]:
+              - button "上一页" [disabled] [ref=e446]
+              - button "下一页" [disabled] [ref=e451]

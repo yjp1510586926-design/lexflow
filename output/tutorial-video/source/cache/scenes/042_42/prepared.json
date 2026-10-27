@@ -1,0 +1,65 @@
+{
+  "id": "42",
+  "chapter": "案件分析",
+  "title": "选择本次分析材料",
+  "subtitle": "材料必须来自同一案件并有解析位置",
+  "bullets": [
+    "进入案件分析页",
+    "选择一到十份材料",
+    "核对版本与总字数"
+  ],
+  "narration": "进入案件分析，选择同案件内一到十份已经解析成功、带有页段位置的可读文件。单份和本次合计最多四万字。材料可以来自团队共同可读的文件，但分析报告仍限创建者或者有权管理员查看，不能把团队可读文件理解为所有任务报告公开。",
+  "visual": "analysis",
+  "crop": [
+    275,
+    335,
+    1130,
+    555
+  ],
+  "focus": [
+    295,
+    445,
+    790,
+    120
+  ],
+  "index": 41,
+  "segments": [
+    {
+      "text": "进入案件分析，选择同案件内一到十份已经解析成功、带有页段位置的可读文件。",
+      "spoken_text": "进入案件分析，选择同案件内一到十份已经解析成功、带有页段位置的可读文件。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6a391eb92b547e8d4c3e51c7.aiff",
+      "voice_duration": 8.745488,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.945488,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/frame_01.png"
+    },
+    {
+      "text": "单份和本次合计最多四万字。材料可以来自团队共同可读的文件，",
+      "spoken_text": "单份和本次合计最多四万字。材料可以来自团队共同可读的文件，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c002dcbbfa2b23bdd612fed0.aiff",
+      "voice_duration": 6.955147,
+      "pause": 0.2,
+      "start": 8.945488,
+      "duration": 7.155147,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/frame_02.png"
+    },
+    {
+      "text": "但分析报告仍限创建者或者有权管理员查看，不能把团队可读文件理解为所有任务报告公开。",
+      "spoken_text": "但分析报告仍限创建者或者有权管理员查看，不能把团队可读文件理解为所有任务报告公开。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/95107807f3d3737d2df69aa2.aiff",
+      "voice_duration": 10.61229,
+      "pause": 0.34,
+      "start": 16.100635,
+      "duration": 10.952322999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/frame_03.png"
+    }
+  ],
+  "duration": 27.052958,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/042_42/scene.mp4",
+  "fingerprint": "5180af18966a785ae86a496bbe2cffdbe965ece1d5386d08886e20a704090161",
+  "visual_type": "真实前端截图"
+}

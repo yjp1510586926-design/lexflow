@@ -1,0 +1,59 @@
+{
+  "id": "28",
+  "chapter": "AI 文书起草",
+  "title": "查看独立 AI 草稿",
+  "subtitle": "不会覆盖生成期间的人工当前正文",
+  "bullets": [
+    "在任务中心查看进度",
+    "检查正文和待补信息",
+    "回到文书比较版本"
+  ],
+  "narration": "生成成功后，结果作为独立 AI 草稿写入版本历史，状态是待复核，不会覆盖生成期间人工编辑的当前正文。打开任务查看输出和待补信息，再回到文书比较版本。单次最多六千输出 token，长正文可能受限，不能只根据任务成功判断内容完整。",
+  "visual": "generation-result",
+  "crop": [
+    385,
+    150,
+    670,
+    590
+  ],
+  "index": 27,
+  "segments": [
+    {
+      "text": "生成成功后，结果作为独立 AI 草稿写入版本历史，状态是待复核，",
+      "spoken_text": "生成成功后，结果作为独立 人工智能 草稿写入版本历史，状态是待复核，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/46b863163e70dd01fab28c79.aiff",
+      "voice_duration": 8.079274,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.279274,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/frame_01.png"
+    },
+    {
+      "text": "不会覆盖生成期间人工编辑的当前正文。打开任务查看输出和待补信息，再回到文书比较版本。",
+      "spoken_text": "不会覆盖生成期间人工编辑的当前正文。打开任务查看输出和待补信息，再回到文书比较版本。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/4fc03b34c7cff295d498ff9c.aiff",
+      "voice_duration": 10.410385,
+      "pause": 0.2,
+      "start": 8.279274,
+      "duration": 10.610384999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/frame_02.png"
+    },
+    {
+      "text": "单次最多六千输出 token，长正文可能受限，不能只根据任务成功判断内容完整。",
+      "spoken_text": "单次最多六千输出 token，长正文可能受限，不能只根据任务成功判断内容完整。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/500e50aef15d980bf6760106.aiff",
+      "voice_duration": 8.534104,
+      "pause": 0.34,
+      "start": 18.889658999999998,
+      "duration": 8.874174000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/frame_03.png"
+    }
+  ],
+  "duration": 27.763833,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/028_28/scene.mp4",
+  "fingerprint": "b25680a44a873521febc1fae7997a9fe6b9b7b4f68bfb605ba8cd0fce0b52061",
+  "visual_type": "真实前端截图"
+}

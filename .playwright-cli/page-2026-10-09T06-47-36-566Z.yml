@@ -1,0 +1,88 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "freshadmin" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "成员与权限" [level=1] [ref=e375]
+        - paragraph [ref=e110]: 管理律所成员及角色
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e376]:
+        - generic [ref=e377]:
+          - generic [ref=e378]:
+            - heading "律所成员与角色授权" [level=2] [ref=e379]
+            - paragraph [ref=e380]: 本租户内所有律师与协作人员账号；支持分配律所管理员、律师及只读权限。
+          - button "添加律所成员" [active] [ref=e381] [cursor=pointer]
+        - table [ref=e388]:
+          - rowgroup [ref=e389]:
+            - row [ref=e390]:
+              - columnheader "用户标识" [ref=e391]
+              - columnheader "用户名 (账号)" [ref=e392]
+              - columnheader "显示姓名" [ref=e393]
+              - columnheader "系统角色" [ref=e394]
+              - columnheader "账号状态" [ref=e395]
+              - columnheader "操作" [ref=e396]
+          - rowgroup [ref=e397]:
+            - row [ref=e398]:
+              - 'cell "UID #1" [ref=e399]'
+              - cell "freshadmin" [ref=e401]
+              - cell "freshadmin" [ref=e402]
+              - cell "律所管理员" [ref=e403]
+              - cell "正常" [ref=e405]
+              - cell [ref=e407]:
+                - button "编辑权限" [ref=e408] [cursor=pointer]
+        - dialog [ref=e414]:
+          - generic [ref=e415]:
+            - generic [ref=e416]:
+              - generic [ref=e417]:
+                - heading "添加律所新成员" [level=3] [ref=e418]
+                - paragraph [ref=e419]: 为本律所执业律师及辅助人员开设独立办公账号
+              - button "关闭弹窗" [ref=e420] [cursor=pointer]
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - generic [ref=e427]: 登录用户名 *
+                - textbox "登录用户名 *" [ref=e428]:
+                  - /placeholder: "例如: zhang.san"
+              - generic [ref=e429]:
+                - generic [ref=e430]: 初始密码 *
+                - textbox "初始密码 *" [ref=e431]:
+                  - /placeholder: 至少 12 位安全字符
+                - generic [ref=e432]: 安全密码要求：至少 12 位字符，建议包含大小写字母与数字。
+              - generic [ref=e433]:
+                - generic [ref=e434]: 成员姓名 (Display Name) *
+                - textbox "成员姓名 (Display Name) *" [ref=e435]:
+                  - /placeholder: "例如: 张三 律师"
+              - generic [ref=e436]:
+                - generic [ref=e437]: 分配系统角色 *
+                - combobox "分配系统角色 *" [ref=e438]:
+                  - option "主办律师 (LAWYER) — 拥有案件立案、编辑与业务执行权限" [selected]
+                  - option "律所管理员 (TENANT_ADMIN) — 具备组织成员及本律所全量权限"
+                  - option "只读成员 (READER) — 仅可查看被授权案件，禁止写入修改"
+            - generic [ref=e439]:
+              - button "取消" [ref=e440] [cursor=pointer]
+              - button "确认创建" [ref=e442] [cursor=pointer]

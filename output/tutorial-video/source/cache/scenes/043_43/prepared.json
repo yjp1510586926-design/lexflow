@@ -1,0 +1,75 @@
+{
+  "id": "43",
+  "chapter": "案件分析",
+  "title": "填写背景和分析要求",
+  "subtitle": "固定本次来源，不随之后材料变化",
+  "bullets": [
+    "背景最多三千字",
+    "要求最多两千字",
+    "确认费用后提交"
+  ],
+  "narration": "填写背景和分析要求，背景最多三千字，要求最多两千字。说明希望整理的问题，避免把未核实的信息写成既定事实。提交时会固定文件版本、摘要、原文和模型配置。确认费用后等待任务执行，案件归档、来源变化或者撤权可能阻止继续计算。",
+  "visual": "analysis",
+  "crop": [
+    275,
+    335,
+    1130,
+    555
+  ],
+  "focus": [
+    295,
+    545,
+    1095,
+    310
+  ],
+  "index": 42,
+  "segments": [
+    {
+      "text": "填写背景和分析要求，背景最多三千字，要求最多两千字。",
+      "spoken_text": "填写背景和分析要求，背景最多三千字，要求最多两千字。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6587cee98e2e3faa8ce104e5.aiff",
+      "voice_duration": 6.886621,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.086621,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/frame_01.png"
+    },
+    {
+      "text": "说明希望整理的问题，避免把未核实的信息写成既定事实。",
+      "spoken_text": "说明希望整理的问题，避免把未核实的信息写成既定事实。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ffed78f5ea33ef9cc5b7b8de.aiff",
+      "voice_duration": 6.279728,
+      "pause": 0.2,
+      "start": 7.086621,
+      "duration": 6.479728000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/frame_02.png"
+    },
+    {
+      "text": "提交时会固定文件版本、摘要、原文和模型配置。",
+      "spoken_text": "提交时会固定文件版本、摘要、原文和模型配置。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b33c46c03465ef223dd97164.aiff",
+      "voice_duration": 5.516644,
+      "pause": 0.2,
+      "start": 13.566349,
+      "duration": 5.7166440000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/frame_03.png"
+    },
+    {
+      "text": "确认费用后等待任务执行，案件归档、来源变化或者撤权可能阻止继续计算。",
+      "spoken_text": "确认费用后等待任务执行，案件归档、来源变化或者撤权可能阻止继续计算。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/859fa4f7a9781236d93474ff.aiff",
+      "voice_duration": 8.782177,
+      "pause": 0.34,
+      "start": 19.282993,
+      "duration": 9.122256999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/frame_04.png"
+    }
+  ],
+  "duration": 28.40525,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/043_43/scene.mp4",
+  "fingerprint": "ced5096f904be21d3dd91edf4043055a763a016c88cb97f6385bfec4cc32e131",
+  "visual_type": "真实前端截图"
+}

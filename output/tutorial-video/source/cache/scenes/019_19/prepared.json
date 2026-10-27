@@ -1,0 +1,75 @@
+{
+  "id": "19",
+  "chapter": "文书与版本",
+  "title": "保存当前正文",
+  "subtitle": "保存形成新的人工版本并切换当前版本",
+  "bullets": [
+    "核对编辑内容",
+    "点击保存新版本",
+    "确认当前版本更新"
+  ],
+  "narration": "完成编辑后点击保存新版本，系统会新增人工正文版本，并把它设为当前版本，文书保持草稿状态。每次保存都应有明确内容变化和目的。保存成功后核对版本和正文，不要只依赖按钮的点击反馈。后续发布、AI 起草和导出都围绕已保存版本进行。",
+  "visual": "document-editor",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    990,
+    435,
+    103,
+    32
+  ],
+  "index": 18,
+  "segments": [
+    {
+      "text": "完成编辑后点击保存新版本，系统会新增人工正文版本，并把它设为当前版本，",
+      "spoken_text": "完成编辑后点击保存新版本，系统会新增人工正文版本，并把它设为当前版本，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/66f7ec5cce6286938f40d967.aiff",
+      "voice_duration": 9.02254,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.222539999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/frame_01.png"
+    },
+    {
+      "text": "文书保持草稿状态。每次保存都应有明确内容变化和目的。",
+      "spoken_text": "文书保持草稿状态。每次保存都应有明确内容变化和目的。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/be9f6344bfda354e2e338656.aiff",
+      "voice_duration": 6.491655,
+      "pause": 0.2,
+      "start": 9.222539999999999,
+      "duration": 6.691655,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/frame_02.png"
+    },
+    {
+      "text": "保存成功后核对版本和正文，不要只依赖按钮的点击反馈。",
+      "spoken_text": "保存成功后核对版本和正文，不要只依赖按钮的点击反馈。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2167f41b9e45a7b4f6ee3009.aiff",
+      "voice_duration": 6.160952,
+      "pause": 0.2,
+      "start": 15.914195,
+      "duration": 6.360952,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/frame_03.png"
+    },
+    {
+      "text": "后续发布、AI 起草和导出都围绕已保存版本进行。",
+      "spoken_text": "后续发布、人工智能 起草和导出都围绕已保存版本进行。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9c0a7a479b7edf99bedb9aa7.aiff",
+      "voice_duration": 6.199592,
+      "pause": 0.34,
+      "start": 22.275147,
+      "duration": 6.539645000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/frame_04.png"
+    }
+  ],
+  "duration": 28.814792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/019_19/scene.mp4",
+  "fingerprint": "3fe924a72760ec829637fd264c15e675e356ffd4f3fe7ee4947923f9aac29437",
+  "visual_type": "真实前端截图"
+}

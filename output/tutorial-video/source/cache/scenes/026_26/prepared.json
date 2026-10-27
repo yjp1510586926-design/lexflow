@@ -1,0 +1,65 @@
+{
+  "id": "26",
+  "chapter": "AI 文书起草",
+  "title": "从文书编辑页打开 AI 起草",
+  "subtitle": "固定本次源正文与生成要求",
+  "bullets": [
+    "先保存当前版本",
+    "打开 AI 起草面板",
+    "确认来源后填写要求"
+  ],
+  "narration": "在文书编辑页点击 AI 起草。先确认来源就是当前保存版本，再填写生成要求。本次输入会固定源版本、案件背景和模型配置，不会随之后的编辑自动变化。一次源正文最多三万字，要求最多两千字，应尽量写清目标、结构以及需要保留的信息。",
+  "visual": "document-editor",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    750,
+    435,
+    60,
+    32
+  ],
+  "index": 25,
+  "segments": [
+    {
+      "text": "在文书编辑页点击 AI 起草。先确认来源就是当前保存版本，再填写生成要求。",
+      "spoken_text": "在文书编辑页点击 人工智能 起草。先确认来源就是当前保存版本，再填写生成要求。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e713875586b06a5b5fbb9263.aiff",
+      "voice_duration": 9.655283,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.855283,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/frame_01.png"
+    },
+    {
+      "text": "本次输入会固定源版本、案件背景和模型配置，不会随之后的编辑自动变化。",
+      "spoken_text": "本次输入会固定源版本、案件背景和模型配置，不会随之后的编辑自动变化。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b9a6b6e93348766fa608477e.aiff",
+      "voice_duration": 8.344354,
+      "pause": 0.2,
+      "start": 9.855283,
+      "duration": 8.544353999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/frame_02.png"
+    },
+    {
+      "text": "一次源正文最多三万字，要求最多两千字，应尽量写清目标、结构以及需要保留的信息。",
+      "spoken_text": "一次源正文最多三万字，要求最多两千字，应尽量写清目标、结构以及需要保留的信息。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b97bd0e8ee7b90e4bf30e340.aiff",
+      "voice_duration": 9.730748,
+      "pause": 0.34,
+      "start": 18.399637,
+      "duration": 10.070780000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/frame_03.png"
+    }
+  ],
+  "duration": 28.470417,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/026_26/scene.mp4",
+  "fingerprint": "de9be7f9c174ab8a86e33f22484ef10c60c3df83a1b1bd6aac94b881c8b36c5e",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,98 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e11]:
+      - generic [ref=f1e12]: LexFlow
+      - generic [ref=f1e13]: 法律业务与 AI 协作平台
+    - navigation [ref=f1e14]:
+      - generic [ref=f1e15]: 核心业务
+      - button "工作台" [ref=f1e16] [cursor=pointer]
+      - button "案件" [active] [ref=f1e24] [cursor=pointer]
+      - button "成员与权限" [ref=f1e30] [cursor=pointer]
+      - generic [ref=f1e38]: 协作与智能扩展
+      - button "文书" [ref=f1e39] [cursor=pointer]
+      - button "任务记录" [ref=f1e45] [cursor=pointer]
+      - button "律所知识库" [ref=f1e50] [cursor=pointer]
+      - button "AI 助手" [ref=f1e56] [cursor=pointer]
+      - button "AI 配置" [ref=f1e61] [cursor=pointer]
+    - generic [ref=f1e67]:
+      - generic [ref=f1e71]:
+        - generic "合成界面验收" [ref=f1e72]
+        - generic [ref=f1e73]: "机构 #999991 · 工号 #81"
+      - button "退出登录" [ref=f1e74] [cursor=pointer]
+  - generic [ref=f1e78]:
+    - banner [ref=f1e79]:
+      - generic [ref=f1e80]:
+        - heading "案件" [level=1] [ref=f1e485]
+        - paragraph [ref=f1e82]: 创建案件、添加成员、整理材料
+      - generic [ref=f1e83]:
+        - button "刷新当前数据" [ref=f1e84] [cursor=pointer]:
+          - generic [ref=f1e90]: 刷新
+        - button "离线/异常" [ref=f1e91] [cursor=pointer]
+        - generic [ref=f1e96]:
+          - generic [ref=f1e97]: 机构
+          - generic [ref=f1e98]: "#999991"
+    - main [ref=f1e99]:
+      - generic [ref=f1e486]:
+        - generic [ref=f1e487]:
+          - generic [ref=f1e488]:
+            - textbox "搜索案件编号或标题..." [ref=f1e490]
+            - tablist [ref=f1e491]:
+              - button "全部状态" [ref=f1e492] [cursor=pointer]
+              - button "进行中" [ref=f1e493] [cursor=pointer]
+              - button "草稿" [ref=f1e494] [cursor=pointer]
+              - button "已归档" [ref=f1e495] [cursor=pointer]
+            - combobox [ref=f1e496]:
+              - option "全部业务类型" [selected]
+              - option "民事诉讼"
+              - option "商事仲裁"
+              - option "刑事辩护"
+              - option "知识产权"
+              - option "劳动争议"
+              - option "公司合规与并购"
+              - option "常年法律顾问"
+              - option "其他业务"
+            - combobox "案件负责人" [ref=f1e497]:
+              - option "全部负责人" [selected]
+              - option "可见负责人甲"
+              - option "可见负责人乙"
+            - button "筛选" [ref=f1e498] [cursor=pointer]
+          - button "立案新建" [ref=f1e501] [cursor=pointer]
+        - generic [ref=f1e506]:
+          - table [ref=f1e508]:
+            - rowgroup [ref=f1e509]:
+              - row [ref=f1e510]:
+                - columnheader "案件编号" [ref=f1e511]
+                - columnheader "案件标题" [ref=f1e512]
+                - columnheader "业务类别" [ref=f1e513]
+                - columnheader "案卷状态" [ref=f1e514]
+                - columnheader "修订版本" [ref=f1e515]
+                - columnheader "操作" [ref=f1e516]
+            - rowgroup [ref=f1e517]:
+              - row [ref=f1e518]:
+                - cell "SYNTHETIC-OWNER-A" [ref=f1e519]
+                - cell [ref=f1e520]:
+                  - text: 合成验收案件甲
+                  - paragraph [ref=f1e521]: 浏览器界面验收专用
+                - cell "民事诉讼" [ref=f1e522]
+                - cell "进行中" [ref=f1e523]
+                - cell "v1" [ref=f1e525]
+                - cell [ref=f1e527]:
+                  - button "案件工作台" [ref=f1e528] [cursor=pointer]
+              - row [ref=f1e530]:
+                - cell "SYNTHETIC-OWNER-B" [ref=f1e531]
+                - cell [ref=f1e532]:
+                  - text: 合成验收案件乙
+                  - paragraph [ref=f1e533]: 浏览器界面验收专用
+                - cell "民事诉讼" [ref=f1e534]
+                - cell "进行中" [ref=f1e535]
+                - cell "v1" [ref=f1e537]
+                - cell [ref=f1e539]:
+                  - button "案件工作台" [ref=f1e540] [cursor=pointer]
+          - generic [ref=f1e542]:
+            - generic [ref=f1e543]:
+              - text: 共
+              - strong [ref=f1e544]: "2"
+              - text: 条记录 · 当前第 1 / 1 页
+            - generic [ref=f1e545]:
+              - button "上一页" [disabled] [ref=f1e546]
+              - button "下一页" [disabled] [ref=f1e551]

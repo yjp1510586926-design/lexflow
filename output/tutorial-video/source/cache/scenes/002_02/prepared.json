@@ -1,0 +1,53 @@
+{
+  "id": "02",
+  "chapter": "开始之前",
+  "title": "本次学习路线",
+  "subtitle": "先完成基础闭环，再使用高级能力",
+  "bullets": [
+    "案件、成员与文件",
+    "文书、版本与导出",
+    "AI、任务及部署附录"
+  ],
+  "narration": "我们会先创建一个演示案件，添加成员，上传材料并查看解析结果，再整理证据目录、保存文书和下载导出文件。之后讲解 AI 起草、知识库问答、合同审查和案件分析，最后补充管理员配置、安装启动与排错方法。",
+  "visual": "slide",
+  "index": 1,
+  "segments": [
+    {
+      "text": "我们会先创建一个演示案件，添加成员，上传材料并查看解析结果，再整理证据目录、",
+      "spoken_text": "我们会先创建一个演示案件，添加成员，上传材料并查看解析结果，再整理证据目录、",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/cebdf81dda4ac7146aeaf561.aiff",
+      "voice_duration": 9.94,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.139999999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/frame_01.png"
+    },
+    {
+      "text": "保存文书和下载导出文件。之后讲解 AI 起草、知识库问答、合同审查和案件分析，",
+      "spoken_text": "保存文书和下载导出文件。之后讲解 人工智能 起草、知识库问答、合同审查和案件分析，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0c473097fc383cfcda4187a9.aiff",
+      "voice_duration": 9.678776,
+      "pause": 0.2,
+      "start": 10.139999999999999,
+      "duration": 9.878775999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/frame_02.png"
+    },
+    {
+      "text": "最后补充管理员配置、安装启动与排错方法。",
+      "spoken_text": "最后补充管理员配置、安装启动与排错方法。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0714f10ee2576718d94bb30d.aiff",
+      "voice_duration": 5.063175,
+      "pause": 0.34,
+      "start": 20.018775999999995,
+      "duration": 5.403224000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/frame_03.png"
+    }
+  ],
+  "duration": 25.422,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/002_02/scene.mp4",
+  "fingerprint": "4a8591f8627d212ffd6ed8c71502f2673388302b1a90934c28a7546b7962c017",
+  "visual_type": "讲解卡片"
+}

@@ -1,0 +1,257 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "林律师" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "任务记录" [level=1] [ref=e337]
+        - paragraph [ref=e110]: 查看后台任务进度与失败原因
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e339]:
+        - generic [ref=e341]:
+          - heading "异步任务中心" [level=3] [ref=e342]
+          - paragraph [ref=e343]: 查看文字提取、知识入库、合同审查、案件分析、AI 文书生成和导出；任务可在案件中提交
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - combobox [ref=e347]:
+              - option "全部类型" [selected]
+              - option "文书解析"
+              - option "知识入库"
+              - option "合同审查"
+              - option "案件分析"
+              - option "AI 文书生成"
+              - option "文书导出"
+            - combobox [ref=e348]:
+              - option "全部状态" [selected]
+              - option "排队中"
+              - option "执行中"
+              - option "待人工确认"
+              - option "成功"
+              - option "失败"
+              - option "取消中"
+              - option "已取消"
+            - button "查询" [ref=e349] [cursor=pointer]
+            - button "重置" [ref=e351] [cursor=pointer]
+            - generic [ref=e359]: 共 11 个任务
+          - table [ref=e955]:
+            - rowgroup [ref=e956]:
+              - row [ref=e957]:
+                - columnheader "任务 ID" [ref=e958]
+                - columnheader "类型" [ref=e959]
+                - columnheader "关联对象" [ref=e960]
+                - columnheader "提交人" [ref=e961]
+                - columnheader "状态" [ref=e962]
+                - columnheader "重试/恢复次数" [ref=e963]
+                - columnheader "错误信息" [ref=e964]
+                - columnheader "提交时间" [ref=e965]
+                - columnheader "开始时间" [ref=e966]
+                - columnheader "完成时间" [ref=e967]
+                - columnheader "操作" [ref=e968]
+            - rowgroup [ref=e969]:
+              - row [ref=e970]:
+                - cell [ref=e971]:
+                  - code [ref=e972]: "#1004"
+                - cell "文书导出" [ref=e973]
+                - 'cell "案件 #101 源版本 #702" [ref=e975]':
+                  - text: "案件 #101"
+                  - generic [ref=e976]: "源版本 #702"
+                - 'cell "用户 #1" [ref=e977]'
+                - cell "成功" [ref=e978]
+                - cell "0 次" [ref=e980]
+                - cell "—" [ref=e981]
+                - cell "2026/10/15 10:00:00" [ref=e982]
+                - cell "2026/10/15 10:00:00" [ref=e983]
+                - cell "2026/10/15 10:00:02" [ref=e984]
+                - cell [ref=e985]:
+                  - button "查看导出" [ref=e987] [cursor=pointer]
+              - row [ref=e989]:
+                - cell [ref=e990]:
+                  - code [ref=e991]: "#1003"
+                - cell "文书解析" [ref=e992]
+                - 'cell "案件 #101 源版本 #211" [ref=e994]':
+                  - text: "案件 #101"
+                  - generic [ref=e995]: "源版本 #211"
+                - 'cell "用户 #1" [ref=e996]'
+                - cell "成功" [ref=e997]
+                - cell "0 次" [ref=e999]
+                - cell "—" [ref=e1000]
+                - cell "2026/10/15 10:00:00" [ref=e1001]
+                - cell "2026/10/15 10:00:00" [ref=e1002]
+                - cell "2026/10/15 10:00:02" [ref=e1003]
+                - cell [ref=e1004]:
+                  - generic [ref=e1005]:
+                    - button "处理记录" [ref=e1006] [cursor=pointer]
+                    - button "查看原文" [ref=e1008] [cursor=pointer]
+              - row [ref=e1010]:
+                - cell [ref=e1011]:
+                  - code [ref=e1012]: "#405"
+                - cell "文书解析" [ref=e1013]
+                - 'cell "案件 #101 源版本 #212" [ref=e1015]':
+                  - text: "案件 #101"
+                  - generic [ref=e1016]: "源版本 #212"
+                - 'cell "用户 #1" [ref=e1017]'
+                - cell "失败" [ref=e1018]
+                - cell "0 次" [ref=e1020]
+                - cell "教学失败示例：文件未包含可读取文字，请检查格式或上传含文字层版本。" [ref=e1021]
+                - cell "2026/10/15 10:00:00" [ref=e1023]
+                - cell "2026/10/15 10:00:00" [ref=e1024]
+                - cell "—" [ref=e1025]
+                - cell [ref=e1026]:
+                  - button "处理记录" [ref=e1028] [cursor=pointer]
+              - row [ref=e1030]:
+                - cell [ref=e1031]:
+                  - code [ref=e1032]: "#404"
+                - cell "AI 文书生成" [ref=e1033]
+                - 'cell "案件 #101" [ref=e1035]'
+                - 'cell "用户 #1" [ref=e1036]'
+                - cell "成功" [ref=e1037]
+                - cell "0 次" [ref=e1039]
+                - cell "—" [ref=e1040]
+                - cell "2026/10/15 10:00:00" [ref=e1041]
+                - cell "2026/10/15 10:00:00" [ref=e1042]
+                - cell "2026/10/15 10:00:02" [ref=e1043]
+                - cell [ref=e1044]:
+                  - generic [ref=e1045]:
+                    - button "处理记录" [ref=e1046] [cursor=pointer]
+                    - button "查看生成" [ref=e1048] [cursor=pointer]
+              - row [ref=e1050]:
+                - cell [ref=e1051]:
+                  - code [ref=e1052]: "#403"
+                - cell "文书导出" [ref=e1053]
+                - 'cell "案件 #101" [ref=e1055]'
+                - 'cell "用户 #1" [ref=e1056]'
+                - cell "成功" [ref=e1057]
+                - cell "0 次" [ref=e1059]
+                - cell "—" [ref=e1060]
+                - cell "2026/10/15 10:00:00" [ref=e1061]
+                - cell "2026/10/15 10:00:00" [ref=e1062]
+                - cell "2026/10/15 10:00:02" [ref=e1063]
+                - cell [ref=e1064]:
+                  - button "查看导出" [ref=e1066] [cursor=pointer]
+              - row [ref=e1068]:
+                - cell [ref=e1069]:
+                  - code [ref=e1070]: "#402"
+                - cell "案件分析" [ref=e1071]
+                - 'cell "案件 #101" [ref=e1073]'
+                - 'cell "用户 #1" [ref=e1074]'
+                - cell "待人工确认" [ref=e1075]
+                - cell "0 次" [ref=e1077]
+                - cell "—" [ref=e1078]
+                - cell "2026/10/15 10:00:00" [ref=e1079]
+                - cell "2026/10/15 10:00:00" [ref=e1080]
+                - cell "—" [ref=e1081]
+                - cell [ref=e1082]:
+                  - generic [ref=e1083]:
+                    - button "处理记录" [ref=e1084] [cursor=pointer]
+                    - button "查看分析" [ref=e1086] [cursor=pointer]
+              - row [ref=e1088]:
+                - cell [ref=e1089]:
+                  - code [ref=e1090]: "#401"
+                - cell "合同审查" [ref=e1091]
+                - 'cell "案件 #101 源版本 #211" [ref=e1093]':
+                  - text: "案件 #101"
+                  - generic [ref=e1094]: "源版本 #211"
+                - 'cell "用户 #1" [ref=e1095]'
+                - cell "待人工确认" [ref=e1096]
+                - cell "0 次" [ref=e1098]
+                - cell "—" [ref=e1099]
+                - cell "2026/10/15 10:00:00" [ref=e1100]
+                - cell "2026/10/15 10:00:00" [ref=e1101]
+                - cell "—" [ref=e1102]
+                - cell [ref=e1103]:
+                  - generic [ref=e1104]:
+                    - button "处理记录" [ref=e1105] [cursor=pointer]
+                    - button "查看审查" [ref=e1107] [cursor=pointer]
+              - row [ref=e1109]:
+                - cell [ref=e1110]:
+                  - code [ref=e1111]: "#304"
+                - cell "知识入库" [ref=e1112]
+                - 'cell "案件 #101" [ref=e1114]'
+                - 'cell "用户 #1" [ref=e1115]'
+                - cell "成功" [ref=e1116]
+                - cell "0 次" [ref=e1118]
+                - cell "—" [ref=e1119]
+                - cell "2026/10/15 10:00:00" [ref=e1120]
+                - cell "2026/10/15 10:00:00" [ref=e1121]
+                - cell "2026/10/15 10:00:02" [ref=e1122]
+                - cell [ref=e1123]:
+                  - button "处理记录" [ref=e1125] [cursor=pointer]
+              - row [ref=e1127]:
+                - cell [ref=e1128]:
+                  - code [ref=e1129]: "#303"
+                - cell "文书解析" [ref=e1130]
+                - 'cell "律所知识库 源版本 #213" [ref=e1132]':
+                  - text: 律所知识库
+                  - generic [ref=e1133]: "源版本 #213"
+                - 'cell "用户 #1" [ref=e1134]'
+                - cell "成功" [ref=e1135]
+                - cell "0 次" [ref=e1137]
+                - cell "—" [ref=e1138]
+                - cell "2026/10/15 10:00:00" [ref=e1139]
+                - cell "2026/10/15 10:00:00" [ref=e1140]
+                - cell "2026/10/15 10:00:02" [ref=e1141]
+                - cell [ref=e1142]:
+                  - generic [ref=e1143]:
+                    - button "处理记录" [ref=e1144] [cursor=pointer]
+                    - button "查看原文" [ref=e1146] [cursor=pointer]
+              - row [ref=e1148]:
+                - cell [ref=e1149]:
+                  - code [ref=e1150]: "#302"
+                - cell "文书解析" [ref=e1151]
+                - 'cell "案件 #101 源版本 #212" [ref=e1153]':
+                  - text: "案件 #101"
+                  - generic [ref=e1154]: "源版本 #212"
+                - 'cell "用户 #1" [ref=e1155]'
+                - cell "成功" [ref=e1156]
+                - cell "0 次" [ref=e1158]
+                - cell "—" [ref=e1159]
+                - cell "2026/10/15 10:00:00" [ref=e1160]
+                - cell "2026/10/15 10:00:00" [ref=e1161]
+                - cell "2026/10/15 10:00:02" [ref=e1162]
+                - cell [ref=e1163]:
+                  - generic [ref=e1164]:
+                    - button "处理记录" [ref=e1165] [cursor=pointer]
+                    - button "查看原文" [ref=e1167] [cursor=pointer]
+              - row [ref=e1169]:
+                - cell [ref=e1170]:
+                  - code [ref=e1171]: "#301"
+                - cell "文书解析" [ref=e1172]
+                - 'cell "案件 #101 源版本 #211" [ref=e1174]':
+                  - text: "案件 #101"
+                  - generic [ref=e1175]: "源版本 #211"
+                - 'cell "用户 #1" [ref=e1176]'
+                - cell "成功" [ref=e1177]
+                - cell "0 次" [ref=e1179]
+                - cell "—" [ref=e1180]
+                - cell "2026/10/15 10:00:00" [ref=e1181]
+                - cell "2026/10/15 10:00:00" [ref=e1182]
+                - cell "2026/10/15 10:00:02" [ref=e1183]
+                - cell [ref=e1184]:
+                  - generic [ref=e1185]:
+                    - button "处理记录" [ref=e1186] [cursor=pointer]
+                    - button "查看原文" [ref=e1188] [cursor=pointer]

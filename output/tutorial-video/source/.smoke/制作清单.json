@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "style_version": "lexflow-v5",
+  "title": "LexFlow 详细使用教程 · 分步讲解",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 15,
+  "voice": "Tingting",
+  "rate": 155,
+  "presentation": "真实前端截图与讲解卡片，配以逐步中文配音；非连续录屏",
+  "disclosure": "教学演示采用虚构数据，AI 输出如有展示均为示例结果。",
+  "scenes": [
+    {
+      "id": "smoke",
+      "chapter": "第一章 · 制作验证",
+      "title": "本地制作链路验证",
+      "subtitle": "验证中文字幕、中文语音与章节封装",
+      "bullets": [
+        "生成中文语音",
+        "烘焙同步字幕",
+        "封装视频与章节"
+      ],
+      "narration": "这是本地教程。",
+      "visual": "slide",
+      "code": [
+        "java -version"
+      ],
+      "index": 0,
+      "segments": [
+        {
+          "text": "这是本地教程。",
+          "spoken_text": "这是本地教程。",
+          "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/audio/3734abc0493d08b564cd52d4.aiff",
+          "voice_duration": 1.586259,
+          "pause": 0.34,
+          "start": 0.0,
+          "duration": 1.926292,
+          "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/frame_01.png"
+        }
+      ],
+      "duration": 1.926292,
+      "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/narration.wav",
+      "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/frames.ffconcat",
+      "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke",
+      "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/scene.mp4",
+      "fingerprint": "54febca5027b203d93b32f170b6a1030b89926997301d43676ddac94dbf11058",
+      "visual_type": "讲解卡片",
+      "encoded_duration": 1.933333
+    }
+  ],
+  "prepared_duration": 1.926292,
+  "chapters": [
+    {
+      "title": "第一章 · 制作验证",
+      "start": 0.0,
+      "end": 1.933333
+    }
+  ],
+  "total_duration": 1.933333,
+  "output_video": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/LexFlow-详细使用教程.mp4",
+  "final_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 40,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "15/1",
+        "avg_frame_rate": "15/1",
+        "time_base": "1/15000",
+        "start_pts": 630,
+        "start_time": "0.042000",
+        "duration_ts": 29000,
+        "duration": "1.933333",
+        "bit_rate": "260358",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "29",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc62.28.101 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "24000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/24000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 47255,
+        "duration": "1.968958",
+        "bit_rate": "89188",
+        "nb_frames": "47",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      },
+      {
+        "index": 2,
+        "codec_name": "mov_text",
+        "codec_long_name": "MOV text",
+        "codec_type": "subtitle",
+        "codec_tag_string": "tx3g",
+        "codec_tag": "0x67337874",
+        "id": "0x3",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1933000,
+        "duration": "1.933000",
+        "bit_rate": "103",
+        "nb_frames": "2",
+        "extradata_size": 68,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "zho",
+          "handler_name": "SubtitleHandler",
+          "name": "中文字幕"
+        }
+      },
+      {
+        "index": 3,
+        "codec_name": "bin_data",
+        "codec_long_name": "binary data",
+        "codec_type": "data",
+        "codec_tag_string": "text",
+        "codec_tag": "0x74786574",
+        "id": "0x4",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1933,
+        "duration": "1.933000",
+        "bit_rate": "161",
+        "nb_frames": "1",
+        "extradata_size": 63,
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "SubtitleHandler"
+        }
+      }
+    ],
+    "chapters": [
+      {
+        "id": 0,
+        "time_base": "1/1000",
+        "start": 0,
+        "start_time": "0.000000",
+        "end": 1933,
+        "end_time": "1.933000",
+        "tags": {
+          "title": "第一章 · 制作验证"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/LexFlow-详细使用教程.partial.mp4",
+      "nb_streams": 4,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "1.975333",
+      "size": "88759",
+      "bit_rate": "359469",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "title": "LexFlow 详细使用教程 · 分步讲解",
+        "encoder": "Lavf62.12.101",
+        "comment": "真实前端截图与逐步中文配音；教学演示采用虚构数据。"
+      }
+    }
+  },
+  "final_duration": 1.975333
+}

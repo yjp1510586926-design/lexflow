@@ -1,0 +1,52 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [active] [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "审计验收管理员" [ref=e100]
+        - generic [ref=e101]: "机构 #900000160 · 工号 #900000160"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "文书" [level=1] [ref=e304]
+        - paragraph [ref=e110]: 查看案件文书与历史版本
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#900000160"
+    - main [ref=e127]:
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - button "案件文件与证据" [ref=e307] [cursor=pointer]
+          - button "操作审计日志" [ref=e312] [cursor=pointer]
+        - generic [ref=e316]:
+          - generic [ref=e318]:
+            - heading "全局文件与证据管理" [level=3] [ref=e319]
+            - paragraph [ref=e320]: 跨案件查看可访问的卷宗材料，支持上传、下载及 SHA-256 完整性核验
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - generic [ref=e325]: 选择案件
+                - combobox [ref=e326]:
+                  - option "暂无可访问案件" [selected]
+              - generic [ref=e327]:
+                - button "刷新" [disabled] [ref=e328]
+                - button "上传文件" [disabled] [ref=e336]
+            - paragraph [ref=e344]: 请先选择案件

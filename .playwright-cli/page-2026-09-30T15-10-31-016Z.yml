@@ -1,0 +1,64 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "AI 助手" [ref=e78] [cursor=pointer]
+      - button "AI 配置" [ref=e83] [cursor=pointer]
+    - generic [ref=e89]:
+      - generic [ref=e93]:
+        - generic "Rerank Tester" [ref=e94]
+        - generic [ref=e95]: "机构 #900000095 · 工号 #900000095"
+      - button "退出登录" [ref=e96] [cursor=pointer]
+  - generic [ref=e100]:
+    - banner [ref=e101]:
+      - generic [ref=e102]:
+        - heading "AI 配置" [level=1] [ref=e309]
+        - paragraph [ref=e104]: 管理本律所的模型服务与 Key
+      - generic [ref=e105]:
+        - button "刷新当前数据" [ref=e106] [cursor=pointer]:
+          - generic [ref=e112]: 刷新
+        - button "服务在线" [ref=e113] [cursor=pointer]
+        - generic [ref=e118]:
+          - generic [ref=e119]: 机构
+          - generic [ref=e120]: "#900000095"
+    - main [ref=e121]:
+      - generic [ref=e310]:
+        - generic [ref=e312]:
+          - heading "AI 配置" [level=3] [ref=e313]
+          - paragraph [ref=e314]: 仅律所管理员可修改。请使用自己的模型服务账号。
+        - generic [ref=e315]:
+          - status [ref=e334]: 配置已保存。尚未测试连接，也未调用模型。
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - text: 用途
+              - combobox "用途" [ref=e318]:
+                - option "资料问答模型（合同审查待接入）"
+                - option "资料向量模型"
+                - option "检索排序模型" [selected]
+            - paragraph [ref=e319]: 已保存 Key（不回显）。替换配置时请重新输入 Key。
+            - generic [ref=e320]:
+              - text: 服务商
+              - textbox "服务商" [ref=e321]: rerank-e2e
+            - generic [ref=e322]:
+              - text: 接口地址
+              - textbox "接口地址" [ref=e323]:
+                - /placeholder: https://服务商地址/v1
+                - text: https://localhost:19443/v2
+            - generic [ref=e324]:
+              - text: 模型名称
+              - textbox "模型名称" [ref=e325]: rank-good
+            - generic [ref=e326]:
+              - text: API Key
+              - textbox "API Key" [ref=e327]
+            - paragraph [ref=e328]: 排序接口需兼容 Cohere v2；填写基础地址（例如 https://服务商地址/v2），系统会追加 /rerank。保存后，主动检索和提问会使用该配置；删除配置可停止排序调用。 保存不调用模型，连接测试尚未开放。
+            - button "保存配置" [ref=e329] [cursor=pointer]
+          - button "删除此配置" [ref=e332] [cursor=pointer]

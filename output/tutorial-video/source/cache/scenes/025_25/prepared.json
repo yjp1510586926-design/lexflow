@@ -1,0 +1,75 @@
+{
+  "id": "25",
+  "chapter": "AI 文书起草",
+  "title": "启用 AI 前先检查准备条件",
+  "subtitle": "管理员配置模型，使用者主动确认费用",
+  "bullets": [
+    "确认已配置 LLM",
+    "使用可编辑的未归档案件",
+    "准备已经保存的源正文"
+  ],
+  "narration": "使用 AI 起草前，管理员需要保存本律所的 LLM 配置，使用者也要有文书和生成权限。案件必须允许编辑，源正文需要已经保存。没有模型配置时系统会明确报错。普通成员不需要填写模型 Key，具体配置方法将在后面的管理员章节说明。",
+  "visual": "document-editor",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    750,
+    435,
+    60,
+    32
+  ],
+  "index": 24,
+  "segments": [
+    {
+      "text": "使用 AI 起草前，管理员需要保存本律所的 LLM 配置，",
+      "spoken_text": "使用 人工智能 起草前，管理员需要保存本律所的 LLM 配置，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f89b547d1e5819d1e912bd24.aiff",
+      "voice_duration": 7.533605,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.733605,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/frame_01.png"
+    },
+    {
+      "text": "使用者也要有文书和生成权限。案件必须允许编辑，源正文需要已经保存。",
+      "spoken_text": "使用者也要有文书和生成权限。案件必须允许编辑，源正文需要已经保存。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0d61068db4a17ca8f429bc24.aiff",
+      "voice_duration": 8.357914,
+      "pause": 0.2,
+      "start": 7.733605,
+      "duration": 8.557913999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/frame_02.png"
+    },
+    {
+      "text": "没有模型配置时系统会明确报错。普通成员不需要填写模型 Key，",
+      "spoken_text": "没有模型配置时系统会明确报错。普通成员不需要填写模型 Key，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/629cd10b88e49dd120fafe7f.aiff",
+      "voice_duration": 7.072381,
+      "pause": 0.2,
+      "start": 16.291518999999997,
+      "duration": 7.272381,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/frame_03.png"
+    },
+    {
+      "text": "具体配置方法将在后面的管理员章节说明。",
+      "spoken_text": "具体配置方法将在后面的管理员章节说明。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2f12a21d75b8ab004667556c.aiff",
+      "voice_duration": 4.637823,
+      "pause": 0.34,
+      "start": 23.563899999999997,
+      "duration": 4.977892000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/frame_04.png"
+    }
+  ],
+  "duration": 28.541792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/025_25/scene.mp4",
+  "fingerprint": "5d0df999e48d084a71f136f2505b3f35d9a89ddddf72957baa259ef45ecf8c0d",
+  "visual_type": "真实前端截图"
+}

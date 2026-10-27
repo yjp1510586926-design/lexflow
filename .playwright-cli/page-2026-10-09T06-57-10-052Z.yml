@@ -1,0 +1,98 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "freshadmin" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "案件详情" [level=1] [ref=e782]
+        - paragraph [ref=e110]: 创建案件、添加成员、整理材料
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e783]:
+        - button "返回案件列表" [ref=e785] [cursor=pointer]
+        - generic [ref=e792]:
+          - generic [ref=e793]:
+            - generic [ref=e794]: FRESH-MVP-20261009
+            - heading "全新基础设施真实闭环验收案件" [level=2] [ref=e795]
+            - generic [ref=e796]: 草稿
+            - generic [ref=e797]: "类型: 民事诉讼"
+            - generic [ref=e798]: "锁版本: v0"
+          - button "转为进行中" [ref=e800] [cursor=pointer]
+        - generic [ref=e805]:
+          - button "案件分析" [ref=e806] [cursor=pointer]
+          - button "基本信息与状态" [ref=e810] [cursor=pointer]
+          - button "办案人员分配" [ref=e815] [cursor=pointer]
+          - button "文件与证据管理" [ref=e822] [cursor=pointer]
+          - button "证据目录" [ref=e827] [cursor=pointer]
+          - button "案件文书" [ref=e832] [cursor=pointer]
+          - button "案件知识库" [ref=e836] [cursor=pointer]
+        - generic [ref=e841]:
+          - generic [ref=e843]:
+            - heading "案件文书" [level=3] [ref=e844]
+            - paragraph [ref=e845]: 起草文书、保存与恢复历史版本、导出已保存内容
+          - generic [ref=e847]:
+            - generic [ref=e848]:
+              - button "← 返回文书列表" [ref=e929] [cursor=pointer]
+              - generic [ref=e931]: /
+              - generic [ref=e932]: MVP手工文书真实持久化验收
+              - generic [ref=e933]: 草稿
+            - generic [ref=e934]:
+              - generic [ref=e935]:
+                - generic [ref=e936]:
+                  - generic [ref=e937]: 当前版本 v1
+                  - generic [ref=e938]:
+                    - button "AI 起草" [active] [ref=e939] [cursor=pointer]
+                    - button "导出 TXT" [ref=e941] [cursor=pointer]
+                    - button "发布" [ref=e947] [cursor=pointer]
+                    - button "保存新版本" [ref=e952] [cursor=pointer]
+                - paragraph [ref=e958]: 导出当前已保存版本，未保存的修改不会包含在文件中。草稿仍为草稿。
+                - textbox "文书正文" [ref=e959]:
+                  - /placeholder: 在此输入文书正文...
+                  - text: 合成案件记录第一版。 甲乙双方约定2026年10月9日咨询服务，金额人民币1000元。 本正文为人工保存的验收材料，待核实，不作为法律结论。
+              - generic [ref=e960]:
+                - generic [ref=e961]: 版本历史 · 北京时间
+                - generic [ref=e963]:
+                  - generic [ref=e964]:
+                    - generic [ref=e965]: v1
+                    - generic [ref=e966]: 手动
+                  - generic [ref=e967]: 2026-10-09 14:56:22
+                  - button "查看正文" [ref=e968] [cursor=pointer]
+            - dialog [ref=e970]:
+              - generic [ref=e971]:
+                - generic [ref=e972]:
+                  - heading "AI 文书生成" [level=3] [ref=e974]
+                  - button "关闭弹窗" [ref=e975] [cursor=pointer]
+                - generic [ref=e980]:
+                  - paragraph [ref=e981]: 基于当前已保存正文和案件背景起草，结果保留为待复核版本。
+                  - generic [ref=e982]:
+                    - text: 生成要求
+                    - textbox "生成要求" [ref=e983]:
+                      - /placeholder: 例如：根据现有事实起草催款函；不确定信息保留占位。
+                  - generic [ref=e984]:
+                    - checkbox "我确认本次生成将调用已配置的模型，可能产生费用" [ref=e985]
+                    - text: 我确认本次生成将调用已配置的模型，可能产生费用
+                  - button "提交生成任务" [disabled] [ref=e987]

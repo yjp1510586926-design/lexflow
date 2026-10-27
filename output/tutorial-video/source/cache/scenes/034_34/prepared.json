@@ -1,0 +1,65 @@
+{
+  "id": "34",
+  "chapter": "知识库与问答",
+  "title": "根据资料主动提问",
+  "subtitle": "证据不足时允许扩大一次检索",
+  "bullets": [
+    "选择或创建自己的会话",
+    "提问并确认费用",
+    "阅读答案及资料不足提示"
+  ],
+  "narration": "选择或者创建自己的问答会话，提出能由资料回答的问题，并确认费用。系统首轮召回少量片段，空结果或有效证据不足时可能扩大一次，费用也可能增加。第二轮仍不足会明确无法作答，不会无限检索。超时或错误也不会当作扩大依据。",
+  "visual": "case-question",
+  "crop": [
+    275,
+    575,
+    1130,
+    325
+  ],
+  "focus": [
+    295,
+    650,
+    635,
+    100
+  ],
+  "index": 33,
+  "segments": [
+    {
+      "text": "选择或者创建自己的问答会话，提出能由资料回答的问题，并确认费用。",
+      "spoken_text": "选择或者创建自己的问答会话，提出能由资料回答的问题，并确认费用。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b30e8a999c406c3820d8d811.aiff",
+      "voice_duration": 7.770295,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.970295,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/frame_01.png"
+    },
+    {
+      "text": "系统首轮召回少量片段，空结果或有效证据不足时可能扩大一次，费用也可能增加。",
+      "spoken_text": "系统首轮召回少量片段，空结果或有效证据不足时可能扩大一次，费用也可能增加。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c1af5cad448bfabc4781d159.aiff",
+      "voice_duration": 9.485805,
+      "pause": 0.2,
+      "start": 7.970295,
+      "duration": 9.685804999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/frame_02.png"
+    },
+    {
+      "text": "第二轮仍不足会明确无法作答，不会无限检索。超时或错误也不会当作扩大依据。",
+      "spoken_text": "第二轮仍不足会明确无法作答，不会无限检索。超时或错误也不会当作扩大依据。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/77271dfdbfbb09182754eb8e.aiff",
+      "voice_duration": 8.743492,
+      "pause": 0.34,
+      "start": 17.6561,
+      "duration": 9.083567000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/frame_03.png"
+    }
+  ],
+  "duration": 26.739667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/034_34/scene.mp4",
+  "fingerprint": "18209aaab04c1d8afc6b0f28f1118631c99bbb5b752581b9b8de7b7a535d9e43",
+  "visual_type": "真实前端截图"
+}

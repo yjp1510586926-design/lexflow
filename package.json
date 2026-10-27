@@ -1,0 +1,14 @@
+{
+  "name": "lexflow-development-tools",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "format": "prettier --write .prettierrc.json package.json pom.xml \"{framework,service,api-core}/pom.xml\" \"{framework,service,api-core}/src/**/*.java\" \"web/**/*.{ts,tsx,js,cjs,css,json,html}\" \"ai-service/**/*.{ts,js,cjs,json}\" \"ops/**/*.cjs\"",
+    "format:check": "prettier --check .prettierrc.json package.json pom.xml \"{framework,service,api-core}/pom.xml\" \"{framework,service,api-core}/src/**/*.java\" \"web/**/*.{ts,tsx,js,cjs,css,json,html}\" \"ai-service/**/*.{ts,js,cjs,json}\" \"ops/**/*.cjs\""
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "3.4.2",
+    "prettier": "3.9.9",
+    "prettier-plugin-java": "2.11.0"
+  }
+}

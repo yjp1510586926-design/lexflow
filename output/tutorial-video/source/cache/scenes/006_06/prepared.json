@@ -1,0 +1,65 @@
+{
+  "id": "06",
+  "chapter": "登录与工作区",
+  "title": "认识页面导航",
+  "subtitle": "围绕案件、文书、知识与任务工作",
+  "bullets": [
+    "先查看工作台",
+    "从侧栏案件进入详情",
+    "在任务记录追踪后台进度"
+  ],
+  "narration": "工作台用于了解当前工作，侧栏案件是日常操作的主要入口。进入详情后，可切换基本信息与状态、办案人员分配、文件与证据管理、证据目录、案件文书、案件知识库和案件分析。后台进度从侧栏任务记录查看，机构账号由成员与权限入口管理。",
+  "visual": "dashboard",
+  "crop": [
+    0,
+    0,
+    1440,
+    740
+  ],
+  "focus": [
+    10,
+    95,
+    225,
+    370
+  ],
+  "index": 5,
+  "segments": [
+    {
+      "text": "工作台用于了解当前工作，侧栏案件是日常操作的主要入口。",
+      "spoken_text": "工作台用于了解当前工作，侧栏案件是日常操作的主要入口。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/fb9576b9bdd4725ae5e0694c.aiff",
+      "voice_duration": 6.54449,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 6.74449,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/frame_01.png"
+    },
+    {
+      "text": "进入详情后，可切换基本信息与状态、办案人员分配、文件与证据管理、证据目录、案件文书、",
+      "spoken_text": "进入详情后，可切换基本信息与状态、办案人员分配、文件与证据管理、证据目录、案件文书、",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ccd29bd50cefe72ba35cb617.aiff",
+      "voice_duration": 11.032653,
+      "pause": 0.2,
+      "start": 6.74449,
+      "duration": 11.232652999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/frame_02.png"
+    },
+    {
+      "text": "案件知识库和案件分析。后台进度从侧栏任务记录查看，机构账号由成员与权限入口管理。",
+      "spoken_text": "案件知识库和案件分析。后台进度从侧栏任务记录查看，机构账号由成员与权限入口管理。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/61e7c97987410553d6388632.aiff",
+      "voice_duration": 10.18839,
+      "pause": 0.34,
+      "start": 17.977142999999998,
+      "duration": 10.528440000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/frame_03.png"
+    }
+  ],
+  "duration": 28.505583,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/006_06/scene.mp4",
+  "fingerprint": "379f99cc4fb00ede7187be5b599cb6377199cff5bd4664269d70a954d4cd7227",
+  "visual_type": "真实前端截图"
+}

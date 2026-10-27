@@ -1,0 +1,65 @@
+{
+  "id": "38",
+  "chapter": "合同审查",
+  "title": "填写立场、关注点和参考库",
+  "subtitle": "参考范围需要明确选择",
+  "bullets": [
+    "选择本次审查立场",
+    "填写关注点并选择参考资料",
+    "阅读费用提示后提交审查"
+  ],
+  "narration": "选择中立、代表甲方或代表乙方，按需要填写关注点，并明确选择本案件或本律所公共参考库。公共参考还要求知识权限。阅读费用提示后点击提交审查，初次提交没有单独费用勾选框。通常有多步模型分析，高风险还可能增加一步。",
+  "visual": "contract",
+  "crop": [
+    350,
+    185,
+    740,
+    530
+  ],
+  "focus": [
+    390,
+    320,
+    660,
+    260
+  ],
+  "index": 37,
+  "segments": [
+    {
+      "text": "选择中立、代表甲方或代表乙方，按需要填写关注点，并明确选择本案件或本律所公共参考库。",
+      "spoken_text": "选择中立、代表甲方或代表乙方，按需要填写关注点，并明确选择本案件或本律所公共参考库。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f829df8df2520b264266ad2e.aiff",
+      "voice_duration": 10.986259,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 11.186259,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/frame_01.png"
+    },
+    {
+      "text": "公共参考还要求知识权限。阅读费用提示后点击提交审查，初次提交没有单独费用勾选框。",
+      "spoken_text": "公共参考还要求知识权限。阅读费用提示后点击提交审查，初次提交没有单独费用勾选框。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9b59e0e5238497d5020b7fd1.aiff",
+      "voice_duration": 10.108753,
+      "pause": 0.2,
+      "start": 11.186259,
+      "duration": 10.308753,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/frame_02.png"
+    },
+    {
+      "text": "通常有多步模型分析，高风险还可能增加一步。",
+      "spoken_text": "通常有多步模型分析，高风险还可能增加一步。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/48edb5dd7f82c859138b5bb6.aiff",
+      "voice_duration": 5.213333,
+      "pause": 0.34,
+      "start": 21.495012,
+      "duration": 5.553405000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/frame_03.png"
+    }
+  ],
+  "duration": 27.048417,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/038_38/scene.mp4",
+  "fingerprint": "c9c4c5d0eb592e24a2b17b7d731b6fc8aa64bf7857fd489f25e89b0a0f027186",
+  "visual_type": "真实前端截图"
+}

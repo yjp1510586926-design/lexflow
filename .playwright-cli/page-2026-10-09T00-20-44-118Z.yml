@@ -1,0 +1,141 @@
+- generic [ref=f2e3]:
+  - complementary [ref=f2e4]:
+    - generic [ref=f2e11]:
+      - generic [ref=f2e12]: LexFlow
+      - generic [ref=f2e13]: 法律业务与 AI 协作平台
+    - navigation [ref=f2e14]:
+      - generic [ref=f2e15]: 核心业务
+      - button "工作台" [ref=f2e16] [cursor=pointer]
+      - button "案件" [ref=f2e24] [cursor=pointer]
+      - button "成员与权限" [ref=f2e30] [cursor=pointer]
+      - generic [ref=f2e38]: 协作与智能扩展
+      - button "文书" [ref=f2e39] [cursor=pointer]
+      - button "任务记录" [ref=f2e45] [cursor=pointer]
+      - button "律所知识库" [ref=f2e50] [cursor=pointer]
+      - button "AI 助手" [ref=f2e56] [cursor=pointer]
+      - button "AI 配置" [ref=f2e61] [cursor=pointer]
+    - generic [ref=f2e67]:
+      - generic [ref=f2e71]:
+        - generic "合成界面验收" [ref=f2e72]
+        - generic [ref=f2e73]: "机构 #999991 · 工号 #81"
+      - button "退出登录" [ref=f2e74] [cursor=pointer]
+  - generic [ref=f2e78]:
+    - banner [ref=f2e79]:
+      - generic [ref=f2e80]:
+        - heading "任务记录" [level=1] [ref=f2e81]
+        - paragraph [ref=f2e82]: 查看后台任务进度与失败原因
+      - generic [ref=f2e83]:
+        - button "刷新当前数据" [ref=f2e84] [cursor=pointer]:
+          - generic [ref=f2e90]: 刷新
+        - button "离线/异常" [ref=f2e91] [cursor=pointer]
+        - generic [ref=f2e96]:
+          - generic [ref=f2e97]: 机构
+          - generic [ref=f2e98]: "#999991"
+    - main [ref=f2e99]:
+      - generic [ref=f2e100]:
+        - generic [ref=f2e101]:
+          - generic [ref=f2e103]:
+            - heading "异步任务中心" [level=3] [ref=f2e104]
+            - paragraph [ref=f2e105]: 查看文字提取、知识入库、合同审查、案件分析、AI 文书生成和导出；任务可在案件中提交
+          - generic [ref=f2e107]:
+            - generic [ref=f2e108]:
+              - combobox [ref=f2e109]:
+                - option "全部类型" [selected]
+                - option "文书解析"
+                - option "知识入库"
+                - option "合同审查"
+                - option "案件分析"
+                - option "AI 文书生成"
+                - option "文书导出"
+              - combobox [ref=f2e110]:
+                - option "全部状态" [selected]
+                - option "排队中"
+                - option "执行中"
+                - option "待人工确认"
+                - option "成功"
+                - option "失败"
+                - option "取消中"
+                - option "已取消"
+              - button "查询" [ref=f2e111] [cursor=pointer]
+              - button "重置" [ref=f2e113] [cursor=pointer]
+              - generic [ref=f2e121]: 共 1 个任务
+            - table [ref=f2e123]:
+              - rowgroup [ref=f2e124]:
+                - row [ref=f2e125]:
+                  - columnheader "任务 ID" [ref=f2e126]
+                  - columnheader "类型" [ref=f2e127]
+                  - columnheader "关联对象" [ref=f2e128]
+                  - columnheader "提交人" [ref=f2e129]
+                  - columnheader "状态" [ref=f2e130]
+                  - columnheader "重试/恢复次数" [ref=f2e131]
+                  - columnheader "错误信息" [ref=f2e132]
+                  - columnheader "提交时间" [ref=f2e133]
+                  - columnheader "开始时间" [ref=f2e134]
+                  - columnheader "完成时间" [ref=f2e135]
+                  - columnheader "操作" [ref=f2e136]
+              - rowgroup [ref=f2e137]:
+                - row [ref=f2e138]:
+                  - cell [ref=f2e139]:
+                    - code [ref=f2e140]: "#130"
+                  - cell "合同审查" [ref=f2e141]
+                  - 'cell "案件 #71 源版本 #92" [ref=f2e143]':
+                    - text: "案件 #71"
+                    - generic [ref=f2e144]: "源版本 #92"
+                  - 'cell "用户 #81" [ref=f2e145]'
+                  - cell "待人工确认" [ref=f2e146]
+                  - cell "0 次" [ref=f2e148]
+                  - cell "—" [ref=f2e149]
+                  - cell "2026/10/9 02:00:00" [ref=f2e150]
+                  - cell "2026/10/9 02:01:00" [ref=f2e151]
+                  - cell "—" [ref=f2e152]
+                  - cell [ref=f2e153]:
+                    - button "查看并复核" [active] [ref=f2e155] [cursor=pointer]
+        - dialog [ref=f2e157]:
+          - generic [ref=f2e158]:
+            - generic [ref=f2e159]:
+              - heading "合同审查" [level=3] [ref=f2e161]
+              - button "关闭弹窗" [ref=f2e162] [cursor=pointer]
+            - generic [ref=f2e167]:
+              - generic [ref=f2e168]:
+                - generic [ref=f2e169]: 待人工复核
+                - button "刷新" [ref=f2e170] [cursor=pointer]
+              - paragraph [ref=f2e172]:
+                - strong [ref=f2e173]: 合成服务合同
+                - text: · 第 2 轮审查 · 中立审查
+              - paragraph [ref=f2e174]: 以下为 AI 辅助分析与修改建议。结果尚待核对。
+              - generic [ref=f2e175]:
+                - strong [ref=f2e176]: 付款条款
+                - blockquote [ref=f2e177]: 验收后付款。
+                - generic [ref=f2e178]:
+                  - generic [ref=f2e179]: 低风险
+                  - paragraph [ref=f2e180]: 期限需核对
+                  - paragraph [ref=f2e181]:
+                    - strong [ref=f2e182]: 修改建议：
+                    - text: 约定明确日期
+                  - group [ref=f2e183]:
+                    - generic "查看参考资料" [ref=f2e184]
+              - generic [ref=f2e185]:
+                - strong [ref=f2e186]: 需要补充或核实的材料
+                - list [ref=f2e187]:
+                  - listitem [ref=f2e188]: 验收日期说明
+              - alert [ref=f2e189]:
+                - strong [ref=f2e190]: 参考依据存在冲突，需人工核实适用范围和有效时间
+                - generic [ref=f2e191]:
+                  - paragraph [ref=f2e192]: 两份资料付款期限不同，需核对适用范围。
+                  - button "定位冲突依据 [17]" [ref=f2e193] [cursor=pointer]
+                  - button "定位冲突依据 [18]" [ref=f2e195] [cursor=pointer]
+              - group [ref=f2e197]:
+                - generic "已固定的补充材料（1份）" [ref=f2e198]
+              - group [ref=f2e199]:
+                - generic "查看完整合同原文" [ref=f2e200]
+              - generic [ref=f2e201]:
+                - button "补充已解析材料并续审" [ref=f2e202] [cursor=pointer]
+                - generic [ref=f2e204]:
+                  - text: 复核意见
+                  - textbox "复核意见" [ref=f2e205]:
+                    - /placeholder: 记录已核对的条款、依据，以及仍需处理的问题
+                - generic [ref=f2e206]:
+                  - checkbox "我已核对原文、修改建议和参考依据冲突，了解缺少的法律依据或材料仍需另行确认。" [ref=f2e207]
+                  - text: 我已核对原文、修改建议和参考依据冲突，了解缺少的法律依据或材料仍需另行确认。
+                - button "确认已复核" [disabled] [ref=f2e208]
+              - button "取消审查" [ref=f2e211] [cursor=pointer]

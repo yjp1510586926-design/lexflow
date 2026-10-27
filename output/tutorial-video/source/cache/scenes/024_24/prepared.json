@@ -1,0 +1,75 @@
+{
+  "id": "24",
+  "chapter": "文书与版本",
+  "title": "下载并核对导出文件",
+  "subtitle": "任务成功后，再检查实际文件内容",
+  "bullets": [
+    "等待结果可下载",
+    "下载并打开 TXT",
+    "核对版本、正文与期限"
+  ],
+  "narration": "导出成功后，页面才提供结果下载。打开下载的 TXT，对照提交时的正文检查内容，成功生成不代表已经下载，也不代表文书已经发布。单次导出最多八兆字节。如果部署设置了保留期限，到期后应回到文书新建导出，正文和版本仍然保留。",
+  "visual": "export",
+  "crop": [
+    450,
+    305,
+    540,
+    290
+  ],
+  "focus": [
+    475,
+    530,
+    100,
+    45
+  ],
+  "index": 23,
+  "segments": [
+    {
+      "text": "导出成功后，页面才提供结果下载。打开下载的 TXT，对照提交时的正文检查内容，",
+      "spoken_text": "导出成功后，页面才提供结果下载。打开下载的 TXT，对照提交时的正文检查内容，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/7b34cb9d57486d8baa48d58a.aiff",
+      "voice_duration": 10.6239,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.8239,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/frame_01.png"
+    },
+    {
+      "text": "成功生成不代表已经下载，也不代表文书已经发布。",
+      "spoken_text": "成功生成不代表已经下载，也不代表文书已经发布。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/028563c9b99fe2334f5a89a9.aiff",
+      "voice_duration": 5.486531,
+      "pause": 0.2,
+      "start": 10.8239,
+      "duration": 5.6865310000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/frame_02.png"
+    },
+    {
+      "text": "单次导出最多八兆字节。如果部署设置了保留期限，到期后应回到文书新建导出，",
+      "spoken_text": "单次导出最多八兆字节。如果部署设置了保留期限，到期后应回到文书新建导出，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ef52dae53eaf5a5f6213a717.aiff",
+      "voice_duration": 8.859184,
+      "pause": 0.2,
+      "start": 16.510431,
+      "duration": 9.059184,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/frame_03.png"
+    },
+    {
+      "text": "正文和版本仍然保留。",
+      "spoken_text": "正文和版本仍然保留。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e6a96ca9ba6e56a641a57099.aiff",
+      "voice_duration": 2.271247,
+      "pause": 0.34,
+      "start": 25.569615,
+      "duration": 2.611302000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/frame_04.png"
+    }
+  ],
+  "duration": 28.180917,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/024_24/scene.mp4",
+  "fingerprint": "e2614002fca7e921054914a8ba61e732a1dcac30abe60b2e4cbf869aeb63d8e5",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "13",
+  "chapter": "文件与证据",
+  "title": "上传第一份材料",
+  "subtitle": "先用小型 TXT 文件验证完整链路",
+  "bullets": [
+    "选择待上传文件",
+    "等待文件可用",
+    "保留页面反馈"
+  ],
+  "narration": "第一次可以上传一份内容较短的 TXT 文件，便于检查文字是否完整。通过页面选择文件并等待上传结束，确认记录进入可用状态。如果出现错误，先阅读提示，检查类型、大小和权限，再决定是否重试，避免连续提交造成难以区分的记录。",
+  "visual": "upload",
+  "crop": [
+    270,
+    290,
+    1140,
+    510
+  ],
+  "focus": [
+    1195,
+    395,
+    200,
+    65
+  ],
+  "index": 12,
+  "segments": [
+    {
+      "text": "第一次可以上传一份内容较短的 TXT 文件，便于检查文字是否完整。",
+      "spoken_text": "第一次可以上传一份内容较短的 TXT 文件，便于检查文字是否完整。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d4e08f8659e8ee117966d9d8.aiff",
+      "voice_duration": 8.778322,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.978321999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/frame_01.png"
+    },
+    {
+      "text": "通过页面选择文件并等待上传结束，确认记录进入可用状态。",
+      "spoken_text": "通过页面选择文件并等待上传结束，确认记录进入可用状态。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d2a16fa5625564436d60e70b.aiff",
+      "voice_duration": 7.00127,
+      "pause": 0.2,
+      "start": 8.978321999999999,
+      "duration": 7.20127,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/frame_02.png"
+    },
+    {
+      "text": "如果出现错误，先阅读提示，检查类型、大小和权限，再决定是否重试，",
+      "spoken_text": "如果出现错误，先阅读提示，检查类型、大小和权限，再决定是否重试，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/aebc1d08c6df60beeca53363.aiff",
+      "voice_duration": 8.850794,
+      "pause": 0.2,
+      "start": 16.179592,
+      "duration": 9.050794,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/frame_03.png"
+    },
+    {
+      "text": "避免连续提交造成难以区分的记录。",
+      "spoken_text": "避免连续提交造成难以区分的记录。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ccaec94c8ce35ab2354128ba.aiff",
+      "voice_duration": 3.595147,
+      "pause": 0.34,
+      "start": 25.230386,
+      "duration": 3.9352389999999984,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/frame_04.png"
+    }
+  ],
+  "duration": 29.165625,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/013_13/scene.mp4",
+  "fingerprint": "3c3c89b48d566aeaeb1abd949f880492e14882c2493b33a420acd975111baa86",
+  "visual_type": "真实前端截图"
+}

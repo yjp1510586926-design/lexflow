@@ -1,0 +1,59 @@
+{
+  "id": "16",
+  "chapter": "文件与证据",
+  "title": "整理证据目录",
+  "subtitle": "目录信息单独保存，不替换原件",
+  "bullets": [
+    "先完成文件上传",
+    "点击记录证据",
+    "按顺序查看目录"
+  ],
+  "narration": "证据目录用于给已上传原件补充来源、收集时间和说明，帮助团队阅读材料。先完成上传，再点击记录证据。目录信息独立保存，不会修改原始文件。数字较小的证据排在前面，可以用简单的顺序号组织合同、付款和沟通材料。",
+  "visual": "evidence",
+  "crop": [
+    270,
+    290,
+    1140,
+    470
+  ],
+  "index": 15,
+  "segments": [
+    {
+      "text": "证据目录用于给已上传原件补充来源、收集时间和说明，帮助团队阅读材料。",
+      "spoken_text": "证据目录用于给已上传原件补充来源、收集时间和说明，帮助团队阅读材料。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0649492ca9957339dbfa7884.aiff",
+      "voice_duration": 8.738005,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.938004999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/frame_01.png"
+    },
+    {
+      "text": "先完成上传，再点击记录证据。目录信息独立保存，不会修改原始文件。",
+      "spoken_text": "先完成上传，再点击记录证据。目录信息独立保存，不会修改原始文件。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b3b4788d6b167d651cd669e8.aiff",
+      "voice_duration": 8.440907,
+      "pause": 0.2,
+      "start": 8.938004999999999,
+      "duration": 8.640906999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/frame_02.png"
+    },
+    {
+      "text": "数字较小的证据排在前面，可以用简单的顺序号组织合同、付款和沟通材料。",
+      "spoken_text": "数字较小的证据排在前面，可以用简单的顺序号组织合同、付款和沟通材料。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/47c71912d12fdb3eec8d2adc.aiff",
+      "voice_duration": 8.648163,
+      "pause": 0.34,
+      "start": 17.578911999999995,
+      "duration": 8.988213000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/frame_03.png"
+    }
+  ],
+  "duration": 26.567125,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/016_16/scene.mp4",
+  "fingerprint": "c9188faf747910fdf4869b58b97348bfedff3e3e2a42efaf194e267596093ea9",
+  "visual_type": "真实前端截图"
+}

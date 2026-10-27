@@ -1,0 +1,59 @@
+{
+  "id": "39",
+  "chapter": "合同审查",
+  "title": "阅读风险报告与依据",
+  "subtitle": "把模型输出与原合同逐项对应",
+  "bullets": [
+    "检查条款和风险说明",
+    "打开原文引用位置",
+    "关注缺依据与冲突提示"
+  ],
+  "narration": "报告形成后，先核对条款引用是否对应原合同，再阅读风险说明和依据。高风险、依据冲突、缺少法律依据或材料不足，会要求人工复核。引用原文必须逐字匹配，但这只能帮助核对来源，不能证明模型分析正确，仍需结合完整材料判断。",
+  "visual": "contract-report",
+  "crop": [
+    385,
+    100,
+    670,
+    400
+  ],
+  "index": 38,
+  "segments": [
+    {
+      "text": "报告形成后，先核对条款引用是否对应原合同，再阅读风险说明和依据。",
+      "spoken_text": "报告形成后，先核对条款引用是否对应原合同，再阅读风险说明和依据。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/60db0e87977ace47625f8686.aiff",
+      "voice_duration": 8.297188,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.497188,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/frame_01.png"
+    },
+    {
+      "text": "高风险、依据冲突、缺少法律依据或材料不足，会要求人工复核。",
+      "spoken_text": "高风险、依据冲突、缺少法律依据或材料不足，会要求人工复核。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ab5618c63475bcd32eb123ce.aiff",
+      "voice_duration": 7.612698,
+      "pause": 0.2,
+      "start": 8.497188,
+      "duration": 7.812698,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/frame_02.png"
+    },
+    {
+      "text": "引用原文必须逐字匹配，但这只能帮助核对来源，不能证明模型分析正确，仍需结合完整材料判断。",
+      "spoken_text": "引用原文必须逐字匹配，但这只能帮助核对来源，不能证明模型分析正确，仍需结合完整材料判断。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/7b85910c9197635b3b857d2c.aiff",
+      "voice_duration": 11.193741,
+      "pause": 0.34,
+      "start": 16.309886,
+      "duration": 11.533781000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/frame_03.png"
+    }
+  ],
+  "duration": 27.843667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/039_39/scene.mp4",
+  "fingerprint": "5cc1117dd906d5e55518dac69fd475c789c624a9f8494050ed9edce82553a3d7",
+  "visual_type": "真实前端截图"
+}

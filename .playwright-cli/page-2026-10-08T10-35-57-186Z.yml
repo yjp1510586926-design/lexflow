@@ -1,0 +1,82 @@
+- generic [ref=f3e3]:
+  - complementary [ref=f3e4]:
+    - generic [ref=f3e11]:
+      - generic [ref=f3e12]: LexFlow
+      - generic [ref=f3e13]: 法律业务与 AI 协作平台
+    - navigation [ref=f3e14]:
+      - generic [ref=f3e15]: 核心业务
+      - button "工作台" [ref=f3e16] [cursor=pointer]
+      - button "案件" [ref=f3e24] [cursor=pointer]
+      - button "成员与权限" [ref=f3e30] [cursor=pointer]
+      - generic [ref=f3e38]: 协作与智能扩展
+      - button "文书" [ref=f3e39] [cursor=pointer]
+      - button "任务记录" [ref=f3e45] [cursor=pointer]
+      - button "律所知识库" [ref=f3e50] [cursor=pointer]
+      - button "AI 助手" [ref=f3e56] [cursor=pointer]
+      - button "AI 配置" [ref=f3e61] [cursor=pointer]
+    - generic [ref=f3e67]:
+      - generic [ref=f3e71]:
+        - generic "界面验收" [ref=f3e72]
+        - generic [ref=f3e73]: "机构 #9001 · 工号 #9001"
+      - button "退出登录" [ref=f3e74] [cursor=pointer]
+  - generic [ref=f3e78]:
+    - banner [ref=f3e79]:
+      - generic [ref=f3e80]:
+        - heading "案件详情" [level=1] [ref=f3e278]
+        - paragraph [ref=f3e82]: 创建案件、添加成员、整理材料
+      - generic [ref=f3e83]:
+        - button "刷新当前数据" [ref=f3e84] [cursor=pointer]:
+          - generic [ref=f3e90]: 刷新
+        - button "离线/异常" [ref=f3e91] [cursor=pointer]
+        - generic [ref=f3e96]:
+          - generic [ref=f3e97]: 机构
+          - generic [ref=f3e98]: "#9001"
+    - main [ref=f3e99]:
+      - generic [ref=f3e279]:
+        - button "返回案件列表" [ref=f3e281] [cursor=pointer]
+        - generic [ref=f3e288]:
+          - generic [ref=f3e289]:
+            - generic [ref=f3e290]: DOC-UI-SYNTHETIC
+            - heading "合成文书并发验收" [level=2] [ref=f3e291]
+            - generic [ref=f3e292]: 进行中
+            - generic [ref=f3e293]: "类型: CIVIL"
+            - generic [ref=f3e294]: "锁版本: v1"
+          - button "归档案件" [ref=f3e296] [cursor=pointer]
+        - generic [ref=f3e298]:
+          - button "案件分析" [ref=f3e299] [cursor=pointer]
+          - button "基本信息与状态" [ref=f3e303] [cursor=pointer]
+          - button "办案人员分配" [ref=f3e308] [cursor=pointer]
+          - button "文件与证据管理" [ref=f3e315] [cursor=pointer]
+          - button "证据目录" [ref=f3e320] [cursor=pointer]
+          - button "案件文书" [active] [ref=f3e325] [cursor=pointer]
+          - button "案件知识库" [ref=f3e329] [cursor=pointer]
+        - generic [ref=f3e369]:
+          - generic [ref=f3e371]:
+            - heading "案件文书" [level=3] [ref=f3e372]
+            - paragraph [ref=f3e373]: 起草文书、保存与恢复历史版本、导出已保存内容
+          - generic [ref=f3e375]:
+            - generic [ref=f3e376]:
+              - generic [ref=f3e377]:
+                - heading "案件文书" [level=3] [ref=f3e378]
+                - paragraph [ref=f3e379]: 管理案件相关的法律文书草稿、历史版本与发布状态
+              - generic [ref=f3e380]:
+                - button "刷新" [ref=f3e381] [cursor=pointer]
+                - button "新建文书" [ref=f3e389] [cursor=pointer]
+            - table [ref=f3e394]:
+              - rowgroup [ref=f3e395]:
+                - row [ref=f3e396]:
+                  - columnheader "文书标题" [ref=f3e397]
+                  - columnheader "状态" [ref=f3e398]
+                  - columnheader "当前版本" [ref=f3e399]
+                  - columnheader "创建时间" [ref=f3e400]
+                  - columnheader "操作" [ref=f3e401]
+              - rowgroup [ref=f3e402]:
+                - row [ref=f3e403]:
+                  - cell "合成催款函" [ref=f3e404]
+                  - cell "草稿" [ref=f3e410]
+                  - cell "v1" [ref=f3e412]
+                  - cell "2026-10-08 18:00:00" [ref=f3e413]
+                  - cell [ref=f3e414]:
+                    - generic [ref=f3e415]:
+                      - button "编辑" [ref=f3e416] [cursor=pointer]
+                      - button "导出" [ref=f3e422] [cursor=pointer]

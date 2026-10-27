@@ -1,0 +1,122 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "林律师" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "律所知识库" [level=1] [ref=e1333]
+        - paragraph [ref=e110]: 共用法律与办案资料，检索原文并核对出处
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e1334]:
+        - generic [ref=e1335]:
+          - generic [ref=e1337]:
+            - heading "全所共用的法律与办案资料" [level=3] [ref=e1338]
+            - paragraph [ref=e1339]: 仅本律所中有权限的成员可访问。这里的资料由管理员独立上传，案件私有材料不会自动进入。
+          - generic [ref=e1341]:
+            - generic [ref=e1342]:
+              - generic [ref=e1343]: 律所知识库
+              - combobox "律所知识库" [ref=e1344]:
+                - option "律所合同办理参考（教学示例）" [selected]
+            - generic [ref=e1345]:
+              - generic [ref=e1346]: 新知识库名称
+              - textbox "新知识库名称" [ref=e1347]: 法律与办案指引
+            - button "创建知识库" [ref=e1348] [cursor=pointer]
+            - button "刷新资料" [ref=e1350] [cursor=pointer]
+        - generic [ref=e1352]:
+          - generic [ref=e1353]:
+            - generic [ref=e1354]:
+              - heading "1. 上传并整理原文" [level=3] [ref=e1355]
+              - paragraph [ref=e1356]: 上传 → 提取文字 → 准备入库。文字提取与整理不会调用 AI 模型。
+            - button "上传资料" [ref=e1358] [cursor=pointer]
+          - generic [ref=e1360]:
+            - paragraph [ref=e1361]: 支持 TXT、DOCX、带文字层 PDF，单文件上限 50MB。扫描版 PDF 暂不支持。
+            - table [ref=e1363]:
+              - rowgroup [ref=e1364]:
+                - row [ref=e1365]:
+                  - columnheader "资料" [ref=e1366]
+                  - columnheader "文字提取" [ref=e1367]
+                  - columnheader "操作" [ref=e1368]
+              - rowgroup [ref=e1369]:
+                - row [ref=e1370]:
+                  - cell [ref=e1371]:
+                    - strong [ref=e1372]: 合同履行核对清单（教学示例）.txt
+                    - paragraph [ref=e1373]: v1 · 1 KB
+                  - cell [ref=e1374]:
+                    - text: 文字已提取
+                    - paragraph [ref=e1375]: "任务 #303"
+                  - cell [ref=e1376]:
+                    - generic [ref=e1377]:
+                      - button "下载原件" [ref=e1378] [cursor=pointer]
+                      - button "查看原文" [ref=e1380] [cursor=pointer]
+                      - button "已准备" [disabled] [ref=e1382]
+                      - button "移除" [ref=e1384] [cursor=pointer]
+        - generic [ref=e1386]:
+          - generic [ref=e1388]:
+            - heading "2. 索引资料" [level=3] [ref=e1389]
+            - paragraph [ref=e1390]: 管理员手动配置 Embedding Key 后主动开始索引。索引可能产生模型费用；刷新进度不会调用模型。
+          - generic [ref=e1391]:
+            - generic [ref=e1392]:
+              - generic [ref=e1393]:
+                - strong [ref=e1394]: 合同履行核对清单（教学示例）.txt
+                - paragraph [ref=e1395]: v1 · 3 段 · 可检索
+              - generic [ref=e1396]:
+                - button "查看原文片段" [ref=e1397] [cursor=pointer]
+                - button "重建索引" [ref=e1399] [cursor=pointer]
+            - paragraph [ref=e1401]: 更换向量模型后需重建索引。重建失败或取消会保留旧索引；检索只使用与当前模型相符的版本。
+        - generic [ref=e1402]:
+          - generic [ref=e1404]:
+            - heading "3. 检索原文" [level=3] [ref=e1405]
+            - paragraph [ref=e1406]: 只检索本知识库中已完成索引的资料，返回可核对的页码或段落。点击检索会调用向量模型；已配置排序模型时也会调用排序模型，可能产生费用。
+          - generic [ref=e1407]:
+            - generic [ref=e1408]:
+              - textbox "检索律所资料" [ref=e1409]:
+                - /placeholder: 例如：办案指引要求何时提交材料？
+                - text: 验收与付款条件应核对什么材料？
+              - button "检索原文" [ref=e1410] [cursor=pointer]
+            - generic [ref=e1430]:
+              - paragraph [ref=e1431]: 已按排序模型的相关性排列。
+              - article [ref=e1432]:
+                - strong [ref=e1433]: 合同履行核对清单（教学示例）.txt · v1 · 第 3 段
+                - paragraph [ref=e1434]: 核对合同主体、服务内容、交付通知、验收标准和付款条件。
+                - button "下载原件核对" [ref=e1435] [cursor=pointer]
+        - generic [ref=e1412]:
+          - generic [ref=e1414]:
+            - heading "4. 根据律所资料提问" [level=3] [ref=e1415]
+            - paragraph [ref=e1416]: 会话和历史回答仅你本人可见。资料撤销后，相关回答和引用会隐藏。
+          - region "律所资料问答" [ref=e1418]:
+            - heading "问律所资料" [level=4] [ref=e1419]
+            - paragraph [ref=e1420]: 根据本知识库原文回答并标注出处。资料不足时，会在你有权访问的本知识库内扩大检索一次；仍不足则说明无法作答。管理员须先配置 LLM 和 Embedding Key；已配置的排序模型也会参与检索。点击提问可能产生模型费用，扩大检索可能增加调用，回答仍需你核对原件。
+            - generic [ref=e1421]:
+              - combobox "问答会话" [ref=e1422]:
+                - option "新会话" [selected]
+              - button "刷新问答记录" [disabled] [ref=e1423]
+            - generic [ref=e1425]:
+              - textbox "资料问答问题" [ref=e1426]:
+                - /placeholder: 例如：合同约定何时付款？请列出原文依据。
+              - button "提问" [disabled] [ref=e1427]
+            - paragraph [ref=e1429]: 还没有问答记录。只有已完成索引的资料会参与回答。

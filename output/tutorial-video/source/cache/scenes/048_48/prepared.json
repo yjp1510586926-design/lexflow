@@ -1,0 +1,69 @@
+{
+  "id": "48",
+  "chapter": "管理员设置",
+  "title": "保存本律所的 AI 配置",
+  "subtitle": "Key 只写入服务端，不展示给普通成员",
+  "bullets": [
+    "管理员进入 AI 配置",
+    "填写地址、模型和 Key",
+    "保存后检查脱敏回读"
+  ],
+  "narration": "管理员进入 AI 配置，选择用途并填写服务商、HTTPS 基础地址、模型名称和自己的 Key。保存只加密持久化，不调用供应商。普通成员不能查看 Key，页面回读也不会返回 Key 或密文。替换配置需要重新输入 Key，提交后输入框会清空。",
+  "visual": "ai-settings",
+  "crop": [
+    285,
+    175,
+    590,
+    530
+  ],
+  "index": 47,
+  "segments": [
+    {
+      "text": "管理员进入 AI 配置，选择用途并填写服务商、HTTPS 基础地址、",
+      "spoken_text": "管理员进入 人工智能 配置，选择用途并填写服务商、HTTPS 基础地址、",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0c33a470d968438ed0dae5e1.aiff",
+      "voice_duration": 9.934603,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.134602999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/frame_01.png"
+    },
+    {
+      "text": "模型名称和自己的 Key。保存只加密持久化，不调用供应商。",
+      "spoken_text": "模型名称和自己的 Key。保存只加密持久化，不调用供应商。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d9f821752d93bd46c2ba6fe2.aiff",
+      "voice_duration": 6.340952,
+      "pause": 0.2,
+      "start": 10.134602999999998,
+      "duration": 6.540952,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/frame_02.png"
+    },
+    {
+      "text": "普通成员不能查看 Key，页面回读也不会返回 Key 或密文。",
+      "spoken_text": "普通成员不能查看 Key，页面回读也不会返回 Key 或密文。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b33396be79bb0e3eb0a725b1.aiff",
+      "voice_duration": 6.118821,
+      "pause": 0.2,
+      "start": 16.675555,
+      "duration": 6.318821,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/frame_03.png"
+    },
+    {
+      "text": "替换配置需要重新输入 Key，提交后输入框会清空。",
+      "spoken_text": "替换配置需要重新输入 Key，提交后输入框会清空。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/93ad9a90ce62602677ec3cea.aiff",
+      "voice_duration": 5.690794,
+      "pause": 0.34,
+      "start": 22.994376,
+      "duration": 6.030874000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/frame_04.png"
+    }
+  ],
+  "duration": 29.02525,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/048_48/scene.mp4",
+  "fingerprint": "d73ba28eb0e48c0c126255646f8a3375c0ee208e88656ad4d84be1654eee50bb",
+  "visual_type": "真实前端截图"
+}

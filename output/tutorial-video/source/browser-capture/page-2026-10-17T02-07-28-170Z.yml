@@ -1,0 +1,99 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [active] [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "林律师" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "文书" [level=1] [ref=e1453]
+        - paragraph [ref=e110]: 查看案件文书与历史版本
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e1454]:
+        - generic [ref=e1455]:
+          - button "案件文件与证据" [ref=e1456] [cursor=pointer]
+          - button "操作审计日志" [ref=e1461] [cursor=pointer]
+        - generic [ref=e1465]:
+          - generic [ref=e1467]:
+            - heading "全局文件与证据管理" [level=3] [ref=e1468]
+            - paragraph [ref=e1469]: 跨案件查看可访问的卷宗材料，支持上传、下载及 SHA-256 完整性核验
+          - generic [ref=e1471]:
+            - generic [ref=e1472]:
+              - generic [ref=e1473]:
+                - generic [ref=e1474]: 选择案件
+                - combobox [ref=e1475]:
+                  - option "[教学-2026-001] 蓝湾软件服务合同纠纷（教学示例）" [selected]
+                  - option "[教学-2026-002] 青禾劳动争议咨询（教学示例）"
+                  - option "[教学-2026-003] 星桥商标使用许可（教学示例）"
+              - generic [ref=e1476]:
+                - button "刷新" [ref=e1477] [cursor=pointer]
+                - button "上传文件" [ref=e1485] [cursor=pointer]
+            - table [ref=e1490]:
+              - rowgroup [ref=e1491]:
+                - row [ref=e1492]:
+                  - columnheader "文件名" [ref=e1493]
+                  - columnheader "格式" [ref=e1494]
+                  - columnheader "大小" [ref=e1495]
+                  - columnheader "状态" [ref=e1496]
+                  - columnheader "SHA-256" [ref=e1497]
+                  - columnheader "操作" [ref=e1498]
+              - rowgroup [ref=e1499]:
+                - row [ref=e1500]:
+                  - cell "教学示例-软件服务合同.txt" [ref=e1501]:
+                    - generic "教学示例-软件服务合同.txt" [ref=e1507]
+                  - cell "TXT" [ref=e1508]
+                  - cell "1.1 KB" [ref=e1510]
+                  - cell "已就绪" [ref=e1511]
+                  - cell [ref=e1513]:
+                    - code [ref=e1514]: f90b351e8497fba82520a91fbb92d8c242c5830ef3d5ea830550eaacd2b4927c
+                  - cell [ref=e1515]:
+                    - generic [ref=e1516]:
+                      - button "下载" [ref=e1517] [cursor=pointer]
+                      - button "删除" [ref=e1522] [cursor=pointer]
+                - row [ref=e1528]:
+                  - cell "01_软件服务合同（教学示例）.txt" [ref=e1529]:
+                    - generic "01_软件服务合同（教学示例）.txt" [ref=e1535]
+                  - cell "TXT" [ref=e1536]
+                  - cell "809 B" [ref=e1538]
+                  - cell "已就绪" [ref=e1539]
+                  - cell [ref=e1541]:
+                    - code [ref=e1542]: de1e04c028cfb6201713a672652527879f628eb45f4dbb282327f54a328c8514
+                  - cell [ref=e1543]:
+                    - generic [ref=e1544]:
+                      - button "下载" [ref=e1545] [cursor=pointer]
+                      - button "删除" [ref=e1550] [cursor=pointer]
+                - row [ref=e1556]:
+                  - cell "02_付款与履约记录（教学示例）.txt" [ref=e1557]:
+                    - generic "02_付款与履约记录（教学示例）.txt" [ref=e1563]
+                  - cell "TXT" [ref=e1564]
+                  - cell "359 B" [ref=e1566]
+                  - cell "已就绪" [ref=e1567]
+                  - cell [ref=e1569]:
+                    - code [ref=e1570]: 0a139e47c07a3fb5d5fa455fd5e742bac92152a1d6b17083fefa94d87e218419
+                  - cell [ref=e1571]:
+                    - generic [ref=e1572]:
+                      - button "下载" [ref=e1573] [cursor=pointer]
+                      - button "删除" [ref=e1578] [cursor=pointer]

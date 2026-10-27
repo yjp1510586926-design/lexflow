@@ -1,0 +1,59 @@
+{
+  "id": "18",
+  "chapter": "文书与版本",
+  "title": "创建案件文书",
+  "subtitle": "先建立人工正文，再使用版本能力",
+  "bullets": [
+    "进入案件详情的案件文书",
+    "点击新建文书并填写标题",
+    "创建后编辑并保存正文"
+  ],
+  "narration": "真正的文书编辑入口在案件详情的案件文书，点击新建文书，填写标题与初始内容后创建。初次可用材料摘要练习保存、版本和导出。侧栏文书是全局文件与审计页面。编辑框的修改需要保存后才进入版本，离开或发起 AI 前先确认已保存。",
+  "visual": "document-create",
+  "crop": [
+    350,
+    155,
+    740,
+    590
+  ],
+  "index": 17,
+  "segments": [
+    {
+      "text": "真正的文书编辑入口在案件详情的案件文书，点击新建文书，填写标题与初始内容后创建。",
+      "spoken_text": "真正的文书编辑入口在案件详情的案件文书，点击新建文书，填写标题与初始内容后创建。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/1e02ef14d55a46fad77de4b3.aiff",
+      "voice_duration": 10.119592,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.319592,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/frame_01.png"
+    },
+    {
+      "text": "初次可用材料摘要练习保存、版本和导出。侧栏文书是全局文件与审计页面。",
+      "spoken_text": "初次可用材料摘要练习保存、版本和导出。侧栏文书是全局文件与审计页面。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/89ff056fde6a627a0ad7511f.aiff",
+      "voice_duration": 8.795374,
+      "pause": 0.2,
+      "start": 10.319592,
+      "duration": 8.995374,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/frame_02.png"
+    },
+    {
+      "text": "编辑框的修改需要保存后才进入版本，离开或发起 AI 前先确认已保存。",
+      "spoken_text": "编辑框的修改需要保存后才进入版本，离开或发起 人工智能 前先确认已保存。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/936eba57ab28218fbc159386.aiff",
+      "voice_duration": 8.669433,
+      "pause": 0.34,
+      "start": 19.314966,
+      "duration": 9.009492,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/frame_03.png"
+    }
+  ],
+  "duration": 28.324458,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/018_18/scene.mp4",
+  "fingerprint": "cd3264bb18017b5d8c3be754405c9202209b0b9fffad9e035f4f4209f2ff9c88",
+  "visual_type": "真实前端截图"
+}

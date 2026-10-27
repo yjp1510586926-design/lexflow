@@ -1,0 +1,65 @@
+{
+  "id": "17",
+  "chapter": "文件与证据",
+  "title": "填写证据来源与说明",
+  "subtitle": "选择原件版本，保留可核对的信息",
+  "bullets": [
+    "选择已经上传的原件",
+    "填写必填的证据来源",
+    "补充时间、说明和顺序"
+  ],
+  "narration": "在证据目录表单中选择原件，填写必填的证据来源，再按需要记录收集时间、说明和顺序。收集时间按本地时区输入。说明可以写材料如何取得以及需要核实的事项，避免直接下结论。保存后回到目录，检查关联的文件版本和文字。",
+  "visual": "evidence-create",
+  "crop": [
+    390,
+    130,
+    660,
+    640
+  ],
+  "focus": [
+    425,
+    310,
+    580,
+    300
+  ],
+  "index": 16,
+  "segments": [
+    {
+      "text": "在证据目录表单中选择原件，填写必填的证据来源，再按需要记录收集时间、说明和顺序。",
+      "spoken_text": "在证据目录表单中选择原件，填写必填的证据来源，再按需要记录收集时间、说明和顺序。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9d9c65c1c6fc1b7df83f872a.aiff",
+      "voice_duration": 10.386712,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.586711999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/frame_01.png"
+    },
+    {
+      "text": "收集时间按本地时区输入。说明可以写材料如何取得以及需要核实的事项，避免直接下结论。",
+      "spoken_text": "收集时间按本地时区输入。说明可以写材料如何取得以及需要核实的事项，避免直接下结论。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d2736d17a9e9dd2f40bad221.aiff",
+      "voice_duration": 9.843991,
+      "pause": 0.2,
+      "start": 10.586711999999999,
+      "duration": 10.043991,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/frame_02.png"
+    },
+    {
+      "text": "保存后回到目录，检查关联的文件版本和文字。",
+      "spoken_text": "保存后回到目录，检查关联的文件版本和文字。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5beb66772b61ef17d23d0d7b.aiff",
+      "voice_duration": 5.011565,
+      "pause": 0.34,
+      "start": 20.630702999999997,
+      "duration": 5.351630000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/frame_03.png"
+    }
+  ],
+  "duration": 25.982333,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/017_17/scene.mp4",
+  "fingerprint": "3200386179b6e9e960a7162167ca56a2e0d44bd04f43f49a3307043ba9d1d47b",
+  "visual_type": "真实前端截图"
+}

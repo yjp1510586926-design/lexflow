@@ -1,0 +1,43 @@
+{
+  "name": "lexflow-ai-service",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "npm run build && node --test test/*.test.cjs",
+    "setup:workflow": "npm run build && node dist/graphs/persistence/setup-workflow-store.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.13",
+    "@langchain/langgraph": "^1.4.18",
+    "@langchain/langgraph-checkpoint": "^1.1.5",
+    "@langchain/openai": "^1.6.0",
+    "@nestjs/axios": "^4.0.0",
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/config": "^4.0.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/microservices": "^11.1.0",
+    "@nestjs/platform-express": "^11.1.0",
+    "@zilliz/milvus2-sdk-node": "^3.0.6",
+    "amqp-connection-manager": "^4.1.14",
+    "amqplib": "^0.10.4",
+    "axios": "^1.7.0",
+    "mammoth": "1.13.0",
+    "mysql2": "^3.24.5",
+    "pdf-parse": "2.4.5",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.12.1",
+    "@swc/cli": "^0.8.1",
+    "@swc/core": "^1.16.13",
+    "@types/amqplib": "^0.10.5",
+    "@types/node": "^24.0.0",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3"
+  }
+}

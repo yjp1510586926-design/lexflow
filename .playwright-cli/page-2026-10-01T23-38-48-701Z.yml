@@ -1,0 +1,107 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "文书生成验收管理员" [ref=e100]
+        - generic [ref=e101]: "机构 #900000180 · 工号 #900000180"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "案件详情" [level=1] [ref=e306]
+        - paragraph [ref=e110]: 创建案件、添加成员、整理材料
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#900000180"
+    - main [ref=e127]:
+      - generic [ref=e307]:
+        - button "返回案件列表" [ref=e309] [cursor=pointer]
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e318]: GENERATION-UI-20261002
+            - heading "文书生成验收" [level=2] [ref=e319]
+            - generic [ref=e320]: 进行中
+            - generic [ref=e321]: "类型: CIVIL"
+            - generic [ref=e322]: "锁版本: v0"
+          - button "归档案件" [ref=e324] [cursor=pointer]
+        - generic [ref=e326]:
+          - button "基本信息与状态" [ref=e327] [cursor=pointer]
+          - button "办案人员分配" [ref=e332] [cursor=pointer]
+          - button "文件与证据管理" [ref=e339] [cursor=pointer]
+          - button "证据目录" [ref=e344] [cursor=pointer]
+          - button "案件文书" [ref=e349] [cursor=pointer]
+          - button "案件知识库" [ref=e353] [cursor=pointer]
+        - generic [ref=e393]:
+          - generic [ref=e395]:
+            - heading "案件文书" [level=3] [ref=e396]
+            - paragraph [ref=e397]: 起草文书、保存与恢复历史版本、导出已保存内容
+          - generic [ref=e399]:
+            - generic [ref=e400]:
+              - button "← 返回文书列表" [ref=e452] [cursor=pointer]
+              - generic [ref=e454]: /
+              - generic [ref=e455]: 催款函
+              - generic [ref=e456]: 草稿
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]: 当前版本 v2
+                  - generic [ref=e461]:
+                    - button "AI 起草" [ref=e462] [cursor=pointer]
+                    - button "导出 TXT" [ref=e464] [cursor=pointer]
+                    - button "发布" [ref=e470] [cursor=pointer]
+                    - button "保存新版本" [ref=e475] [cursor=pointer]
+                - paragraph [ref=e481]: 导出当前已保存版本，未保存的修改不会包含在文件中。草稿仍为草稿。
+                - textbox "在此输入文书正文..." [ref=e482]: 提交后保存的人工正文，不应被生成结果覆盖。
+              - generic [ref=e483]:
+                - generic [ref=e484]: 版本历史
+                - generic [ref=e546]:
+                  - generic [ref=e547]:
+                    - generic [ref=e548]:
+                      - generic [ref=e549]: v3
+                      - generic [ref=e550]: AI 草稿
+                    - generic [ref=e551]: 2026-10-01 23:37:18
+                    - button "查看正文" [active] [ref=e552] [cursor=pointer]
+                    - generic [ref=e554]:
+                      - generic [ref=e555]:
+                        - generic [ref=e556]: "AI复核:"
+                        - generic [ref=e557]: 待复核
+                      - generic [ref=e558]:
+                        - button "通过" [ref=e559] [cursor=pointer]
+                        - button "驳回" [ref=e564] [cursor=pointer]
+                  - generic [ref=e570]:
+                    - generic [ref=e571]:
+                      - generic [ref=e572]: v2
+                      - generic [ref=e573]: 手动
+                    - generic [ref=e574]: 2026-10-01 23:37:16
+                    - button "查看正文" [ref=e575] [cursor=pointer]
+                  - generic [ref=e577]:
+                    - generic [ref=e578]:
+                      - generic [ref=e579]: v1
+                      - generic [ref=e580]: 手动
+                    - generic [ref=e581]: 2026-10-01 23:32:16
+                    - button "查看正文" [ref=e582] [cursor=pointer]
+                    - button "恢复此版本" [ref=e584] [cursor=pointer]
+            - dialog [ref=e586]:
+              - generic [ref=e587]:
+                - generic [ref=e588]:
+                  - heading "版本 v3 正文" [level=3] [ref=e590]
+                  - button "关闭弹窗" [ref=e591] [cursor=pointer]
+                - generic [ref=e595]: 催款函 请甲向乙支付欠款 100 元。 收件地址：【待补充：收件地址】 本函为待复核草稿。

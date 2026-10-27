@@ -1,0 +1,75 @@
+{
+  "id": "22",
+  "chapter": "文书与版本",
+  "title": "理解发布操作",
+  "subtitle": "发布当前已保存正文，不新增正文版本",
+  "bullets": [
+    "先确认当前正文",
+    "完成必要人工核对",
+    "按工作要求发布"
+  ],
+  "narration": "发布作用于当前已经保存的正文，不会因为点击发布就自动保存输入框里的修改，也不会新增正文版本。发布前先核对当前版本和内容。恢复历史或再次保存会形成草稿状态。AI 待审内容必须先完成复核，不能通过发布直接转成正式结果。",
+  "visual": "document-editor",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    916,
+    435,
+    67,
+    32
+  ],
+  "index": 21,
+  "segments": [
+    {
+      "text": "发布作用于当前已经保存的正文，不会因为点击发布就自动保存输入框里的修改，",
+      "spoken_text": "发布作用于当前已经保存的正文，不会因为点击发布就自动保存输入框里的修改，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/78c6dfc0053d45511b18c551.aiff",
+      "voice_duration": 8.486893,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.686893,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/frame_01.png"
+    },
+    {
+      "text": "也不会新增正文版本。发布前先核对当前版本和内容。",
+      "spoken_text": "也不会新增正文版本。发布前先核对当前版本和内容。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f4dcd39a3e065de916730295.aiff",
+      "voice_duration": 6.004036,
+      "pause": 0.2,
+      "start": 8.686893,
+      "duration": 6.204036,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/frame_02.png"
+    },
+    {
+      "text": "恢复历史或再次保存会形成草稿状态。AI 待审内容必须先完成复核，",
+      "spoken_text": "恢复历史或再次保存会形成草稿状态。人工智能 待审内容必须先完成复核，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ed71e5c7e7ab67cd02c02f06.aiff",
+      "voice_duration": 8.37746,
+      "pause": 0.2,
+      "start": 14.890929,
+      "duration": 8.577459999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/frame_03.png"
+    },
+    {
+      "text": "不能通过发布直接转成正式结果。",
+      "spoken_text": "不能通过发布直接转成正式结果。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/155323ffd29eec8edd2c8577.aiff",
+      "voice_duration": 3.432789,
+      "pause": 0.34,
+      "start": 23.468389,
+      "duration": 3.772861000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/frame_04.png"
+    }
+  ],
+  "duration": 27.24125,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/022_22/scene.mp4",
+  "fingerprint": "17b045ca469e20a2c8d2b9faffbf541604c3b8af110e493eb0208aa909c293a3",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,66 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${SERVER_PORT:8080}
+  servlet:
+    session:
+      timeout: 30m
+      cookie:
+        http-only: true
+        same-site: lax
+        secure: ${COOKIE_SECURE:false}
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+  application:
+    name: lexflow-core
+  datasource:
+    url: ${DATABASE_URL:jdbc:mysql://127.0.0.1:13306/lexflow?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true}
+    username: ${MYSQL_USER:lexflow}
+    password: ${MYSQL_PASSWORD:lexflow_dev_only}
+  # 独立迁移连接避免 Druid 将 Flyway 的权限能力探测当作连接故障。
+  flyway:
+    url: ${DATABASE_URL:jdbc:mysql://127.0.0.1:13306/lexflow?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true}
+    user: ${MYSQL_USER:lexflow}
+    password: ${MYSQL_PASSWORD:lexflow_dev_only}
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:16379}
+  session:
+    redis:
+      namespace: lexflow:session
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 51MB
+  rabbitmq:
+    host: ${RABBITMQ_HOST:127.0.0.1}
+    port: ${RABBITMQ_PORT:15672}
+    username: ${RABBITMQ_USER:lexflow}
+    password: ${RABBITMQ_PASSWORD:lexflow_mq_dev_only}
+    virtual-host: ${RABBITMQ_VHOST:/}
+    # Publisher confirm：发布器确认成功后才标记 outbox SENT
+    publisher-confirm-type: correlated
+    publisher-returns: true
+
+scheduling:
+  enabled: ${SCHEDULING_ENABLED:true}
+
+lexflow:
+  # 内部服务间 shared-secret 验证 AI 服务身份
+  internal-secret: ${LEXFLOW_INTERNAL_SECRET:dev-internal-secret-change-in-prod}
+  # AI 服务地址（内部调用）
+  ai-service-url: ${AI_SERVICE_URL:http://127.0.0.1:3001}
+  audit:
+    buffer-directory: ${AUDIT_BUFFER_DIRECTORY:${user.dir}/.lexflow-audit-buffer}
+    max-records: ${AUDIT_BUFFER_MAX_RECORDS:10000}
+    max-bytes: ${AUDIT_BUFFER_MAX_BYTES:20971520}
+    replay-batch-size: ${AUDIT_REPLAY_BATCH_SIZE:100}
+    replay-delay-ms: ${AUDIT_REPLAY_DELAY_MS:15000}
+  lifecycle:
+    export-retention-days: ${EXPORT_RETENTION_DAYS:0}
+    cleanup-compact-after-days: ${CLEANUP_COMPACT_AFTER_DAYS:0}
+
+mybatis-plus:
+  configuration:
+    local-cache-scope: STATEMENT

@@ -1,0 +1,69 @@
+{
+  "id": "50",
+  "chapter": "管理员设置",
+  "title": "主动测试模型连接",
+  "subtitle": "每次测试都要确认可能产生费用",
+  "bullets": [
+    "确认供应商域名在白名单",
+    "主动勾选费用确认",
+    "读取测试状态与耗时"
+  ],
+  "narration": "连接测试必须主动触发并逐次确认费用。服务端会检查 HTTPS 地址和部署者设置的精确域名白名单，用少量合成文本验证接口。成功表示当前接口兼容，不代表法律分析可靠。测试超时先读取既有结果，再决定是否新建，不要通过刷新反复调用。",
+  "visual": "ai-test",
+  "crop": [
+    285,
+    508,
+    590,
+    300
+  ],
+  "index": 49,
+  "segments": [
+    {
+      "text": "连接测试必须主动触发并逐次确认费用。",
+      "spoken_text": "连接测试必须主动触发并逐次确认费用。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/66efadb42560d84a3a46ebb5.aiff",
+      "voice_duration": 4.169977,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 4.3699770000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/frame_01.png"
+    },
+    {
+      "text": "服务端会检查 HTTPS 地址和部署者设置的精确域名白名单，用少量合成文本验证接口。",
+      "spoken_text": "服务端会检查 HTTPS 地址和部署者设置的精确域名白名单，用少量合成文本验证接口。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/4c80a3995cf0e56d896f9c8c.aiff",
+      "voice_duration": 11.75483,
+      "pause": 0.2,
+      "start": 4.3699770000000004,
+      "duration": 11.95483,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/frame_02.png"
+    },
+    {
+      "text": "成功表示当前接口兼容，不代表法律分析可靠。测试超时先读取既有结果，再决定是否新建，",
+      "spoken_text": "成功表示当前接口兼容，不代表法律分析可靠。测试超时先读取既有结果，再决定是否新建，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/3e6ab16f73613302e154db03.aiff",
+      "voice_duration": 10.618141,
+      "pause": 0.2,
+      "start": 16.324807,
+      "duration": 10.818140999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/frame_03.png"
+    },
+    {
+      "text": "不要通过刷新反复调用。",
+      "spoken_text": "不要通过刷新反复调用。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/46697a7ee1d3dc45b2c76b8f.aiff",
+      "voice_duration": 2.573651,
+      "pause": 0.34,
+      "start": 27.142947999999997,
+      "duration": 2.913719000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/frame_04.png"
+    }
+  ],
+  "duration": 30.056667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/050_50/scene.mp4",
+  "fingerprint": "3217f1fafdf60d0a85eafcc53649d7b751c18a7d110acaeaae26cc63584ffc3f",
+  "visual_type": "真实前端截图"
+}

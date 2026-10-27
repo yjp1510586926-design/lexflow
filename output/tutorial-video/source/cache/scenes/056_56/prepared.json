@@ -1,0 +1,70 @@
+{
+  "id": "56",
+  "chapter": "部署与排错附录",
+  "title": "初始化首次管理员",
+  "subtitle": "仅适用于空业务库，记下输出的律所 ID",
+  "bullets": [
+    "设置律所名和管理员账号",
+    "交互输入初始密码",
+    "完成日志 → 记下律所 ID → Ctrl+C"
+  ],
+  "narration": "首次管理员只能在空业务库初始化。先设置律所名和账号，再交互输入密码，至少十二字符且 UTF 八编码不超过七十二字节。运行 bootstrap，等明确出现首次初始化完成和律所 ID，记下编号，再停止初始化容器。重复执行不会覆盖旧账号或重置密码。",
+  "visual": "slide",
+  "code": [
+    "export LEXFLOW_TENANT_NAME='演示律所'",
+    "export LEXFLOW_ADMIN_USERNAME='admin'",
+    "read -r -s LEXFLOW_ADMIN_PASSWORD",
+    "export LEXFLOW_ADMIN_PASSWORD",
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml run --rm --no-deps -e LEXFLOW_TENANT_NAME -e LEXFLOW_ADMIN_USERNAME -e LEXFLOW_ADMIN_PASSWORD api --spring.profiles.active=bootstrap"
+  ],
+  "index": 55,
+  "segments": [
+    {
+      "text": "首次管理员只能在空业务库初始化。先设置律所名和账号，再交互输入密码，",
+      "spoken_text": "首次管理员只能在空业务库初始化。先设置律所名和账号，再交互输入密码，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e985437bbd16f35025b4dc3e.aiff",
+      "voice_duration": 8.555283,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.755282999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/frame_01.png"
+    },
+    {
+      "text": "至少十二字符且 UTF 八编码不超过七十二字节。",
+      "spoken_text": "至少十二字符且 UTF 八编码不超过七十二字节。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/554df9ff4dc6a20cf2b5a5a6.aiff",
+      "voice_duration": 6.439184,
+      "pause": 0.2,
+      "start": 8.755282999999999,
+      "duration": 6.639184,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/frame_02.png"
+    },
+    {
+      "text": "运行 bootstrap，等明确出现首次初始化完成和律所 ID，记下编号，",
+      "spoken_text": "运行 bootstrap，等明确出现首次初始化完成和律所 ID，记下编号，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0e8dfddccf3dbd48d217b7bd.aiff",
+      "voice_duration": 7.581451,
+      "pause": 0.2,
+      "start": 15.394466999999999,
+      "duration": 7.781451000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/frame_03.png"
+    },
+    {
+      "text": "再停止初始化容器。重复执行不会覆盖旧账号或重置密码。",
+      "spoken_text": "再停止初始化容器。重复执行不会覆盖旧账号或重置密码。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b857f2a0ccbf1ef158759da5.aiff",
+      "voice_duration": 6.40449,
+      "pause": 0.34,
+      "start": 23.175918,
+      "duration": 6.7445400000000015,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/frame_04.png"
+    }
+  ],
+  "duration": 29.920458,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/056_56/scene.mp4",
+  "fingerprint": "4d7e0cd1686935b74c42bd5622d915d7ccb4663f478eb8d22e60c59ebdf980c8",
+  "visual_type": "讲解卡片"
+}

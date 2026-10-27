@@ -1,0 +1,58 @@
+{
+  "id": "54",
+  "chapter": "部署与排错附录",
+  "title": "生成私密配置并构建应用",
+  "subtitle": "配置生成器不会覆盖已有文件",
+  "bullets": [
+    "生成 .env.mvp.local",
+    "校验 Compose 配置",
+    "依次构建三个应用镜像"
+  ],
+  "narration": "在项目根目录运行配置生成器，创建私密部署文件，然后校验 Compose 配置，依次构建业务服务、AI 服务和网页。生成器只创建不存在的文件，不会覆盖旧配置。配置中有基础设施密码和加密主密钥，应私下保存，不要放进公开视频或提交仓库。",
+  "visual": "slide",
+  "code": [
+    "sh deploy/configure-mvp.sh",
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml config --quiet",
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml build api ai-service web"
+  ],
+  "index": 53,
+  "segments": [
+    {
+      "text": "在项目根目录运行配置生成器，创建私密部署文件，然后校验 Compose 配置，",
+      "spoken_text": "在项目根目录运行配置生成器，创建私密部署文件，然后校验 Compose 配置，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/bb9287848843e9511f924468.aiff",
+      "voice_duration": 8.389796,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.589796,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/frame_01.png"
+    },
+    {
+      "text": "依次构建业务服务、AI 服务和网页。生成器只创建不存在的文件，不会覆盖旧配置。",
+      "spoken_text": "依次构建业务服务、人工智能 服务和网页。生成器只创建不存在的文件，不会覆盖旧配置。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/20e7aed735ddafcef5c2bbd9.aiff",
+      "voice_duration": 9.694603,
+      "pause": 0.2,
+      "start": 8.589796,
+      "duration": 9.894603,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/frame_02.png"
+    },
+    {
+      "text": "配置中有基础设施密码和加密主密钥，应私下保存，不要放进公开视频或提交仓库。",
+      "spoken_text": "配置中有基础设施密码和加密主密钥，应私下保存，不要放进公开视频或提交仓库。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f780c3f79c2fafcbeef5d711.aiff",
+      "voice_duration": 9.369615,
+      "pause": 0.34,
+      "start": 18.484399,
+      "duration": 9.709684,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/frame_03.png"
+    }
+  ],
+  "duration": 28.194083,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/054_54/scene.mp4",
+  "fingerprint": "39adcca439e2559f683bb7bd2ceb0b0c1a6175fa0f15126c319c6469e40778b6",
+  "visual_type": "讲解卡片"
+}

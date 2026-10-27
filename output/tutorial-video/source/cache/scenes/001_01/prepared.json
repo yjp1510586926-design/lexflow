@@ -1,0 +1,53 @@
+{
+  "id": "01",
+  "chapter": "开始之前",
+  "title": "LexFlow 项目详细使用教程",
+  "subtitle": "从首次登录到完整业务流程",
+  "bullets": [
+    "真实前端界面",
+    "本地虚构演示资料",
+    "分步讲解，可暂停跟做"
+  ],
+  "narration": "欢迎来到 LexFlow 项目使用教程。本片采用项目真实前端界面和本地虚构演示数据，按步骤说明操作方法。AI 结果由本地教学模拟接口提供，没有现场调用付费模型。请先熟悉案件、文件和文书，再学习 AI 与管理员功能。",
+  "visual": "dashboard",
+  "index": 0,
+  "segments": [
+    {
+      "text": "欢迎来到 LexFlow 项目使用教程。本片采用项目真实前端界面和本地虚构演示数据，",
+      "spoken_text": "欢迎来到 LexFlow 项目使用教程。本片采用项目真实前端界面和本地虚构演示数据，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/323e29f061089802e88d573b.aiff",
+      "voice_duration": 9.016009,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.216009,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/frame_01.png"
+    },
+    {
+      "text": "按步骤说明操作方法。AI 结果由本地教学模拟接口提供，没有现场调用付费模型。",
+      "spoken_text": "按步骤说明操作方法。人工智能 结果由本地教学模拟接口提供，没有现场调用付费模型。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d90d1aa54878c84e47c22124.aiff",
+      "voice_duration": 9.677551,
+      "pause": 0.2,
+      "start": 9.216009,
+      "duration": 9.877550999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/frame_02.png"
+    },
+    {
+      "text": "请先熟悉案件、文件和文书，再学习 AI 与管理员功能。",
+      "spoken_text": "请先熟悉案件、文件和文书，再学习 人工智能 与管理员功能。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d5f65abfa669325e256998bd.aiff",
+      "voice_duration": 6.876281,
+      "pause": 0.34,
+      "start": 19.093559999999997,
+      "duration": 7.216357000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/frame_03.png"
+    }
+  ],
+  "duration": 26.309917,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/001_01/scene.mp4",
+  "fingerprint": "e3218c889a53ddb5410f9e66cc639367dca1c41890034f8454adae4411d497ae",
+  "visual_type": "真实前端截图"
+}

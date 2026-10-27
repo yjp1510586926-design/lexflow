@@ -1,0 +1,121 @@
+name: lexflow-dev
+services:
+  mysql:
+    image: mysql:8.4.6
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-lexflow}
+      MYSQL_USER: ${MYSQL_USER:-lexflow}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-lexflow_dev_only}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-lexflow_root_dev_only}
+    ports: ["127.0.0.1:${MYSQL_PORT:-13306}:3306"]
+    volumes: ["mysql-data:/var/lib/mysql"]
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysql -uroot -e 'SELECT 1'",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+  redis:
+    image: redis:7.4.5-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports: ["127.0.0.1:${REDIS_PORT:-16379}:6379"]
+    volumes: ["redis-data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  rabbitmq:
+    image: rabbitmq:4.1.4-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER:-lexflow}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS:-lexflow_mq_dev_only}
+    ports:
+      - "127.0.0.1:${RABBITMQ_PORT:-15672}:5672"
+      - "127.0.0.1:${RABBITMQ_MANAGEMENT_PORT:-15673}:15672"
+    volumes: ["rabbitmq-data:/var/lib/rabbitmq"]
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+  minio:
+    image: milvusdb/minio:RELEASE.2024-12-18T13-15-44Z
+    command: ["minio", "server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-lexflow}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-lexflow_minio_dev_only}
+    ports:
+      - "127.0.0.1:${MINIO_PORT:-19000}:9000"
+      - "127.0.0.1:${MINIO_CONSOLE_PORT:-19001}:9001"
+    volumes: ["minio-data:/data"]
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  etcd:
+    profiles: [vector]
+    image: quay.io/coreos/etcd:v3.5.25
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command:
+      [
+        "etcd",
+        "--advertise-client-urls=http://etcd:2379",
+        "--listen-client-urls=http://0.0.0.0:2379",
+        "--data-dir=/etcd",
+      ]
+    volumes: ["etcd-data:/etcd"]
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  milvus-volume-init:
+    profiles: [vector]
+    image: milvusdb/milvus:v3.0.2
+    user: "0:0"
+    network_mode: none
+    read_only: true
+    restart: "no"
+    entrypoint: ["/bin/sh", "-c"]
+    command: ['chown -R "$$(id -u milvus):$$(id -g milvus)" /var/lib/milvus']
+    volumes: ["milvus-data:/var/lib/milvus"]
+  milvus:
+    profiles: [vector]
+    image: milvusdb/milvus:v3.0.2
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      MINIO_REGION: us-east-1
+      MINIO_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-lexflow}
+      MINIO_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:-lexflow_minio_dev_only}
+    ports:
+      - "127.0.0.1:${MILVUS_PORT:-19530}:19530"
+      - "127.0.0.1:${MILVUS_HEALTH_PORT:-19091}:9091"
+    volumes: ["milvus-data:/var/lib/milvus"]
+    depends_on:
+      milvus-volume-init: { condition: service_completed_successfully }
+      etcd: { condition: service_healthy }
+      minio: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 5
+volumes:
+  mysql-data:
+  redis-data:
+  rabbitmq-data:
+  minio-data:
+  etcd-data:
+  milvus-data:

@@ -1,0 +1,36 @@
+{
+  "id": "smoke",
+  "chapter": "第一章 · 制作验证",
+  "title": "本地制作链路验证",
+  "subtitle": "验证中文字幕、中文语音与章节封装",
+  "bullets": [
+    "生成中文语音",
+    "烘焙同步字幕",
+    "封装视频与章节"
+  ],
+  "narration": "这是本地教程。",
+  "visual": "slide",
+  "code": [
+    "java -version"
+  ],
+  "index": 0,
+  "segments": [
+    {
+      "text": "这是本地教程。",
+      "spoken_text": "这是本地教程。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/audio/3734abc0493d08b564cd52d4.aiff",
+      "voice_duration": 1.586259,
+      "pause": 0.34,
+      "start": 0.0,
+      "duration": 1.926292,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/frame_01.png"
+    }
+  ],
+  "duration": 1.926292,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/.smoke/cache/scenes/001_smoke/scene.mp4",
+  "fingerprint": "54febca5027b203d93b32f170b6a1030b89926997301d43676ddac94dbf11058",
+  "visual_type": "讲解卡片"
+}

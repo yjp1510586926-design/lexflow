@@ -1,0 +1,76 @@
+- generic [ref=e337]:
+  - complementary [ref=e338]:
+    - generic [ref=e345]:
+      - generic [ref=e346]: LexFlow
+      - generic [ref=e347]: 法律业务与 AI 协作平台
+    - navigation [ref=e348]:
+      - generic [ref=e349]: 核心业务
+      - button "工作台" [ref=e350] [cursor=pointer]
+      - button "案件" [ref=e358] [cursor=pointer]
+      - button "成员与权限" [ref=e364] [cursor=pointer]
+      - generic [ref=e372]: 协作与智能扩展
+      - button "文书" [ref=e373] [cursor=pointer]
+      - button "任务记录" [ref=e379] [cursor=pointer]
+      - button "AI 助手" [ref=e384] [cursor=pointer]
+      - button "AI 配置" [ref=e389] [cursor=pointer]
+    - generic [ref=e395]:
+      - generic [ref=e399]:
+        - generic "QA Tester" [ref=e400]
+        - generic [ref=e401]: "机构 #900000094 · 工号 #900000094"
+      - button "退出登录" [ref=e402] [cursor=pointer]
+  - generic [ref=e406]:
+    - banner [ref=e407]:
+      - generic [ref=e408]:
+        - heading "案件详情" [level=1] [ref=e615]
+        - paragraph [ref=e410]: 创建案件、添加成员、整理材料
+      - generic [ref=e411]:
+        - button "刷新当前数据" [ref=e412] [cursor=pointer]:
+          - generic [ref=e418]: 刷新
+        - button "服务在线" [ref=e419] [cursor=pointer]
+        - generic [ref=e424]:
+          - generic [ref=e425]: 机构
+          - generic [ref=e426]: "#900000094"
+    - main [ref=e427]:
+      - generic [ref=e616]:
+        - button "返回案件列表" [ref=e618] [cursor=pointer]
+        - generic [ref=e625]:
+          - generic [ref=e626]:
+            - generic [ref=e627]: QA-E2E-20260930
+            - heading "案件资料问答验收" [level=2] [ref=e628]
+            - generic [ref=e629]: 草稿
+            - generic [ref=e630]: "类型: CIVIL"
+            - generic [ref=e631]: "锁版本: v0"
+          - button "转为进行中" [ref=e633] [cursor=pointer]
+        - generic [ref=e638]:
+          - button "基本信息与状态" [ref=e639] [cursor=pointer]
+          - button "办案人员分配" [ref=e644] [cursor=pointer]
+          - button "文件与证据管理" [ref=e651] [cursor=pointer]
+          - button "文书与 AI 审查" [ref=e656] [cursor=pointer]
+          - button "案件知识库" [ref=e660] [cursor=pointer]
+        - generic [ref=e665]:
+          - generic [ref=e667]:
+            - heading "案件基础信息" [level=3] [ref=e668]
+            - paragraph [ref=e669]: 维护案件审级、案由、争议诉求与进展阶段
+          - generic [ref=e671]:
+            - generic [ref=e672]:
+              - generic [ref=e673]:
+                - generic [ref=e674]: 案件编号
+                - textbox [disabled] [ref=e675]: QA-E2E-20260930
+                - generic [ref=e676]: 案件立案后文号不可随意修改
+              - generic [ref=e677]:
+                - generic [ref=e678]: 业务类别
+                - textbox [disabled] [ref=e679]: CIVIL
+            - generic [ref=e680]:
+              - generic [ref=e681]: 案件标题 *
+              - textbox "案件标题 *" [ref=e682]: 案件资料问答验收
+            - generic [ref=e683]:
+              - generic [ref=e684]: 案情简介及诉求
+              - textbox "案情简介及诉求" [ref=e685]: 专用合成资料验收
+            - generic [ref=e686]:
+              - generic [ref=e687]: 案卷流转状态
+              - combobox [ref=e688]:
+                - option "草稿状态" [selected]
+                - option "进行中"
+                - option "已归档"
+              - generic [ref=e689]: 办案流程流转：立案草稿进入正式办理；办结案件归档锁定；归档案件支持按权限恢复。
+            - button "保存变更" [ref=e691] [cursor=pointer]

@@ -1,0 +1,59 @@
+{
+  "id": "08",
+  "chapter": "案件与团队",
+  "title": "查找已有案件",
+  "subtitle": "先定位案件，再进入业务详情",
+  "bullets": [
+    "按编号或标题搜索",
+    "核对案件状态与负责人",
+    "点击进入案件详情"
+  ],
+  "narration": "在案件列表中，先通过案件编号或标题定位目标，再核对状态和负责人。练习时可以搜索自己创建的演示案件，避免把操作落在其他记录上。进入详情后，再检查案情和团队范围。列表里的统计信息不能替代对具体案件内容的核对。",
+  "visual": "cases",
+  "crop": [
+    255,
+    60,
+    1170,
+    560
+  ],
+  "index": 7,
+  "segments": [
+    {
+      "text": "在案件列表中，先通过案件编号或标题定位目标，再核对状态和负责人。",
+      "spoken_text": "在案件列表中，先通过案件编号或标题定位目标，再核对状态和负责人。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c8b946e23773606e3060432d.aiff",
+      "voice_duration": 8.436236,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.636235999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/frame_01.png"
+    },
+    {
+      "text": "练习时可以搜索自己创建的演示案件，避免把操作落在其他记录上。",
+      "spoken_text": "练习时可以搜索自己创建的演示案件，避免把操作落在其他记录上。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/27f7e9f8a38b8889ff37450f.aiff",
+      "voice_duration": 7.445079,
+      "pause": 0.2,
+      "start": 8.636235999999998,
+      "duration": 7.645079,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/frame_02.png"
+    },
+    {
+      "text": "进入详情后，再检查案情和团队范围。列表里的统计信息不能替代对具体案件内容的核对。",
+      "spoken_text": "进入详情后，再检查案情和团队范围。列表里的统计信息不能替代对具体案件内容的核对。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/8ed811117015c8d75d8f96bc.aiff",
+      "voice_duration": 9.732336,
+      "pause": 0.34,
+      "start": 16.281315,
+      "duration": 10.072393000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/frame_03.png"
+    }
+  ],
+  "duration": 26.353708,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/008_08/scene.mp4",
+  "fingerprint": "e91752de3abbb2c0712643de04be2409d1e50a3486d575171f7f437b1b5b8ee0",
+  "visual_type": "真实前端截图"
+}

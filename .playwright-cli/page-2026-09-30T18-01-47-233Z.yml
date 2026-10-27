@@ -1,0 +1,109 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "AI 助手" [ref=e78] [cursor=pointer]
+      - button "AI 配置" [ref=e83] [cursor=pointer]
+    - generic [ref=e89]:
+      - generic [ref=e93]:
+        - generic "Contract E2E" [ref=e94]
+        - generic [ref=e95]: "机构 #900000114 · 工号 #900000114"
+      - button "退出登录" [ref=e96] [cursor=pointer]
+  - generic [ref=e100]:
+    - banner [ref=e101]:
+      - generic [ref=e102]:
+        - heading "案件详情" [level=1] [ref=e300]
+        - paragraph [ref=e104]: 创建案件、添加成员、整理材料
+      - generic [ref=e105]:
+        - button "刷新当前数据" [ref=e106] [cursor=pointer]:
+          - generic [ref=e112]: 刷新
+        - button "服务在线" [ref=e113] [cursor=pointer]
+        - generic [ref=e118]:
+          - generic [ref=e119]: 机构
+          - generic [ref=e120]: "#900000114"
+    - main [ref=e121]:
+      - generic [ref=e301]:
+        - button "返回案件列表" [ref=e303] [cursor=pointer]
+        - generic [ref=e310]:
+          - generic [ref=e311]:
+            - generic [ref=e312]: CONTRACT-E2E
+            - heading "合成合同验收" [level=2] [ref=e313]
+            - generic [ref=e314]: 草稿
+            - generic [ref=e315]: "类型: CIVIL"
+            - generic [ref=e316]: "锁版本: v0"
+          - button "转为进行中" [ref=e318] [cursor=pointer]
+        - generic [ref=e323]:
+          - button "基本信息与状态" [ref=e324] [cursor=pointer]
+          - button "办案人员分配" [ref=e329] [cursor=pointer]
+          - button "文件与证据管理" [ref=e336] [cursor=pointer]
+          - button "文书与 AI 审查" [ref=e341] [cursor=pointer]
+          - button "案件知识库" [ref=e345] [cursor=pointer]
+        - generic [ref=e378]:
+          - generic [ref=e380]:
+            - heading "案件文件与证据管理" [level=3] [ref=e381]
+            - paragraph [ref=e382]: 上传及归档涉案证据材料、诉讼文书、答辩状及判决文件
+          - generic [ref=e384]:
+            - generic [ref=e385]:
+              - generic [ref=e386]:
+                - heading "案件电子卷宗" [level=3] [ref=e387]
+                - paragraph [ref=e388]: 支持 PDF、DOCX、TXT、PNG、JPEG · 单文件上限 50MB · SHA-256 完整性校验
+                - paragraph [ref=e389]: 文字提取支持 TXT、DOCX 和含文字层 PDF；扫描版 PDF 暂不支持。
+              - generic [ref=e390]:
+                - button "刷新" [ref=e391] [cursor=pointer]
+                - button "上传材料" [ref=e399] [cursor=pointer]
+            - table [ref=e404]:
+              - rowgroup [ref=e405]:
+                - row [ref=e406]:
+                  - columnheader "文件名" [ref=e407]
+                  - columnheader "格式" [ref=e408]
+                  - columnheader "大小" [ref=e409]
+                  - columnheader "状态" [ref=e410]
+                  - columnheader "SHA-256 指纹" [ref=e411]
+                  - columnheader "操作" [ref=e412]
+              - rowgroup [ref=e413]:
+                - row [ref=e414]:
+                  - cell "contract.txt" [ref=e415]:
+                    - generic "contract.txt" [ref=e421]
+                  - cell "TXT" [ref=e422]
+                  - cell "33 B" [ref=e424]
+                  - cell "已就绪" [ref=e425]
+                  - cell [ref=e427]:
+                    - code [ref=e428]: f7471760aa1cefccc722ba23c1380000cbff51158d939919163f45ffe4d8e9a0
+                  - cell [ref=e429]:
+                    - generic [ref=e430]:
+                      - button "下载" [ref=e431] [cursor=pointer]
+                      - button "提取文字" [ref=e436] [cursor=pointer]
+                      - button "审查合同" [active] [ref=e438] [cursor=pointer]
+                      - button "删除" [ref=e440] [cursor=pointer]
+            - dialog [ref=e446]:
+              - generic [ref=e447]:
+                - generic [ref=e448]:
+                  - heading "审查《contract.txt》" [level=3] [ref=e450]
+                  - button "关闭弹窗" [ref=e451] [cursor=pointer]
+                - generic [ref=e456]:
+                  - paragraph [ref=e457]: 审查文件：contract.txt
+                  - generic [ref=e458]:
+                    - text: 审查立场
+                    - combobox "审查立场" [ref=e459]:
+                      - option "中立审查" [selected]
+                      - option "代表甲方"
+                      - option "代表乙方"
+                  - generic [ref=e460]:
+                    - text: 关注点（选填）
+                    - textbox "关注点（选填）" [ref=e461]:
+                      - /placeholder: 例如：付款期限、违约责任、解除条件
+                  - generic [ref=e462]:
+                    - text: 参考案件资料（选填）
+                    - combobox "参考案件资料（选填）" [ref=e463]:
+                      - option "仅审查合同原文" [selected]
+                  - paragraph [ref=e464]: 支持 TXT、DOCX 和含文字层 PDF，提取文字最多 4 万字。提交后会使用本律所手动配置的模型，可能产生费用。未提供适用法律依据时，结果会进入人工复核。
+                  - button "提交审查" [ref=e465] [cursor=pointer]

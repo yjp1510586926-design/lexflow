@@ -1,0 +1,65 @@
+{
+  "id": "09",
+  "chapter": "案件与团队",
+  "title": "新建一个演示案件",
+  "subtitle": "填写案件文号、标题和基本案情",
+  "bullets": [
+    "点击立案新建",
+    "填写编号、标题和业务类别",
+    "确认立案后检查详情"
+  ],
+  "narration": "在案件列表点击立案新建，填写必填的案件编号、案件标题和业务类别，按需要补充立案日期、案情简介及诉求，再点击确认立案。创建者会成为本案主办律师。成功后进入详情核对记录，案件编号和业务类别在详情中不能修改。",
+  "visual": "case-create",
+  "crop": [
+    390,
+    95,
+    660,
+    710
+  ],
+  "focus": [
+    425,
+    198,
+    590,
+    302
+  ],
+  "index": 8,
+  "segments": [
+    {
+      "text": "在案件列表点击立案新建，填写必填的案件编号、案件标题和业务类别，按需要补充立案日期、",
+      "spoken_text": "在案件列表点击立案新建，填写必填的案件编号、案件标题和业务类别，按需要补充立案日期、",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ac7339655f1a801df495d11c.aiff",
+      "voice_duration": 10.479592,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.679592,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/frame_01.png"
+    },
+    {
+      "text": "案情简介及诉求，再点击确认立案。创建者会成为本案主办律师。",
+      "spoken_text": "案情简介及诉求，再点击确认立案。创建者会成为本案主办律师。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/896bb44e940b9afa098683b1.aiff",
+      "voice_duration": 7.413605,
+      "pause": 0.2,
+      "start": 10.679592,
+      "duration": 7.613605,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/frame_02.png"
+    },
+    {
+      "text": "成功后进入详情核对记录，案件编号和业务类别在详情中不能修改。",
+      "spoken_text": "成功后进入详情核对记录，案件编号和业务类别在详情中不能修改。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f683f30b3ab579735029ee05.aiff",
+      "voice_duration": 7.425397,
+      "pause": 0.34,
+      "start": 18.293197,
+      "duration": 7.7654700000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/frame_03.png"
+    }
+  ],
+  "duration": 26.058667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/009_09/scene.mp4",
+  "fingerprint": "08c8cc1f87f65fa6abed98467b86da258a0b4659615b8272e5291a7c5d3d1eed",
+  "visual_type": "真实前端截图"
+}

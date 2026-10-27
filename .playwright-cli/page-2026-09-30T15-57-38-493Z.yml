@@ -1,0 +1,97 @@
+- generic [ref=e2]:
+  - generic [ref=e31]:
+    - complementary [ref=e32]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: LexFlow
+        - generic [ref=e41]: 法律业务与 AI 协作平台
+      - navigation [ref=e42]:
+        - generic [ref=e43]: 核心业务
+        - button "工作台" [ref=e44] [cursor=pointer]
+        - button "案件" [ref=e52] [cursor=pointer]
+        - button "成员与权限" [ref=e58] [cursor=pointer]
+        - generic [ref=e66]: 协作与智能扩展
+        - button "文书" [ref=e67] [cursor=pointer]
+        - button "任务记录" [ref=e73] [cursor=pointer]
+        - button "AI 助手" [ref=e78] [cursor=pointer]
+        - button "AI 配置" [ref=e83] [cursor=pointer]
+      - generic [ref=e89]:
+        - generic [ref=e93]:
+          - generic "Rebuild Admin" [ref=e94]
+          - generic [ref=e95]: "机构 #900000096 · 工号 #900000096"
+        - button "退出登录" [ref=e96] [cursor=pointer]
+    - generic [ref=e100]:
+      - banner [ref=e101]:
+        - generic [ref=e102]:
+          - heading "案件详情" [level=1] [ref=e309]
+          - paragraph [ref=e104]: 创建案件、添加成员、整理材料
+        - generic [ref=e105]:
+          - button "刷新当前数据" [ref=e106] [cursor=pointer]:
+            - generic [ref=e112]: 刷新
+          - button "服务在线" [ref=e113] [cursor=pointer]
+          - generic [ref=e118]:
+            - generic [ref=e119]: 机构
+            - generic [ref=e120]: "#900000096"
+      - main [ref=e121]:
+        - generic [ref=e310]:
+          - button "返回案件列表" [ref=e312] [cursor=pointer]
+          - generic [ref=e319]:
+            - generic [ref=e320]:
+              - generic [ref=e321]: REBUILD-E2E
+              - heading "索引重建验收案件" [level=2] [ref=e322]
+              - generic [ref=e323]: 草稿
+              - generic [ref=e324]: "类型: CIVIL"
+              - generic [ref=e325]: "锁版本: v0"
+            - button "转为进行中" [ref=e327] [cursor=pointer]
+          - generic [ref=e332]:
+            - button "基本信息与状态" [ref=e333] [cursor=pointer]
+            - button "办案人员分配" [ref=e338] [cursor=pointer]
+            - button "文件与证据管理" [ref=e345] [cursor=pointer]
+            - button "文书与 AI 审查" [ref=e350] [cursor=pointer]
+            - button "案件知识库" [ref=e354] [cursor=pointer]
+          - generic [ref=e387]:
+            - generic [ref=e389]:
+              - heading "案件知识库" [level=3] [ref=e390]
+              - paragraph [ref=e391]: 整理本案件资料，按权限检索原文并查看页码或段落来源
+            - generic [ref=e437]:
+              - paragraph [ref=e438]: 先整理已解析文件，再由律所管理员配置 Embedding API Key 后主动开始索引。完成索引后可以检索原文或提问；更换向量模型后请重建索引。重建失败或取消保留原索引，检索只使用与当前模型匹配的版本；模型调用可能产生费用。
+              - generic [ref=e439]:
+                - generic [ref=e440]: 案件知识库
+                - combobox "案件知识库" [ref=e441]:
+                  - option "重建验收资料" [selected]
+              - generic [ref=e442]:
+                - generic [ref=e443]: 选择已完成文字提取的文件
+                - generic [ref=e444]:
+                  - combobox "选择已完成文字提取的文件" [ref=e445]:
+                    - option "请选择解析任务" [selected]
+                    - 'option "rebuild-contract.txt · 任务 #308"'
+                  - button "准备入库" [disabled] [ref=e446]
+                  - button "刷新" [ref=e448] [cursor=pointer]
+              - generic [ref=e450]:
+                - generic [ref=e451]:
+                  - heading "已整理文件" [level=4] [ref=e452]
+                  - button "刷新状态" [ref=e453] [cursor=pointer]
+                - generic [ref=e455]:
+                  - generic [ref=e456]: "rebuild-contract.txt · v1 · 3 段 · 可检索 · 重建中 · 任务 #355"
+                  - button "查看切片" [ref=e458] [cursor=pointer]
+              - generic [ref=e460]:
+                - heading "检索案件原文" [level=4] [ref=e461]
+                - paragraph [ref=e462]: 只查已完成索引的本案件材料。检索可能产生向量模型费用；管理员配置排序模型后，本次检索还会调用排序模型。结果是原文片段。
+                - generic [ref=e463]:
+                  - textbox "检索问题" [ref=e464]:
+                    - /placeholder: 例如：合同约定何时付款？
+                  - button "检索原文" [disabled] [ref=e465]
+              - region "案件资料问答" [ref=e467]:
+                - heading "问案件资料" [level=4] [ref=e468]
+                - paragraph [ref=e469]: 根据本知识库原文回答并标注出处。管理员须先配置 LLM 和 Embedding Key；已配置的排序模型也会参与检索。点击提问可能产生模型费用，回答仍需你核对原件。
+                - generic [ref=e470]:
+                  - combobox "问答会话" [ref=e471]:
+                    - option "新会话" [selected]
+                  - button "刷新问答记录" [disabled] [ref=e472]
+                - generic [ref=e474]:
+                  - textbox "资料问答问题" [ref=e475]:
+                    - /placeholder: 例如：合同约定何时付款？请列出原文依据。
+                  - button "提问" [disabled] [ref=e476]
+                - paragraph [ref=e478]: 还没有问答记录。只有已完成索引的资料会参与回答。
+  - alert [ref=e479]:
+    - generic [ref=e483]: "索引任务 #355 已提交，请稍后刷新状态"
+    - button "关闭通知" [ref=e484] [cursor=pointer]

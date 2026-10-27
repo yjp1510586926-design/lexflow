@@ -1,0 +1,59 @@
+{
+  "id": "52",
+  "chapter": "管理员设置",
+  "title": "查看操作审计与追踪编号",
+  "subtitle": "在权限范围内定位业务问题",
+  "bullets": [
+    "侧栏文书→操作审计日志",
+    "筛选并查看动作与结果",
+    "保留错误提示中的 traceId"
+  ],
+  "narration": "从侧栏文书进入操作审计日志页签，有权限时可筛选记录、查看动作、时间、结果和详情。管理员限本律所，普通成员限本人。遇到问题保留错误提示和追踪编号。审计不记录正文、密码、模型 Key 或 Cookie，也不能替代基础设施健康监控。",
+  "visual": "audit",
+  "crop": [
+    270,
+    80,
+    1140,
+    580
+  ],
+  "index": 51,
+  "segments": [
+    {
+      "text": "从侧栏文书进入操作审计日志页签，有权限时可筛选记录、查看动作、时间、结果和详情。",
+      "spoken_text": "从侧栏文书进入操作审计日志页签，有权限时可筛选记录、查看动作、时间、结果和详情。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e104c1bf1fd644ef8e399077.aiff",
+      "voice_duration": 11.09288,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 11.292879999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/frame_01.png"
+    },
+    {
+      "text": "管理员限本律所，普通成员限本人。遇到问题保留错误提示和追踪编号。",
+      "spoken_text": "管理员限本律所，普通成员限本人。遇到问题保留错误提示和追踪编号。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/cb32157b19ad8f2bef1a1ec8.aiff",
+      "voice_duration": 8.193107,
+      "pause": 0.2,
+      "start": 11.292879999999998,
+      "duration": 8.393106999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/frame_02.png"
+    },
+    {
+      "text": "审计不记录正文、密码、模型 Key 或 Cookie，也不能替代基础设施健康监控。",
+      "spoken_text": "审计不记录正文、密码、模型 Key 或 Cookie，也不能替代基础设施健康监控。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/3ebb1aadc71aacbb50242232.aiff",
+      "voice_duration": 7.939955,
+      "pause": 0.34,
+      "start": 19.685986999999997,
+      "duration": 8.280013000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/frame_03.png"
+    }
+  ],
+  "duration": 27.966,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/052_52/scene.mp4",
+  "fingerprint": "0be2c5e5f27f08060aad85af3438dbcf19e1a0176d531514925d9d32241fa30b",
+  "visual_type": "真实前端截图"
+}

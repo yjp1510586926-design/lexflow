@@ -1,0 +1,95 @@
+- generic [ref=e337]:
+  - complementary [ref=e338]:
+    - generic [ref=e345]:
+      - generic [ref=e346]: LexFlow
+      - generic [ref=e347]: 法律业务与 AI 协作平台
+    - navigation [ref=e348]:
+      - generic [ref=e349]: 核心业务
+      - button "工作台" [ref=e350] [cursor=pointer]
+      - button "案件" [ref=e358] [cursor=pointer]
+      - button "成员与权限" [ref=e364] [cursor=pointer]
+      - generic [ref=e372]: 协作与智能扩展
+      - button "文书" [ref=e373] [cursor=pointer]
+      - button "任务记录" [ref=e379] [cursor=pointer]
+      - button "AI 助手" [ref=e384] [cursor=pointer]
+      - button "AI 配置" [ref=e389] [cursor=pointer]
+    - generic [ref=e395]:
+      - generic [ref=e399]:
+        - generic "QA Tester" [ref=e400]
+        - generic [ref=e401]: "机构 #900000094 · 工号 #900000094"
+      - button "退出登录" [ref=e402] [cursor=pointer]
+  - generic [ref=e406]:
+    - banner [ref=e407]:
+      - generic [ref=e408]:
+        - heading "案件详情" [level=1] [ref=e615]
+        - paragraph [ref=e410]: 创建案件、添加成员、整理材料
+      - generic [ref=e411]:
+        - button "刷新当前数据" [ref=e412] [cursor=pointer]:
+          - generic [ref=e418]: 刷新
+        - button "服务在线" [ref=e419] [cursor=pointer]
+        - generic [ref=e424]:
+          - generic [ref=e425]: 机构
+          - generic [ref=e426]: "#900000094"
+    - main [ref=e427]:
+      - generic [ref=e616]:
+        - button "返回案件列表" [ref=e618] [cursor=pointer]
+        - generic [ref=e625]:
+          - generic [ref=e626]:
+            - generic [ref=e627]: QA-E2E-20260930
+            - heading "案件资料问答验收" [level=2] [ref=e628]
+            - generic [ref=e629]: 草稿
+            - generic [ref=e630]: "类型: CIVIL"
+            - generic [ref=e631]: "锁版本: v0"
+          - button "转为进行中" [ref=e633] [cursor=pointer]
+        - generic [ref=e638]:
+          - button "基本信息与状态" [ref=e639] [cursor=pointer]
+          - button "办案人员分配" [ref=e644] [cursor=pointer]
+          - button "文件与证据管理" [ref=e651] [cursor=pointer]
+          - button "文书与 AI 审查" [ref=e656] [cursor=pointer]
+          - button "案件知识库" [active] [ref=e660] [cursor=pointer]
+        - generic [ref=e693]:
+          - generic [ref=e695]:
+            - heading "案件知识库" [level=3] [ref=e696]
+            - paragraph [ref=e697]: 整理本案件资料，按权限检索原文并查看页码或段落来源
+          - generic [ref=e699]:
+            - paragraph [ref=e700]: 先整理已解析文件，再由律所管理员配置 Embedding API Key 后主动开始索引。完成索引后可以检索原文或提问；模型调用可能产生费用。
+            - generic [ref=e701]:
+              - generic [ref=e702]: 案件知识库
+              - combobox "案件知识库" [ref=e703]:
+                - option "空资料验收" [selected]
+                - option "问答验收资料"
+            - generic [ref=e704]:
+              - generic [ref=e705]: 选择已完成文字提取的文件
+              - generic [ref=e706]:
+                - combobox "选择已完成文字提取的文件" [ref=e707]:
+                  - option "请选择解析任务" [selected]
+                  - 'option "qa-contract.txt · 任务 #176"'
+                - button "准备入库" [disabled] [ref=e708]
+                - button "刷新" [ref=e710] [cursor=pointer]
+            - generic [ref=e712]:
+              - generic [ref=e713]:
+                - heading "已整理文件" [level=4] [ref=e714]
+                - button "刷新状态" [ref=e715] [cursor=pointer]
+              - paragraph [ref=e717]: 还没有文件。
+            - generic [ref=e718]:
+              - heading "检索案件原文" [level=4] [ref=e719]
+              - paragraph [ref=e720]: 只查已完成索引的本案件材料。检索可能产生一次 Embedding 模型费用；结果是原文片段，不是法律意见。
+              - generic [ref=e721]:
+                - textbox "检索问题" [ref=e722]:
+                  - /placeholder: 例如：合同约定何时付款？
+                - button "检索原文" [disabled] [ref=e723]
+            - region "案件资料问答" [ref=e725]:
+              - heading "问案件资料" [level=4] [ref=e726]
+              - paragraph [ref=e727]: 根据本知识库原文回答并标注出处。管理员须先配置 LLM 和 Embedding Key；点击提问可能产生模型费用。回答仅供辅助，仍需你核对原件。
+              - generic [ref=e728]:
+                - combobox "问答会话" [ref=e729]:
+                  - option "新会话"
+                  - option "无依据拒答" [selected]
+                - button "刷新问答记录" [ref=e730] [cursor=pointer]
+              - generic [ref=e732]:
+                - textbox "资料问答问题" [ref=e733]:
+                  - /placeholder: 例如：合同约定何时付款？请列出原文依据。
+                - button "提问" [disabled] [ref=e734]
+              - article [ref=e736]:
+                - strong [ref=e737]: 你：何时付款？
+                - paragraph [ref=e738]: 当前案件资料不足以回答这个问题，请补充相关材料后再提问。

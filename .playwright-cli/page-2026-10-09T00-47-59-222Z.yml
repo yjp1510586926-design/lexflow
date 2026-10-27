@@ -1,0 +1,86 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "install-admin-e84f8377f129" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "案件详情" [level=1] [ref=e455]
+        - paragraph [ref=e110]: 创建案件、添加成员、整理材料
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e456]:
+        - button "返回案件列表" [ref=e458] [cursor=pointer]
+        - generic [ref=e465]:
+          - generic [ref=e466]:
+            - generic [ref=e467]: INSTALL-e84f8377
+            - heading "空数据安装验收案件" [level=2] [ref=e468]
+            - generic [ref=e469]: 草稿
+            - generic [ref=e470]: "类型: CIVIL"
+            - generic [ref=e471]: "锁版本: v0"
+          - button "转为进行中" [ref=e473] [cursor=pointer]
+        - generic [ref=e478]:
+          - button "案件分析" [ref=e479] [cursor=pointer]
+          - button "基本信息与状态" [ref=e483] [cursor=pointer]
+          - button "办案人员分配" [ref=e488] [cursor=pointer]
+          - button "文件与证据管理" [ref=e495] [cursor=pointer]
+          - button "证据目录" [ref=e500] [cursor=pointer]
+          - button "案件文书" [ref=e505] [cursor=pointer]
+          - button "案件知识库" [ref=e509] [cursor=pointer]
+        - generic [ref=e514]:
+          - generic [ref=e516]:
+            - heading "案件基础信息" [level=3] [ref=e517]
+            - paragraph [ref=e518]: 维护案件审级、案由、争议诉求与进展阶段
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - generic [ref=e522]:
+                - generic [ref=e523]: 案件编号
+                - textbox [disabled] [ref=e524]: INSTALL-e84f8377
+                - generic [ref=e525]: 案件立案后文号不可随意修改
+              - generic [ref=e526]:
+                - generic [ref=e527]: 业务类别
+                - textbox [disabled] [ref=e528]: CIVIL
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e531]: 立案日期
+                - textbox "立案日期" [ref=e532]
+              - generic [ref=e533]:
+                - generic [ref=e534]: 归档时间
+                - paragraph [ref=e535]: 尚未归档
+            - generic [ref=e536]:
+              - generic [ref=e537]: 案件标题 *
+              - textbox "案件标题 *" [ref=e538]: 空数据安装验收案件
+            - generic [ref=e539]:
+              - generic [ref=e540]: 案情简介及诉求
+              - textbox "案情简介及诉求" [ref=e541]: 当前主机新空数据实例的合成验收记录
+            - generic [ref=e542]:
+              - generic [ref=e543]: 案卷流转状态
+              - combobox [ref=e544]:
+                - option "草稿状态" [selected]
+                - option "进行中"
+                - option "已归档"
+              - generic [ref=e545]: 办案流程流转：立案草稿进入正式办理；办结案件归档锁定；归档案件支持按权限恢复。
+            - button "保存变更" [ref=e547] [cursor=pointer]

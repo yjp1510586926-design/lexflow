@@ -1,0 +1,75 @@
+{
+  "id": "29",
+  "chapter": "AI 文书起草",
+  "title": "完成人工复核与采用",
+  "subtitle": "点击通过即采用该 AI 版本，不等同于发布",
+  "bullets": [
+    "对照材料逐项复核",
+    "点击通过或驳回",
+    "通过后核对当前正文与草稿状态"
+  ],
+  "narration": "复核时对照材料检查事实、引用、表述和待补项，再点击通过或驳回。点击通过会把该 AI 版本设为当前正文，切换到不同正文时文书回到草稿，再按需发布或导出。这里没有另一个采用按钮。未通过的 AI 草稿也不能从其他入口绕过复核。",
+  "visual": "versions",
+  "crop": [
+    900,
+    420,
+    505,
+    420
+  ],
+  "focus": [
+    1120,
+    550,
+    270,
+    75
+  ],
+  "index": 28,
+  "segments": [
+    {
+      "text": "复核时对照材料检查事实、引用、表述和待补项，再点击通过或驳回。",
+      "spoken_text": "复核时对照材料检查事实、引用、表述和待补项，再点击通过或驳回。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c93163c1ce2d56fb499762fe.aiff",
+      "voice_duration": 8.097687,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.297687,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/frame_01.png"
+    },
+    {
+      "text": "点击通过会把该 AI 版本设为当前正文，切换到不同正文时文书回到草稿，",
+      "spoken_text": "点击通过会把该 人工智能 版本设为当前正文，切换到不同正文时文书回到草稿，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/1f21d8dbc7e949a4c3e4ad73.aiff",
+      "voice_duration": 8.604717,
+      "pause": 0.2,
+      "start": 8.297687,
+      "duration": 8.804717,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/frame_02.png"
+    },
+    {
+      "text": "再按需发布或导出。这里没有另一个采用按钮。",
+      "spoken_text": "再按需发布或导出。这里没有另一个采用按钮。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/765bd32070a6efef2ef5cf0f.aiff",
+      "voice_duration": 4.755873,
+      "pause": 0.2,
+      "start": 17.102404,
+      "duration": 4.955873,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/frame_03.png"
+    },
+    {
+      "text": "未通过的 AI 草稿也不能从其他入口绕过复核。",
+      "spoken_text": "未通过的 人工智能 草稿也不能从其他入口绕过复核。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/a9c232cac0bb448a207aac0b.aiff",
+      "voice_duration": 5.272245,
+      "pause": 0.34,
+      "start": 22.058277,
+      "duration": 5.612306000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/frame_04.png"
+    }
+  ],
+  "duration": 27.670583,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/029_29/scene.mp4",
+  "fingerprint": "e376d386d3d4be0c30c004fb19e1059421c41fa8ff1c6d963419ceb6b65d28bf",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "47",
+  "chapter": "任务与恢复",
+  "title": "谨慎处理结果不确定",
+  "subtitle": "超时不代表供应商没有执行",
+  "bullets": [
+    "先核对既有任务和调用",
+    "不要反复提交或批准",
+    "取消后再决定是否新建"
+  ],
+  "narration": "如果模型请求已经发出，系统却无法确定结果，任务会进入不确定状态，禁止直接重放。超时不能证明供应商没有执行或计费。先核对任务及既有调用，再取消，并主动决定是否另建任务。取消会阻止结果发布，但不能保证远程模型请求立即停止。",
+  "visual": "slide",
+  "index": 46,
+  "segments": [
+    {
+      "text": "如果模型请求已经发出，系统却无法确定结果，任务会进入不确定状态，禁止直接重放。",
+      "spoken_text": "如果模型请求已经发出，系统却无法确定结果，任务会进入不确定状态，禁止直接重放。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/8b80e3a03c23a1e0bdf303ec.aiff",
+      "voice_duration": 10.127891,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.327891,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/frame_01.png"
+    },
+    {
+      "text": "超时不能证明供应商没有执行或计费。先核对任务及既有调用，再取消，",
+      "spoken_text": "超时不能证明供应商没有执行或计费。先核对任务及既有调用，再取消，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/a981b1ffca9c61446582d444.aiff",
+      "voice_duration": 7.936236,
+      "pause": 0.2,
+      "start": 10.327891,
+      "duration": 8.136236,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/frame_02.png"
+    },
+    {
+      "text": "并主动决定是否另建任务。取消会阻止结果发布，但不能保证远程模型请求立即停止。",
+      "spoken_text": "并主动决定是否另建任务。取消会阻止结果发布，但不能保证远程模型请求立即停止。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/fb06fa2784fba6e546607c39.aiff",
+      "voice_duration": 9.318866,
+      "pause": 0.34,
+      "start": 18.464126999999998,
+      "duration": 9.658915000000004,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/frame_03.png"
+    }
+  ],
+  "duration": 28.123042,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/047_47/scene.mp4",
+  "fingerprint": "ee1a3b1f3270a56fee5b95425b5f5fc8b1cbb761ada394dbf4920f3b74ee6735",
+  "visual_type": "讲解卡片"
+}

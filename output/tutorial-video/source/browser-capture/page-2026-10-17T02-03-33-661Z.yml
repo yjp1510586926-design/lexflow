@@ -1,0 +1,162 @@
+- generic [ref=e2]:
+  - generic [ref=e31]:
+    - complementary [ref=e32]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: LexFlow
+        - generic [ref=e41]: 法律业务与 AI 协作平台
+      - navigation [ref=e42]:
+        - generic [ref=e43]: 核心业务
+        - button "工作台" [ref=e44] [cursor=pointer]
+        - button "案件" [ref=e52] [cursor=pointer]
+        - button "成员与权限" [ref=e58] [cursor=pointer]
+        - generic [ref=e66]: 协作与智能扩展
+        - button "文书" [ref=e67] [cursor=pointer]
+        - button "任务记录" [ref=e73] [cursor=pointer]
+        - button "律所知识库" [ref=e78] [cursor=pointer]
+        - button "AI 助手" [ref=e84] [cursor=pointer]
+        - button "AI 配置" [ref=e89] [cursor=pointer]
+      - generic [ref=e95]:
+        - generic [ref=e99]:
+          - generic "林律师" [ref=e100]
+          - generic [ref=e101]: "机构 #1 · 工号 #1"
+        - button "退出登录" [ref=e102] [cursor=pointer]
+    - generic [ref=e106]:
+      - banner [ref=e107]:
+        - generic [ref=e108]:
+          - heading "工作台" [level=1] [ref=e109]
+          - paragraph [ref=e110]: "欢迎回来，林律师 律师 · 机构编号 #1"
+        - generic [ref=e111]:
+          - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+            - generic [ref=e118]: 刷新
+          - button "服务在线" [ref=e119] [cursor=pointer]
+          - generic [ref=e124]:
+            - generic [ref=e125]: 机构
+            - generic [ref=e126]: "#1"
+      - main [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: 可访问案件总数
+              - generic [ref=e136]: "3"
+              - generic [ref=e137]: 包含负责及授权参与案件
+            - generic [ref=e138]:
+              - generic [ref=e139]: 进行中案卷
+              - generic [ref=e143]: "1"
+              - generic [ref=e144]: 当前活跃法务流程
+            - generic [ref=e145]:
+              - generic [ref=e146]: 草稿案卷
+              - generic [ref=e151]: "1"
+              - generic [ref=e152]: 待审核或流转案卷
+            - generic [ref=e153]:
+              - generic [ref=e154]: 律所有效成员
+              - generic [ref=e161]: "3"
+              - generic [ref=e162]: 本租户在职执业人员
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]:
+                  - heading "最新案件动态" [level=3] [ref=e167]
+                  - paragraph [ref=e168]: 本律所您有权访问的最新创建与流转案件
+                - button "全部案件" [ref=e170] [cursor=pointer]
+              - table [ref=e177]:
+                - rowgroup [ref=e178]:
+                  - row [ref=e179]:
+                    - columnheader "案件编号" [ref=e180]
+                    - columnheader "案件标题" [ref=e181]
+                    - columnheader "业务类别" [ref=e182]
+                    - columnheader "状态" [ref=e183]
+                    - columnheader "修订版本" [ref=e184]
+                    - columnheader "操作" [ref=e185]
+                - rowgroup [ref=e186]:
+                  - row [ref=e187]:
+                    - cell "教学-2026-001" [ref=e188]
+                    - cell "蓝湾软件服务合同纠纷（教学示例）" [ref=e189]
+                    - cell "民事诉讼" [ref=e190]
+                    - cell "进行中" [ref=e191]
+                    - cell "v3" [ref=e193]
+                    - cell [ref=e195]:
+                      - button "详情" [ref=e196] [cursor=pointer]
+                  - row [ref=e198]:
+                    - cell "教学-2026-002" [ref=e199]
+                    - cell "青禾劳动争议咨询（教学示例）" [ref=e200]
+                    - cell "劳动争议" [ref=e201]
+                    - cell "草稿" [ref=e202]
+                    - cell "v1" [ref=e204]
+                    - cell [ref=e206]:
+                      - button "详情" [ref=e207] [cursor=pointer]
+                  - row [ref=e209]:
+                    - cell "教学-2026-003" [ref=e210]
+                    - cell "星桥商标使用许可（教学示例）" [ref=e211]
+                    - cell "知识产权" [ref=e212]
+                    - cell "已归档" [ref=e213]
+                    - cell "v4" [ref=e215]
+                    - cell [ref=e217]:
+                      - button "详情" [ref=e218] [cursor=pointer]
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - generic [ref=e223]:
+                  - heading "核心业务入口" [level=3] [ref=e224]
+                  - paragraph [ref=e225]: 案件与组织操作
+                - generic [ref=e227]:
+                  - button "立案新建案件" [ref=e228] [cursor=pointer]
+                  - button "管理案件与成员" [ref=e232] [cursor=pointer]
+                  - button "组织架构与人员" [ref=e238] [cursor=pointer]
+                  - button "AI 助手" [ref=e246] [cursor=pointer]
+              - generic [ref=e251]:
+                - generic [ref=e253]:
+                  - heading "当前执业账号" [level=3] [ref=e254]
+                  - paragraph [ref=e255]: 所属机构与权限上下文
+                - generic [ref=e257]:
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: "登录用户:"
+                    - strong [ref=e260]: 林律师
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: "机构编号:"
+                    - generic [ref=e263]: "#1"
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: "用户标识:"
+                    - generic [ref=e266]: UID 1
+                  - generic [ref=e267]:
+                    - generic [ref=e268]: "数据安全保护:"
+                    - generic [ref=e269]: 行级隔离已启用
+          - generic [ref=e270]:
+            - generic [ref=e272]:
+              - heading "律所业务协同与数据合规指引" [level=3] [ref=e273]
+              - paragraph [ref=e274]: 保障执业合规、利益冲突防范与办案全流程追溯
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - generic [ref=e279]: 立案与案卷管理规范
+                  - generic [ref=e280]: 工作流程
+                - list [ref=e281]:
+                  - listitem [ref=e282]:
+                    - generic [ref=e285]: 立案文号全所唯一，支持草稿、进行中与归档流转
+                  - listitem [ref=e286]:
+                    - generic [ref=e289]: 已归档案卷自动开启防篡改只读保护，需恢复后方可编辑
+                  - listitem [ref=e290]:
+                    - generic [ref=e293]: 多人并发协作支持版本冲突自动检测，杜绝数据相互覆盖
+              - generic [ref=e294]:
+                - generic [ref=e295]:
+                  - generic [ref=e296]: 主办律师与成员权限隔离
+                  - generic [ref=e297]: 权限管控
+                - list [ref=e298]:
+                  - listitem [ref=e299]:
+                    - generic [ref=e302]: 每起案件设置唯一主办律师，享有成员与文书管理权
+                  - listitem [ref=e303]:
+                    - generic [ref=e306]: 支持添加协作律师（编辑权）或实习/助理人员（只读权）
+                  - listitem [ref=e307]:
+                    - generic [ref=e310]: 案卷信息仅对授权成员开放，严格执行执业利益冲突隔离
+              - generic [ref=e311]:
+                - generic [ref=e312]:
+                  - generic [ref=e313]: 证据材料与 AI 审查规范
+                  - generic [ref=e314]: 安全合规
+                - list [ref=e315]:
+                  - listitem [ref=e316]:
+                    - generic [ref=e319]: 涉案证据支持电子化完整性校验，不可随意篡改或遗失
+                  - listitem [ref=e320]:
+                    - generic [ref=e323]: 在案件知识库中提问，根据原文回答并查看出处
+                  - listitem [ref=e324]:
+                    - generic [ref=e327]: 合同审查的高风险或缺少依据结果须人工复核后确认
+  - alert [ref=e328]:
+    - generic [ref=e332]: 登录成功，欢迎使用 LexFlow
+    - button "关闭通知" [ref=e333] [cursor=pointer]

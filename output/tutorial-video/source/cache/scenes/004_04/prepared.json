@@ -1,0 +1,53 @@
+{
+  "id": "04",
+  "chapter": "开始之前",
+  "title": "准备可重复的练习资料",
+  "subtitle": "使用虚构内容完成第一次练习",
+  "bullets": [
+    "准备一份文字合同",
+    "准备付款与沟通材料",
+    "先安排一次人工文书练习"
+  ],
+  "narration": "建议准备一份虚构合同，再准备付款说明和沟通记录，使用能打开并核对内容的文本文件。案件标题和参与人也采用虚构名称。第一次练习先完成不依赖模型的上传、解析和导出，确认基础环境可用后，再进入可能计费的功能。",
+  "visual": "slide",
+  "index": 3,
+  "segments": [
+    {
+      "text": "建议准备一份虚构合同，再准备付款说明和沟通记录，使用能打开并核对内容的文本文件。",
+      "spoken_text": "建议准备一份虚构合同，再准备付款说明和沟通记录，使用能打开并核对内容的文本文件。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6f53af49d2cd00df7522e515.aiff",
+      "voice_duration": 9.801995,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.001994999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/frame_01.png"
+    },
+    {
+      "text": "案件标题和参与人也采用虚构名称。第一次练习先完成不依赖模型的上传、解析和导出，",
+      "spoken_text": "案件标题和参与人也采用虚构名称。第一次练习先完成不依赖模型的上传、解析和导出，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e236f61179701a044d488f09.aiff",
+      "voice_duration": 9.909751,
+      "pause": 0.2,
+      "start": 10.001994999999999,
+      "duration": 10.109751,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/frame_02.png"
+    },
+    {
+      "text": "确认基础环境可用后，再进入可能计费的功能。",
+      "spoken_text": "确认基础环境可用后，再进入可能计费的功能。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/d5e59138573bd794d4c7d6e0.aiff",
+      "voice_duration": 5.125034,
+      "pause": 0.34,
+      "start": 20.111745999999997,
+      "duration": 5.465087000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/frame_03.png"
+    }
+  ],
+  "duration": 25.576833,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/004_04/scene.mp4",
+  "fingerprint": "8e3fbaeaa6fc00bf15b6459d1b90bca76ab2b8181b10ddf8b15c15b92ea5850a",
+  "visual_type": "讲解卡片"
+}

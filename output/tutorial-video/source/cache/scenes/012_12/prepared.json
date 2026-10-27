@@ -1,0 +1,65 @@
+{
+  "id": "12",
+  "chapter": "文件与证据",
+  "title": "进入案件文件区",
+  "subtitle": "原件是解析、审查与分析的起点",
+  "bullets": [
+    "先核对目标案件",
+    "检查文件名称与状态",
+    "保留可追溯的原件"
+  ],
+  "narration": "文件区保存案件原始材料，后续的解析、合同审查和案件分析都建立在这些原件之上。上传前先确认当前案件，检查文件名是否有明确含义，避免把不同版本混在一起。上传完成后还要查看文件状态，不能把上传成功等同于解析成功。",
+  "visual": "files",
+  "crop": [
+    270,
+    290,
+    1140,
+    450
+  ],
+  "focus": [
+    295,
+    381,
+    1095,
+    75
+  ],
+  "index": 11,
+  "segments": [
+    {
+      "text": "文件区保存案件原始材料，后续的解析、合同审查和案件分析都建立在这些原件之上。",
+      "spoken_text": "文件区保存案件原始材料，后续的解析、合同审查和案件分析都建立在这些原件之上。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/68958ff93555e7bc291b59c6.aiff",
+      "voice_duration": 9.777279,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.977279,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/frame_01.png"
+    },
+    {
+      "text": "上传前先确认当前案件，检查文件名是否有明确含义，避免把不同版本混在一起。",
+      "spoken_text": "上传前先确认当前案件，检查文件名是否有明确含义，避免把不同版本混在一起。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/bbf4de05c116bad675674e9d.aiff",
+      "voice_duration": 9.611791,
+      "pause": 0.2,
+      "start": 9.977279,
+      "duration": 9.811791,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/frame_02.png"
+    },
+    {
+      "text": "上传完成后还要查看文件状态，不能把上传成功等同于解析成功。",
+      "spoken_text": "上传完成后还要查看文件状态，不能把上传成功等同于解析成功。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b085835932ec9f24993a3c89.aiff",
+      "voice_duration": 7.661315,
+      "pause": 0.34,
+      "start": 19.78907,
+      "duration": 8.001347,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/frame_03.png"
+    }
+  ],
+  "duration": 27.790417,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/012_12/scene.mp4",
+  "fingerprint": "096ed7e6160fef5fe3d6ddec6dfb5aef18275cff39f6828023e828b3c4404a64",
+  "visual_type": "真实前端截图"
+}

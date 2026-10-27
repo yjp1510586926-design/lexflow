@@ -1,0 +1,12 @@
+**/target/
+**/node_modules/
+**/dist/
+.idea/
+*.iml
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+!.env.lexflow.example
+**/.lexflow-audit-buffer/

@@ -1,0 +1,59 @@
+{
+  "id": "44",
+  "chapter": "案件分析",
+  "title": "区分事实、推论与待核实",
+  "subtitle": "报告结构帮助发现材料缺口",
+  "bullets": [
+    "先看事实和引用",
+    "再看争议与证据缺口",
+    "完成必要人工复核"
+  ],
+  "narration": "案件分析报告会区分材料事实、推论、待核实事项、争议、证据缺口、建议和限制。先沿引用核对事实，再阅读推论。高风险、缺材、证据不足或者待核实事项会进入人工复核。页面显示的建议用于辅助整理，不能替代对案件和材料的专业判断。",
+  "visual": "analysis-result",
+  "crop": [
+    385,
+    105,
+    670,
+    550
+  ],
+  "index": 43,
+  "segments": [
+    {
+      "text": "案件分析报告会区分材料事实、推论、待核实事项、争议、证据缺口、建议和限制。",
+      "spoken_text": "案件分析报告会区分材料事实、推论、待核实事项、争议、证据缺口、建议和限制。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9a74b1d9a35a290403e135f9.aiff",
+      "voice_duration": 9.886531,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.086530999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/frame_01.png"
+    },
+    {
+      "text": "先沿引用核对事实，再阅读推论。高风险、缺材、证据不足或者待核实事项会进入人工复核。",
+      "spoken_text": "先沿引用核对事实，再阅读推论。高风险、缺材、证据不足或者待核实事项会进入人工复核。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/750482a0ada50659af50c1a3.aiff",
+      "voice_duration": 10.739683,
+      "pause": 0.2,
+      "start": 10.086530999999999,
+      "duration": 10.939682999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/frame_02.png"
+    },
+    {
+      "text": "页面显示的建议用于辅助整理，不能替代对案件和材料的专业判断。",
+      "spoken_text": "页面显示的建议用于辅助整理，不能替代对案件和材料的专业判断。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ebe7875464e302d472f05e56.aiff",
+      "voice_duration": 6.990522,
+      "pause": 0.34,
+      "start": 21.026213999999996,
+      "duration": 7.330578000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/frame_03.png"
+    }
+  ],
+  "duration": 28.356792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/044_44/scene.mp4",
+  "fingerprint": "9f60eb2b7744093a31dc87d752779fcd9a1f774a0564f533c3905cef94b10827",
+  "visual_type": "真实前端截图"
+}

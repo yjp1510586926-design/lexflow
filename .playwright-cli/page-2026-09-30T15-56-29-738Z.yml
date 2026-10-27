@@ -1,0 +1,76 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "AI 助手" [ref=e78] [cursor=pointer]
+      - button "AI 配置" [ref=e83] [cursor=pointer]
+    - generic [ref=e89]:
+      - generic [ref=e93]:
+        - generic "Rebuild Admin" [ref=e94]
+        - generic [ref=e95]: "机构 #900000096 · 工号 #900000096"
+      - button "退出登录" [ref=e96] [cursor=pointer]
+  - generic [ref=e100]:
+    - banner [ref=e101]:
+      - generic [ref=e102]:
+        - heading "案件详情" [level=1] [ref=e309]
+        - paragraph [ref=e104]: 创建案件、添加成员、整理材料
+      - generic [ref=e105]:
+        - button "刷新当前数据" [ref=e106] [cursor=pointer]:
+          - generic [ref=e112]: 刷新
+        - button "服务在线" [ref=e113] [cursor=pointer]
+        - generic [ref=e118]:
+          - generic [ref=e119]: 机构
+          - generic [ref=e120]: "#900000096"
+    - main [ref=e121]:
+      - generic [ref=e310]:
+        - button "返回案件列表" [ref=e312] [cursor=pointer]
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - generic [ref=e321]: REBUILD-E2E
+            - heading "索引重建验收案件" [level=2] [ref=e322]
+            - generic [ref=e323]: 草稿
+            - generic [ref=e324]: "类型: CIVIL"
+            - generic [ref=e325]: "锁版本: v0"
+          - button "转为进行中" [ref=e327] [cursor=pointer]
+        - generic [ref=e332]:
+          - button "基本信息与状态" [ref=e333] [cursor=pointer]
+          - button "办案人员分配" [ref=e338] [cursor=pointer]
+          - button "文件与证据管理" [ref=e345] [cursor=pointer]
+          - button "文书与 AI 审查" [ref=e350] [cursor=pointer]
+          - button "案件知识库" [ref=e354] [cursor=pointer]
+        - generic [ref=e359]:
+          - generic [ref=e361]:
+            - heading "案件基础信息" [level=3] [ref=e362]
+            - paragraph [ref=e363]: 维护案件审级、案由、争议诉求与进展阶段
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: 案件编号
+                - textbox [disabled] [ref=e369]: REBUILD-E2E
+                - generic [ref=e370]: 案件立案后文号不可随意修改
+              - generic [ref=e371]:
+                - generic [ref=e372]: 业务类别
+                - textbox [disabled] [ref=e373]: CIVIL
+            - generic [ref=e374]:
+              - generic [ref=e375]: 案件标题 *
+              - textbox "案件标题 *" [ref=e376]: 索引重建验收案件
+            - generic [ref=e377]:
+              - generic [ref=e378]: 案情简介及诉求
+              - textbox "案情简介及诉求" [ref=e379]: 本机合成材料，无真实业务数据
+            - generic [ref=e380]:
+              - generic [ref=e381]: 案卷流转状态
+              - combobox [ref=e382]:
+                - option "草稿状态" [selected]
+                - option "进行中"
+                - option "已归档"
+              - generic [ref=e383]: 办案流程流转：立案草稿进入正式办理；办结案件归档锁定；归档案件支持按权限恢复。
+            - button "保存变更" [ref=e385] [cursor=pointer]

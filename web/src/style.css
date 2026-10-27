@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background: #f3f5f8;
+  color: #182b40;
+  font: 16px/1.7 system-ui;
+}
+main {
+  max-width: 880px;
+  margin: 64px auto;
+  padding: 24px;
+}
+small {
+  letter-spacing: 2px;
+  color: #486680;
+}
+h1 {
+  font-size: 36px;
+}
+section {
+  background: white;
+  padding: 24px 32px;
+  border-radius: 16px;
+  margin: 24px 0;
+  border: 1px solid #dce4ec;
+}
+button {
+  background: #194f70;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:focus-visible {
+  outline: 3px solid #64a8dd;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  main {
+    margin: 16px auto;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}

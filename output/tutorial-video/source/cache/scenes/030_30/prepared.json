@@ -1,0 +1,53 @@
+{
+  "id": "30",
+  "chapter": "知识库与问答",
+  "title": "区分案件知识库和律所公共库",
+  "subtitle": "公共范围仅限同律所授权成员",
+  "bullets": [
+    "案件资料保持案件范围",
+    "公共资料由管理员独立上传",
+    "问答历史只有创建者可读"
+  ],
+  "narration": "案件知识库围绕当前案件资料工作，律所公共库由管理员独立上传整理，案件材料不会自动进入公共库。公共只表示同律所有权限的成员可读，不能跨律所。案件和公共问答会话都只属于创建者，管理员也不能读取同事的私人问答历史。",
+  "visual": "tenant-knowledge",
+  "index": 29,
+  "segments": [
+    {
+      "text": "案件知识库围绕当前案件资料工作，律所公共库由管理员独立上传整理，",
+      "spoken_text": "案件知识库围绕当前案件资料工作，律所公共库由管理员独立上传整理，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2efab62c175f150880956652.aiff",
+      "voice_duration": 7.761905,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.961905,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/frame_01.png"
+    },
+    {
+      "text": "案件材料不会自动进入公共库。公共只表示同律所有权限的成员可读，不能跨律所。",
+      "spoken_text": "案件材料不会自动进入公共库。公共只表示同律所有权限的成员可读，不能跨律所。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/baa6987ad99c89711d7e4b83.aiff",
+      "voice_duration": 9.097052,
+      "pause": 0.2,
+      "start": 7.961905,
+      "duration": 9.297051999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/frame_02.png"
+    },
+    {
+      "text": "案件和公共问答会话都只属于创建者，管理员也不能读取同事的私人问答历史。",
+      "spoken_text": "案件和公共问答会话都只属于创建者，管理员也不能读取同事的私人问答历史。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/84c012c953d145e6cc1e47ea.aiff",
+      "voice_duration": 8.156644,
+      "pause": 0.34,
+      "start": 17.258957,
+      "duration": 8.49671,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/frame_03.png"
+    }
+  ],
+  "duration": 25.755667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/030_30/scene.mp4",
+  "fingerprint": "3df170a54f233bc49cf0d6ecc8bc06e03dbedf1b0d9882ca09a4aadf966c9a91",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,137 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "公共知识验收管理员" [ref=e100]
+        - generic [ref=e101]: "机构 #900000200 · 工号 #900000200"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "律所知识库" [level=1] [ref=e109]
+        - paragraph [ref=e110]: 共用法律与办案资料，检索原文并核对出处
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#900000200"
+    - main [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e131]:
+            - heading "全所共用的法律与办案资料" [level=3] [ref=e132]
+            - paragraph [ref=e133]: 仅本律所中有权限的成员可访问。这里的资料由管理员独立上传，案件私有材料不会自动进入。
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]: 律所知识库
+              - combobox "律所知识库" [ref=e138]:
+                - option "公共办案指引验收" [selected]
+            - generic [ref=e139]:
+              - generic [ref=e140]: 新知识库名称
+              - textbox "新知识库名称" [ref=e141]: 法律与办案指引
+            - button "创建知识库" [ref=e142] [cursor=pointer]
+            - button "刷新资料" [ref=e144] [cursor=pointer]
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - heading "1. 上传并整理原文" [level=3] [ref=e149]
+              - paragraph [ref=e150]: 上传 → 提取文字 → 准备入库。文字提取与整理不会调用 AI 模型。
+            - button "上传资料" [ref=e152] [cursor=pointer]
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: 支持 TXT、DOCX、带文字层 PDF，单文件上限 50MB。扫描版 PDF 暂不支持。
+            - table [ref=e157]:
+              - rowgroup [ref=e158]:
+                - row [ref=e159]:
+                  - columnheader "资料" [ref=e160]
+                  - columnheader "文字提取" [ref=e161]
+                  - columnheader "操作" [ref=e162]
+              - rowgroup [ref=e163]:
+                - row [ref=e164]:
+                  - cell [ref=e165]:
+                    - strong [ref=e166]: 公共办案指引-仅测试.txt
+                    - paragraph [ref=e167]: v1 · 1 KB
+                  - cell [ref=e168]:
+                    - text: 文字已提取
+                    - paragraph [ref=e169]: "任务 #1836"
+                  - cell [ref=e170]:
+                    - generic [ref=e171]:
+                      - button "下载原件" [ref=e172] [cursor=pointer]
+                      - button "查看原文" [ref=e174] [cursor=pointer]
+                      - button "已准备" [disabled] [ref=e176]
+                      - button "移除" [ref=e178] [cursor=pointer]
+        - generic [ref=e180]:
+          - generic [ref=e182]:
+            - heading "2. 索引资料" [level=3] [ref=e183]
+            - paragraph [ref=e184]: 管理员手动配置 Embedding Key 后主动开始索引。索引可能产生模型费用；刷新进度不会调用模型。
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - strong [ref=e188]: 公共办案指引-仅测试.txt
+                - paragraph [ref=e189]: v1 · 3 段 · 可检索
+              - generic [ref=e190]:
+                - button "查看原文片段" [ref=e191] [cursor=pointer]
+                - button "重建索引" [ref=e249] [cursor=pointer]
+            - paragraph [ref=e193]: 更换向量模型后需重建索引。重建失败或取消会保留旧索引；检索只使用与当前模型相符的版本。
+        - generic [ref=e194]:
+          - generic [ref=e196]:
+            - heading "3. 检索原文" [level=3] [ref=e197]
+            - paragraph [ref=e198]: 只检索本知识库中已完成索引的资料，返回可核对的页码或段落。点击检索会调用向量模型；已配置排序模型时也会调用排序模型，可能产生费用。
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - textbox "检索律所资料" [ref=e201]:
+                - /placeholder: 例如：办案指引要求何时提交材料？
+                - text: 付款截止日期？
+              - button "检索原文" [ref=e202] [cursor=pointer]
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: 按向量相似度排列，未调用排序模型。
+              - article [ref=e253]:
+                - strong [ref=e254]: 公共办案指引-仅测试.txt · v1 · 第 1 段
+                - paragraph [ref=e255]: 合成办案指引（仅测试）
+                - button "下载原件核对" [ref=e256] [cursor=pointer]
+              - article [ref=e258]:
+                - strong [ref=e259]: 公共办案指引-仅测试.txt · v1 · 第 2 段
+                - paragraph [ref=e260]: 付款截止日期为 2026 年 11 月 1 日。
+                - button "下载原件核对" [ref=e261] [cursor=pointer]
+              - article [ref=e263]:
+                - strong [ref=e264]: 公共办案指引-仅测试.txt · v1 · 第 3 段
+                - paragraph [ref=e265]: 该条款仅用于界面验收，不是法律法规。
+                - button "下载原件核对" [ref=e266] [cursor=pointer]
+        - generic [ref=e204]:
+          - generic [ref=e206]:
+            - heading "4. 根据律所资料提问" [level=3] [ref=e207]
+            - paragraph [ref=e208]: 会话和历史回答仅你本人可见。资料撤销后，相关回答和引用会隐藏。
+          - region "律所资料问答" [ref=e210]:
+            - heading "问律所资料" [level=4] [ref=e211]
+            - paragraph [ref=e212]: 根据本知识库原文回答并标注出处。资料不足时，会在你有权访问的本知识库内扩大检索一次；仍不足则说明无法作答。管理员须先配置 LLM 和 Embedding Key；已配置的排序模型也会参与检索。点击提问可能产生模型费用，扩大检索可能增加调用，回答仍需你核对原件。
+            - generic [ref=e213]:
+              - combobox "问答会话" [ref=e214]:
+                - option "新会话"
+                - option "付款截止日期是什么？" [selected]
+              - button "刷新问答记录" [ref=e215] [cursor=pointer]
+            - generic [ref=e217]:
+              - textbox "资料问答问题" [ref=e218]:
+                - /placeholder: 例如：合同约定何时付款？请列出原文依据。
+              - button "提问" [disabled] [ref=e219]
+            - article [ref=e268]:
+              - strong [ref=e269]: 你：付款截止日期是什么？
+              - paragraph [ref=e270]: 付款截止日期为 2026 年 11 月 1 日。[2]
+              - group [ref=e271]:
+                - generic "[2] 公共办案指引-仅测试.txt · v1 · 第 2 段" [active] [ref=e272]
+                - paragraph [ref=e273]: 付款截止日期为 2026 年 11 月 1 日。
+                - button "下载原件" [ref=e274] [cursor=pointer]

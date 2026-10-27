@@ -1,0 +1,63 @@
+{
+  "id": "53",
+  "chapter": "部署与排错附录",
+  "title": "准备单机运行环境",
+  "subtitle": "默认仅监听本机，使用 Docker Compose v2",
+  "bullets": [
+    "准备 Docker、Compose 和 OpenSSL",
+    "预留构建内存与磁盘",
+    "在项目根目录执行命令"
+  ],
+  "narration": "自己启动项目时，宿主机准备 Docker、Compose 第二版和 OpenSSL。镜像内部使用 JDK 二十一和 Node 二十四，宿主机无需另装 Java 或 Node。基础服务内存上限合计约三点九 GiB，启用向量后约六点二，还应为构建留出空间。",
+  "visual": "slide",
+  "index": 52,
+  "segments": [
+    {
+      "text": "自己启动项目时，宿主机准备 Docker、Compose 第二版和 OpenSSL。",
+      "spoken_text": "自己启动项目时，宿主机准备 Docker、Compose 第二版和 OpenSSL。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6905a5ce503c3473c5844476.aiff",
+      "voice_duration": 7.954059,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.154059,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/frame_01.png"
+    },
+    {
+      "text": "镜像内部使用 JDK 二十一和 Node 二十四，",
+      "spoken_text": "镜像内部使用 JDK 二十一和 Node 二十四，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5134097c117f46807881e65c.aiff",
+      "voice_duration": 5.274104,
+      "pause": 0.2,
+      "start": 8.154059,
+      "duration": 5.4741040000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/frame_02.png"
+    },
+    {
+      "text": "宿主机无需另装 Java 或 Node。基础服务内存上限合计约三点九 GiB，",
+      "spoken_text": "宿主机无需另装 Java 或 Node。基础服务内存上限合计约三点九 GiB，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/7b7a3884cc40e073dd4f0ff9.aiff",
+      "voice_duration": 7.163537,
+      "pause": 0.2,
+      "start": 13.628163,
+      "duration": 7.363537,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/frame_03.png"
+    },
+    {
+      "text": "启用向量后约六点二，还应为构建留出空间。",
+      "spoken_text": "启用向量后约六点二，还应为构建留出空间。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/a1a2884a0f8117c3bc8c188a.aiff",
+      "voice_duration": 5.053515,
+      "pause": 0.34,
+      "start": 20.9917,
+      "duration": 5.393591999999997,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/frame_04.png"
+    }
+  ],
+  "duration": 26.385292,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/053_53/scene.mp4",
+  "fingerprint": "fd4318ec0f3b632d397267fc9e4a449ba39a2a92cb1620d12f48ff2a647659bf",
+  "visual_type": "讲解卡片"
+}

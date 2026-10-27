@@ -1,0 +1,74 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [active] [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "林律师" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "成员与权限" [level=1] [ref=e1190]
+        - paragraph [ref=e110]: 管理律所成员及角色
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e1191]:
+        - generic [ref=e1192]:
+          - generic [ref=e1193]:
+            - heading "律所成员与角色授权" [level=2] [ref=e1194]
+            - paragraph [ref=e1195]: 本租户内所有律师与协作人员账号；支持分配律所管理员、律师及只读权限。
+          - button "添加律所成员" [ref=e1196] [cursor=pointer]
+        - table [ref=e1203]:
+          - rowgroup [ref=e1204]:
+            - row [ref=e1205]:
+              - columnheader "用户标识" [ref=e1206]
+              - columnheader "用户名 (账号)" [ref=e1207]
+              - columnheader "显示姓名" [ref=e1208]
+              - columnheader "系统角色" [ref=e1209]
+              - columnheader "账号状态" [ref=e1210]
+              - columnheader "操作" [ref=e1211]
+          - rowgroup [ref=e1212]:
+            - row [ref=e1213]:
+              - 'cell "UID #1" [ref=e1214]'
+              - cell "lin.demo" [ref=e1216]
+              - cell "林律师" [ref=e1217]
+              - cell "律所管理员" [ref=e1218]
+              - cell "正常" [ref=e1220]
+              - cell [ref=e1222]:
+                - button "编辑权限" [ref=e1223] [cursor=pointer]
+            - row [ref=e1229]:
+              - 'cell "UID #2" [ref=e1230]'
+              - cell "zhou.demo" [ref=e1232]
+              - cell "周律师（演示）" [ref=e1233]
+              - cell "主办律师" [ref=e1234]
+              - cell "正常" [ref=e1236]
+              - cell [ref=e1238]:
+                - button "编辑权限" [ref=e1239] [cursor=pointer]
+            - row [ref=e1245]:
+              - 'cell "UID #3" [ref=e1246]'
+              - cell "chen.demo" [ref=e1248]
+              - cell "陈助理（演示）" [ref=e1249]
+              - cell "只读人员" [ref=e1250]
+              - cell "正常" [ref=e1252]
+              - cell [ref=e1254]:
+                - button "编辑权限" [ref=e1255] [cursor=pointer]

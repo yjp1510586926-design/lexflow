@@ -1,0 +1,21 @@
+- generic [ref=e550]:
+  - generic [ref=e551]:
+    - heading "LexFlow 律所业务协作平台" [level=1] [ref=e557]
+    - paragraph [ref=e558]: 管理案件、协作办案、整理材料
+  - generic [ref=e559]:
+    - generic [ref=e560]:
+      - generic [ref=e561]: 律所编号 *
+      - spinbutton "律所编号 *" [ref=e563]
+      - generic [ref=e564]: 请向律所系统管理员获取所属机构的租户编号
+    - generic [ref=e565]:
+      - generic [ref=e566]: 用户名 *
+      - textbox "用户名 *" [ref=e567]:
+        - /placeholder: 请输入您的律所账号
+    - generic [ref=e568]:
+      - generic [ref=e569]: 密码 *
+      - textbox "密码 *" [ref=e571]:
+        - /placeholder: 请输入登录密码
+    - button "登 录" [ref=e572] [cursor=pointer]
+  - generic [ref=e574]:
+    - generic [ref=e575]: 请使用你的律所账号登录
+    - generic [ref=e576]: 如需重置密码或开通执业账号，请联系本所系统管理员

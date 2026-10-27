@@ -1,0 +1,58 @@
+# Example only. Review thresholds and notification routing before deployment.
+groups:
+  - name: lexflow-audit-and-delivery
+    rules:
+      - alert: LexflowRequestAuditDurabilityLost
+        expr: increase(lexflow_audit_events_total{outcome="unavailable"}[5m]) > 0
+        labels:
+          severity: critical
+        annotations:
+          summary: Request audit could not reach the database or durable buffer
+      - alert: LexflowAuditBufferIntegrityFailure
+        expr: increase(lexflow_audit_events_total{outcome="integrity_failure"}[5m]) > 0
+        labels:
+          severity: critical
+        annotations:
+          summary: Pending audit record integrity requires operator investigation
+      - alert: LexflowAuditBufferNearCapacity
+        expr: (lexflow_audit_buffer_records / lexflow_audit_buffer_max_records >= 0.8) or (lexflow_audit_buffer_bytes / lexflow_audit_buffer_max_bytes >= 0.8)
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: Private audit buffer is approaching its configured limit
+      - alert: LexflowAuditReplayDelayed
+        expr: lexflow_audit_buffer_records > 0 and lexflow_audit_buffer_oldest_age_seconds > 300
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: Pending request audit has not been replayed
+      - alert: LexflowOperationalDatabaseUnavailable
+        expr: lexflow_operational_database_available == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: Operational database aggregates are unavailable
+      - alert: LexflowOutboxStalled
+        expr: lexflow_operational_oldest_age_seconds{category="outbox",state="pending"} > 300
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: Pending outbox events have not been published
+      - alert: LexflowDeliveryNeedsAttention
+        expr: lexflow_operational_records{category="delivery",state="dead"} > 0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: Dead letter deliveries await authorized manual handling
+      - alert: LexflowFileCleanupDelayed
+        expr: lexflow_operational_oldest_age_seconds{category="file_cleanup",state="pending"} > 3600
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: File object cleanup has pending work older than the configured example threshold

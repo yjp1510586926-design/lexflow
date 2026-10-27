@@ -1,0 +1,63 @@
+{
+  "id": "46",
+  "chapter": "任务与恢复",
+  "title": "处理投递故障与人工恢复",
+  "subtitle": "系统会复用已保存结果并重新校验资格",
+  "bullets": [
+    "等待有限基础设施重试",
+    "打开任务行的处理记录",
+    "核对资格并确认允许恢复的步骤"
+  ],
+  "narration": "部分瞬时基础设施故障按十秒、六十秒和三百秒有限重试，耗尽后进入人工处理。在任务行打开处理记录，核对故障类型和恢复提示。系统会复查权限、来源、配置和工作流记录，成功结果会复用。费用确认只授权尚未执行的步骤，不能强行重算。",
+  "visual": "slide",
+  "index": 45,
+  "segments": [
+    {
+      "text": "部分瞬时基础设施故障按十秒、六十秒和三百秒有限重试，耗尽后进入人工处理。",
+      "spoken_text": "部分瞬时基础设施故障按十秒、六十秒和三百秒有限重试，耗尽后进入人工处理。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/94cfaae5b68c4cdd9650cafa.aiff",
+      "voice_duration": 9.144898,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.344897999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/frame_01.png"
+    },
+    {
+      "text": "在任务行打开处理记录，核对故障类型和恢复提示。",
+      "spoken_text": "在任务行打开处理记录，核对故障类型和恢复提示。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b0145f1cc1f0fb23474d5edc.aiff",
+      "voice_duration": 5.638231,
+      "pause": 0.2,
+      "start": 9.344897999999999,
+      "duration": 5.838231,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/frame_02.png"
+    },
+    {
+      "text": "系统会复查权限、来源、配置和工作流记录，成功结果会复用。",
+      "spoken_text": "系统会复查权限、来源、配置和工作流记录，成功结果会复用。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/64ba8f6dcbb05106606ba891.aiff",
+      "voice_duration": 7.488889,
+      "pause": 0.2,
+      "start": 15.183129,
+      "duration": 7.6888890000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/frame_03.png"
+    },
+    {
+      "text": "费用确认只授权尚未执行的步骤，不能强行重算。",
+      "spoken_text": "费用确认只授权尚未执行的步骤，不能强行重算。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/8278fd9a13bdcfcf361621b8.aiff",
+      "voice_duration": 5.514739,
+      "pause": 0.34,
+      "start": 22.872018,
+      "duration": 5.854814999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/frame_04.png"
+    }
+  ],
+  "duration": 28.726833,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/046_46/scene.mp4",
+  "fingerprint": "b544d7cfee61bce15d8e9de9e2130f2c17afb0861d5ff2294cb77c8cdb6051fb",
+  "visual_type": "讲解卡片"
+}

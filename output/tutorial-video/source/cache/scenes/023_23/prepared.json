@@ -1,0 +1,75 @@
+{
+  "id": "23",
+  "chapter": "文书与版本",
+  "title": "提交异步 TXT 导出",
+  "subtitle": "导出固定提交时的已保存版本",
+  "bullets": [
+    "先保存所需正文",
+    "发起 TXT 导出",
+    "进入任务查看进度"
+  ],
+  "narration": "TXT 导出是后台任务，提交时会固定已经保存的正文版本。输入框里的未保存改动不会进入结果，之后再保存新版本，也不会改变已提交的导出。导出不调用模型，不需要模型 Key、向量服务或 AI 消费者，适合用于验证基础业务闭环。",
+  "visual": "document-editor",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    818,
+    435,
+    92,
+    32
+  ],
+  "index": 22,
+  "segments": [
+    {
+      "text": "TXT 导出是后台任务，提交时会固定已经保存的正文版本。",
+      "spoken_text": "TXT 导出是后台任务，提交时会固定已经保存的正文版本。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/925a6f2b830e8290d84f4667.aiff",
+      "voice_duration": 7.461769,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.6617690000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/frame_01.png"
+    },
+    {
+      "text": "输入框里的未保存改动不会进入结果，之后再保存新版本，也不会改变已提交的导出。",
+      "spoken_text": "输入框里的未保存改动不会进入结果，之后再保存新版本，也不会改变已提交的导出。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/bf2cd7c5c4f1e1417a75995a.aiff",
+      "voice_duration": 9.205442,
+      "pause": 0.2,
+      "start": 7.6617690000000005,
+      "duration": 9.405441999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/frame_02.png"
+    },
+    {
+      "text": "导出不调用模型，不需要模型 Key、向量服务或 AI 消费者，",
+      "spoken_text": "导出不调用模型，不需要模型 Key、向量服务或 人工智能 消费者，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ce991de2110dba032d750401.aiff",
+      "voice_duration": 6.978367,
+      "pause": 0.2,
+      "start": 17.067211,
+      "duration": 7.178367000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/frame_03.png"
+    },
+    {
+      "text": "适合用于验证基础业务闭环。",
+      "spoken_text": "适合用于验证基础业务闭环。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/870547ce2ff1488c157dbd5b.aiff",
+      "voice_duration": 3.052154,
+      "pause": 0.34,
+      "start": 24.245578000000002,
+      "duration": 3.392214000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/frame_04.png"
+    }
+  ],
+  "duration": 27.637792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/023_23/scene.mp4",
+  "fingerprint": "40405051700aa1fe542e8763cafa9bd41dfa85545c4091dc620e61c44fb571b9",
+  "visual_type": "真实前端截图"
+}

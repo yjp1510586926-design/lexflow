@@ -1,0 +1,65 @@
+{
+  "id": "27",
+  "chapter": "AI 文书起草",
+  "title": "提交明确的生成要求",
+  "subtitle": "把事实依据和待补事项写清楚",
+  "bullets": [
+    "说明输出目标与格式",
+    "要求保留未知与待核实项",
+    "勾选费用确认后提交"
+  ],
+  "narration": "生成要求可以说明希望整理成什么结构、使用怎样的表述，以及哪些信息缺失时要列为待补。不要要求模型编造材料和引用。勾选费用确认后提交，修改要求后需要重新确认。系统没有自动重试模型请求，提交后应先查看原任务状态。",
+  "visual": "doc-generation",
+  "crop": [
+    350,
+    245,
+    740,
+    420
+  ],
+  "focus": [
+    365,
+    350,
+    710,
+    270
+  ],
+  "index": 26,
+  "segments": [
+    {
+      "text": "生成要求可以说明希望整理成什么结构、使用怎样的表述，以及哪些信息缺失时要列为待补。",
+      "spoken_text": "生成要求可以说明希望整理成什么结构、使用怎样的表述，以及哪些信息缺失时要列为待补。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/77a77d9669bc28e27e31340e.aiff",
+      "voice_duration": 10.029751,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.229750999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/frame_01.png"
+    },
+    {
+      "text": "不要要求模型编造材料和引用。勾选费用确认后提交，修改要求后需要重新确认。",
+      "spoken_text": "不要要求模型编造材料和引用。勾选费用确认后提交，修改要求后需要重新确认。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/8280f0d51d4f18e217eda35f.aiff",
+      "voice_duration": 9.353878,
+      "pause": 0.2,
+      "start": 10.229750999999998,
+      "duration": 9.553878,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/frame_02.png"
+    },
+    {
+      "text": "系统没有自动重试模型请求，提交后应先查看原任务状态。",
+      "spoken_text": "系统没有自动重试模型请求，提交后应先查看原任务状态。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c8e42b4aff84534fe163e5ea.aiff",
+      "voice_duration": 6.73424,
+      "pause": 0.34,
+      "start": 19.783628999999998,
+      "duration": 7.074329000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/frame_03.png"
+    }
+  ],
+  "duration": 26.857958,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/027_27/scene.mp4",
+  "fingerprint": "6ae44fd900431f4fb9693b78257bdd920e13b6f0199798a91014355de693e272",
+  "visual_type": "真实前端截图"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "33",
+  "chapter": "知识库与问答",
+  "title": "检索可核对的原文",
+  "subtitle": "查询也可能调用向量与排序模型",
+  "bullets": [
+    "选择当前知识库",
+    "输入具体检索问题",
+    "核对返回的页码或段落"
+  ],
+  "narration": "在当前知识库输入具体问题检索原文，结果会给出可以核对的来源位置。检索可能调用向量模型，配置了排序模型时也可能产生排序费用。检索只在当前授权范围内执行，不会因为问题里提到另一案件，就自动扩大到那个案件的私有资料。",
+  "visual": "knowledge-search",
+  "crop": [
+    275,
+    370,
+    1130,
+    490
+  ],
+  "index": 32,
+  "segments": [
+    {
+      "text": "在当前知识库输入具体问题检索原文，结果会给出可以核对的来源位置。",
+      "spoken_text": "在当前知识库输入具体问题检索原文，结果会给出可以核对的来源位置。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/8272d2f73e42fec226655da6.aiff",
+      "voice_duration": 7.681587,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.881587000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/frame_01.png"
+    },
+    {
+      "text": "检索可能调用向量模型，配置了排序模型时也可能产生排序费用。",
+      "spoken_text": "检索可能调用向量模型，配置了排序模型时也可能产生排序费用。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e1b5c7d7e99981eb5e77696a.aiff",
+      "voice_duration": 7.43356,
+      "pause": 0.2,
+      "start": 7.881587000000001,
+      "duration": 7.63356,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/frame_02.png"
+    },
+    {
+      "text": "检索只在当前授权范围内执行，不会因为问题里提到另一案件，",
+      "spoken_text": "检索只在当前授权范围内执行，不会因为问题里提到另一案件，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/59eb6983e16059a8332439ad.aiff",
+      "voice_duration": 7.166531,
+      "pause": 0.2,
+      "start": 15.515147,
+      "duration": 7.366531,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/frame_03.png"
+    },
+    {
+      "text": "就自动扩大到那个案件的私有资料。",
+      "spoken_text": "就自动扩大到那个案件的私有资料。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/24c07f15591eeeb7721aea7f.aiff",
+      "voice_duration": 3.323628,
+      "pause": 0.34,
+      "start": 22.881678,
+      "duration": 3.663739,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/frame_04.png"
+    }
+  ],
+  "duration": 26.545417,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/033_33/scene.mp4",
+  "fingerprint": "75025ca74abdaab9b856ffeebfbf35ac16200a734daac68dddcd7e27d944bd0b",
+  "visual_type": "真实前端截图"
+}

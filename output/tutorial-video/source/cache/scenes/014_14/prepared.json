@@ -1,0 +1,75 @@
+{
+  "id": "14",
+  "chapter": "文件与证据",
+  "title": "等待并检查解析结果",
+  "subtitle": "解析提取文字，不会自动证明材料内容",
+  "bullets": [
+    "在文件行点击提取文字",
+    "进入侧栏任务记录",
+    "成功后点击查看原文核对"
+  ],
+  "narration": "上传完成后，在文件行主动点击提取文字，系统才会创建解析任务。进入侧栏任务记录查看进度，任务成功后点击查看原文，对照原件核对文字。解析只负责提取文本，未进行 AI 法律分析。发现缺字或内容不完整时，先处理来源问题。",
+  "visual": "parsed-text",
+  "focus": [
+    370,
+    225,
+    700,
+    450
+  ],
+  "crop": [
+    350,
+    205,
+    740,
+    490
+  ],
+  "index": 13,
+  "segments": [
+    {
+      "text": "上传完成后，在文件行主动点击提取文字，系统才会创建解析任务。",
+      "spoken_text": "上传完成后，在文件行主动点击提取文字，系统才会创建解析任务。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/eac783bc13f3dbd666b3eca9.aiff",
+      "voice_duration": 8.009615,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.209615,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/frame_01.png"
+    },
+    {
+      "text": "进入侧栏任务记录查看进度，任务成功后点击查看原文，对照原件核对文字。",
+      "spoken_text": "进入侧栏任务记录查看进度，任务成功后点击查看原文，对照原件核对文字。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/4dca22037830ed1617d4c0d8.aiff",
+      "voice_duration": 8.548118,
+      "pause": 0.2,
+      "start": 8.209615,
+      "duration": 8.748118,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/frame_02.png"
+    },
+    {
+      "text": "解析只负责提取文本，未进行 AI 法律分析。",
+      "spoken_text": "解析只负责提取文本，未进行 人工智能 法律分析。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/21f3d2989d2aae6c173b0067.aiff",
+      "voice_duration": 5.320544,
+      "pause": 0.2,
+      "start": 16.957732999999998,
+      "duration": 5.520544,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/frame_03.png"
+    },
+    {
+      "text": "发现缺字或内容不完整时，先处理来源问题。",
+      "spoken_text": "发现缺字或内容不完整时，先处理来源问题。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b3c699cde8e569bcfd584d70.aiff",
+      "voice_duration": 5.16644,
+      "pause": 0.34,
+      "start": 22.478277,
+      "duration": 5.506515000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/frame_04.png"
+    }
+  ],
+  "duration": 27.984792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/014_14/scene.mp4",
+  "fingerprint": "23a7288f911ebc549fd8383442a2a626ddb24e8d936debb5ea3a6ecd7110df1a",
+  "visual_type": "真实前端截图"
+}

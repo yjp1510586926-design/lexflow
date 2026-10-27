@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "authorized": false,
+  "runId": null,
+  "datasetSha256": null,
+  "javaUrl": null,
+  "credentialsFile": null,
+  "authorizationRecordFile": null,
+  "ownedRuntime": {"database": null, "aiDatabase": null, "bucket": null, "vhost": null, "redisNamespace": null},
+  "provider": {"name": null, "baseUrl": null, "keyFile": null},
+  "models": {
+    "EMBEDDING": {"model": null, "responseModels": [], "encoding": null, "maxInputTokens": null, "maxCalls": null, "inputMicrosPerMillion": null, "messageOverheadTokens": 0},
+    "LLM": {"model": null, "responseModels": [], "encoding": null, "maxInputTokens": null, "maxOutputTokens": 1800, "maxCalls": null, "inputMicrosPerMillion": null, "outputMicrosPerMillion": null, "messageOverheadTokens": null}
+  },
+  "limits": {"maxCalls": null, "budgetMicrosUSD": null, "maxRequestBytes": 65536, "requestTimeoutMs": 60000},
+  "gateway": {"url": null, "tlsKeyFile": null, "tlsCertFile": null, "tokenFile": null, "ledgerDirectory": null},
+  "pricing": {"sourceUrl": null, "reviewedAt": null}
+}

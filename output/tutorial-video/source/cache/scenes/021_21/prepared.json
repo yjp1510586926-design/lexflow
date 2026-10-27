@@ -1,0 +1,75 @@
+{
+  "id": "21",
+  "chapter": "文书与版本",
+  "title": "处理并发编辑冲突",
+  "subtitle": "保留自己的内容，对照服务器最新正文",
+  "bullets": [
+    "看到冲突先停止提交",
+    "对照最新内容合并",
+    "继续编辑后单独保存"
+  ],
+  "narration": "如果同事先保存了新版本，系统可能提示并发冲突。此时本地未保存正文会保留，页面展示服务器最新内容。先对照并手动合并，再明确选择我已对照合并，继续编辑。这个选择只是允许继续，合并后的正文仍然需要单独点击保存。",
+  "visual": "document-conflict",
+  "crop": [
+    275,
+    385,
+    1130,
+    495
+  ],
+  "focus": [
+    295,
+    495,
+    800,
+    190
+  ],
+  "index": 20,
+  "segments": [
+    {
+      "text": "如果同事先保存了新版本，系统可能提示并发冲突。",
+      "spoken_text": "如果同事先保存了新版本，系统可能提示并发冲突。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c5258845025f825b573daed3.aiff",
+      "voice_duration": 5.8322,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 6.0322000000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/frame_01.png"
+    },
+    {
+      "text": "此时本地未保存正文会保留，页面展示服务器最新内容。",
+      "spoken_text": "此时本地未保存正文会保留，页面展示服务器最新内容。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2a22e093b5f87082ce09d267.aiff",
+      "voice_duration": 6.147029,
+      "pause": 0.2,
+      "start": 6.0322000000000005,
+      "duration": 6.347029,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/frame_02.png"
+    },
+    {
+      "text": "先对照并手动合并，再明确选择我已对照合并，继续编辑。",
+      "spoken_text": "先对照并手动合并，再明确选择我已对照合并，继续编辑。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/1c7b60c72a82aaac13081a58.aiff",
+      "voice_duration": 6.72263,
+      "pause": 0.2,
+      "start": 12.379229,
+      "duration": 6.92263,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/frame_03.png"
+    },
+    {
+      "text": "这个选择只是允许继续，合并后的正文仍然需要单独点击保存。",
+      "spoken_text": "这个选择只是允许继续，合并后的正文仍然需要单独点击保存。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/a7784a0729d8e9711da3be34.aiff",
+      "voice_duration": 6.683039,
+      "pause": 0.34,
+      "start": 19.301859,
+      "duration": 7.0230989999999975,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/frame_04.png"
+    }
+  ],
+  "duration": 26.324958,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/021_21/scene.mp4",
+  "fingerprint": "b8481fc97b716c5e328d2bf49d80c069749bad36032dd75f708b08ac8022853b",
+  "visual_type": "真实前端截图"
+}

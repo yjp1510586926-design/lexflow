@@ -1,0 +1,75 @@
+{
+  "id": "35",
+  "chapter": "知识库与问答",
+  "title": "沿引用回到真实来源",
+  "subtitle": "答案必须能够对应当前授权原文",
+  "bullets": [
+    "查看引用清单",
+    "打开原文或下载引用文件",
+    "复核片段与答案的关系"
+  ],
+  "narration": "读答案时同时检查引用，打开原文或者下载引用文件，对照文字和上下文。引用位置由服务端依据真实来源核对，不能只信模型写出的页码。资料删除、索引失效或者权限撤销后，相关答案与引用可能隐藏，这是来源授权重新检查的结果。",
+  "visual": "case-citation",
+  "crop": [
+    280,
+    510,
+    1120,
+    380
+  ],
+  "focus": [
+    295,
+    715,
+    1095,
+    155
+  ],
+  "index": 34,
+  "segments": [
+    {
+      "text": "读答案时同时检查引用，打开原文或者下载引用文件，对照文字和上下文。",
+      "spoken_text": "读答案时同时检查引用，打开原文或者下载引用文件，对照文字和上下文。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5bef9dfe83a5b96f27a58d12.aiff",
+      "voice_duration": 8.406395,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.606395,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/frame_01.png"
+    },
+    {
+      "text": "引用位置由服务端依据真实来源核对，不能只信模型写出的页码。",
+      "spoken_text": "引用位置由服务端依据真实来源核对，不能只信模型写出的页码。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/ef5321b52901c66a14daa823.aiff",
+      "voice_duration": 6.538141,
+      "pause": 0.2,
+      "start": 8.606395,
+      "duration": 6.738141000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/frame_02.png"
+    },
+    {
+      "text": "资料删除、索引失效或者权限撤销后，相关答案与引用可能隐藏，",
+      "spoken_text": "资料删除、索引失效或者权限撤销后，相关答案与引用可能隐藏，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b9a962261b6e8ed9871d9ffb.aiff",
+      "voice_duration": 7.815918,
+      "pause": 0.2,
+      "start": 15.344536,
+      "duration": 8.015918,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/frame_03.png"
+    },
+    {
+      "text": "这是来源授权重新检查的结果。",
+      "spoken_text": "这是来源授权重新检查的结果。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/0e9f4574e77c4991e53b7d1a.aiff",
+      "voice_duration": 3.385805,
+      "pause": 0.34,
+      "start": 23.360453999999997,
+      "duration": 3.725921000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/frame_04.png"
+    }
+  ],
+  "duration": 27.086375,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/035_35/scene.mp4",
+  "fingerprint": "dbce7323782297bacf9fcd7b99e4b8c3583ffbf715b4198ac946d5245ccea260",
+  "visual_type": "真实前端截图"
+}

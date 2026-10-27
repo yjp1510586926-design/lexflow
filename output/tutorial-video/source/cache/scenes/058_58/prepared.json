@@ -1,0 +1,67 @@
+{
+  "id": "58",
+  "chapter": "部署与排错附录",
+  "title": "按症状定位常见问题",
+  "subtitle": "先检查权限、来源、配置和任务提示",
+  "bullets": [
+    "登录失败核对律所编号",
+    "AI 失败检查配置与白名单",
+    "任务异常查看服务状态和日志"
+  ],
+  "narration": "登录失败先核对律所编号与账号；无权操作核对机构角色、案件成员和归档状态；AI 失败检查用途配置、主密钥、域名白名单和工作流建表；解析失败检查文件类型与文字层。查看状态和近期日志时保护凭据，优先记录固定错误提示与追踪编号。",
+  "visual": "slide",
+  "code": [
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml ps",
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml logs --tail 100 api ai-service web"
+  ],
+  "index": 57,
+  "segments": [
+    {
+      "text": "登录失败先核对律所编号与账号；无权操作核对机构角色、案件成员和归档状态；",
+      "spoken_text": "登录失败先核对律所编号与账号；无权操作核对机构角色、案件成员和归档状态；",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5acac9b466eba6470a393a39.aiff",
+      "voice_duration": 9.231655,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.431655,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/frame_01.png"
+    },
+    {
+      "text": "AI 失败检查用途配置、主密钥、域名白名单和工作流建表；",
+      "spoken_text": "人工智能 失败检查用途配置、主密钥、域名白名单和工作流建表；",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/683850b1b027205356cb3b28.aiff",
+      "voice_duration": 7.258322,
+      "pause": 0.2,
+      "start": 9.431655,
+      "duration": 7.458322,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/frame_02.png"
+    },
+    {
+      "text": "解析失败检查文件类型与文字层。查看状态和近期日志时保护凭据，",
+      "spoken_text": "解析失败检查文件类型与文字层。查看状态和近期日志时保护凭据，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b5799990d1a5b3edba2164fa.aiff",
+      "voice_duration": 7.57288,
+      "pause": 0.2,
+      "start": 16.889977,
+      "duration": 7.77288,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/frame_03.png"
+    },
+    {
+      "text": "优先记录固定错误提示与追踪编号。",
+      "spoken_text": "优先记录固定错误提示与追踪编号。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e2fa46ce79a8fc0212a4d66f.aiff",
+      "voice_duration": 3.739909,
+      "pause": 0.34,
+      "start": 24.662857,
+      "duration": 4.079976000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/frame_04.png"
+    }
+  ],
+  "duration": 28.742833,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/058_58/scene.mp4",
+  "fingerprint": "a77fbfb58963d7c729c7466a3e41312ce0f78ffddf2dabae7894e8f91f04c37f",
+  "visual_type": "讲解卡片"
+}

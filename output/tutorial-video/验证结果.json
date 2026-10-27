@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "video": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/LexFlow-详细使用教程.mp4",
+  "duration_seconds": 1669.536,
+  "size_bytes": 39256396,
+  "sha256": "3f51b3dec3ce3fec73d2f40f9c58041f599ffe7bf20552b868577395d856a0de",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "video_codec": "H.264 / yuv420p",
+  "audio_codec": "AAC / mono / 24000 Hz",
+  "fps": "12518000/834747",
+  "scenes": 60,
+  "chapters": 13,
+  "subtitle_cues": 209,
+  "subtitle_track": "mov_text / zho",
+  "full_audio_video_decode": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "subtitle_last_end_seconds": 1669.494,
+  "video_audio_duration_difference_seconds": 0.02458300000012059,
+  "visual_qa": "60镜头排版生成通过；独立目视复核24个关键镜头；已修复14、20、32、39、51的裁切或标记，并查看最终MP4抽取的11个片段画面。",
+  "scope": "本片为真实前端截图+讲解卡片；虚构业务与AI模拟结果，非真实后端业务或模型验收。"
+}

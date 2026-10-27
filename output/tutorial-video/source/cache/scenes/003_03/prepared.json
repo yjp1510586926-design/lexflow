@@ -1,0 +1,53 @@
+{
+  "id": "03",
+  "chapter": "开始之前",
+  "title": "理解项目的工作方式",
+  "subtitle": "页面、业务服务与后台任务配合完成操作",
+  "bullets": [
+    "React 提供操作页面",
+    "Java 管理业务与权限",
+    "任务经队列异步执行"
+  ],
+  "narration": "页面负责收集输入和显示结果，Java 服务负责账号、案件、权限与业务记录。文件解析和部分 AI 工作交给后台消费者处理，任务通过消息队列传递。因此提交成功通常表示任务已受理，仍需等待后台完成后再查看实际结果。",
+  "visual": "slide",
+  "index": 2,
+  "segments": [
+    {
+      "text": "页面负责收集输入和显示结果，Java 服务负责账号、案件、权限与业务记录。",
+      "spoken_text": "页面负责收集输入和显示结果，Java 服务负责账号、案件、权限与业务记录。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2bb7069dd208c72e53813077.aiff",
+      "voice_duration": 8.441769,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.641769,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/frame_01.png"
+    },
+    {
+      "text": "文件解析和部分 AI 工作交给后台消费者处理，任务通过消息队列传递。",
+      "spoken_text": "文件解析和部分 人工智能 工作交给后台消费者处理，任务通过消息队列传递。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/f8129f597618b4191b233a3f.aiff",
+      "voice_duration": 8.244762,
+      "pause": 0.2,
+      "start": 8.641769,
+      "duration": 8.444761999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/frame_02.png"
+    },
+    {
+      "text": "因此提交成功通常表示任务已受理，仍需等待后台完成后再查看实际结果。",
+      "spoken_text": "因此提交成功通常表示任务已受理，仍需等待后台完成后再查看实际结果。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/598245cc5bdcf5f5aa5d68a2.aiff",
+      "voice_duration": 8.371066,
+      "pause": 0.34,
+      "start": 17.086531,
+      "duration": 8.711135999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/frame_03.png"
+    }
+  ],
+  "duration": 25.797667,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/003_03/scene.mp4",
+  "fingerprint": "3ae66fd0e5582f3ff588686ef9d47021f165493e99d08cd81a408f2746fe9c58",
+  "visual_type": "讲解卡片"
+}

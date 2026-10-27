@@ -1,0 +1,64 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "AI 助手" [ref=e78] [cursor=pointer]
+      - button "AI 配置" [ref=e83] [cursor=pointer]
+    - generic [ref=e89]:
+      - generic [ref=e93]:
+        - generic "导出验收" [ref=e94]
+        - generic [ref=e95]: "机构 #900000116 · 工号 #900000116"
+      - button "退出登录" [ref=e96] [cursor=pointer]
+  - generic [ref=e100]:
+    - banner [ref=e101]:
+      - generic [ref=e102]:
+        - heading "案件详情" [level=1] [ref=e373]
+        - paragraph [ref=e104]: 创建案件、添加成员、整理材料
+      - generic [ref=e105]:
+        - button "刷新当前数据" [ref=e106] [cursor=pointer]:
+          - generic [ref=e112]: 刷新
+        - button "服务在线" [ref=e113] [cursor=pointer]
+        - generic [ref=e118]:
+          - generic [ref=e119]: 机构
+          - generic [ref=e120]: "#900000116"
+    - main [ref=e121]:
+      - generic [ref=e374]:
+        - button "返回案件列表" [ref=e376] [cursor=pointer]
+        - generic [ref=e383]:
+          - generic [ref=e384]:
+            - generic [ref=e385]: EXPORT-TASK-20261001
+            - heading "文书导出验收案件" [level=2] [ref=e386]
+            - generic [ref=e387]: 草稿
+            - generic [ref=e388]: "类型: 民事诉讼"
+            - generic [ref=e389]: "锁版本: v0"
+          - button "转为进行中" [ref=e391] [cursor=pointer]
+        - generic [ref=e396]:
+          - button "基本信息与状态" [ref=e397] [cursor=pointer]
+          - button "办案人员分配" [ref=e402] [cursor=pointer]
+          - button "文件与证据管理" [ref=e409] [cursor=pointer]
+          - button "案件文书" [active] [ref=e414] [cursor=pointer]
+          - button "案件知识库" [ref=e418] [cursor=pointer]
+        - generic [ref=e451]:
+          - generic [ref=e453]:
+            - heading "案件文书" [level=3] [ref=e454]
+            - paragraph [ref=e455]: 起草文书、保存与恢复历史版本、导出已保存内容
+          - generic [ref=e457]:
+            - generic [ref=e458]:
+              - generic [ref=e459]:
+                - heading "案件文书" [level=3] [ref=e460]
+                - paragraph [ref=e461]: 管理案件相关的法律文书草稿、历史版本与发布状态
+              - generic [ref=e462]:
+                - button "刷新" [ref=e463] [cursor=pointer]
+                - button "新建文书" [ref=e471] [cursor=pointer]
+            - generic [ref=e475]:
+              - paragraph [ref=e479]: 尚无文书
+              - paragraph [ref=e480]: 点击「新建文书」开始起草合同、诉状或答辩状

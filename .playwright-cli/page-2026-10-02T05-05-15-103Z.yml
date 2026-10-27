@@ -1,0 +1,44 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [active] [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "公共知识验收管理员" [ref=e100]
+        - generic [ref=e101]: "机构 #900000200 · 工号 #900000200"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "AI 助手" [level=1] [ref=e315]
+        - paragraph [ref=e110]: 合同审查与资料问答
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#900000200"
+    - main [ref=e127]:
+      - generic [ref=e317]:
+        - generic [ref=e319]:
+          - heading "AI 助手" [level=3] [ref=e320]
+          - paragraph [ref=e321]: 根据有权访问的案件或律所资料提问
+        - generic [ref=e322]:
+          - paragraph [ref=e323]: 在案件详情的“案件知识库”中整理资料、完成索引后，即可根据原文提问并查看出处。 也可在“律所知识库”中根据公共法律资料提问，会话仅你本人可见。 在案件文件中点击“审查合同”，选择审查立场与关注点；需要人工复核时，可在任务记录中核对原文、填写意见并确认。 管理员需要先在 AI 配置中填写模型 Key。
+          - generic [ref=e324]:
+            - button "查看案件" [ref=e325] [cursor=pointer]
+            - button "问律所资料" [ref=e327] [cursor=pointer]
+            - button "查看任务记录" [ref=e329] [cursor=pointer]

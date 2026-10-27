@@ -1,0 +1,63 @@
+{
+  "id": "15",
+  "chapter": "文件与证据",
+  "title": "了解解析限制",
+  "subtitle": "支持文字材料，当前不提供 OCR",
+  "bullets": [
+    "支持 TXT、DOCX 和文字层 PDF",
+    "单文件最多 50 MB",
+    "扫描 PDF 需先另行文字化"
+  ],
+  "narration": "当前解析支持 TXT、DOCX，以及带有文字层的 PDF。单文件上限为五十兆字节，PDF 最多五百页，提取正文最多一百万字符。系统当前不执行 OCR，纯扫描图片可能无法得到可用文字。后续 AI 功能还有更小的输入上限，不能直接照搬上传上限。",
+  "visual": "slide",
+  "index": 14,
+  "segments": [
+    {
+      "text": "当前解析支持 TXT、DOCX，以及带有文字层的 PDF。",
+      "spoken_text": "当前解析支持 TXT、DOCX，以及带有文字层的 PDF。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/22a508af9defcd7217d3bc02.aiff",
+      "voice_duration": 8.162585,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.362585,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/frame_01.png"
+    },
+    {
+      "text": "单文件上限为五十兆字节，PDF 最多五百页，提取正文最多一百万字符。",
+      "spoken_text": "单文件上限为五十兆字节，PDF 最多五百页，提取正文最多一百万字符。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/e8e97984c8d6df0174c5f793.aiff",
+      "voice_duration": 8.870794,
+      "pause": 0.2,
+      "start": 8.362585,
+      "duration": 9.070794,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/frame_02.png"
+    },
+    {
+      "text": "系统当前不执行 OCR，纯扫描图片可能无法得到可用文字。",
+      "spoken_text": "系统当前不执行 OCR，纯扫描图片可能无法得到可用文字。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9d39513da70c5580d614c852.aiff",
+      "voice_duration": 7.686259,
+      "pause": 0.2,
+      "start": 17.433379,
+      "duration": 7.886259,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/frame_03.png"
+    },
+    {
+      "text": "后续 AI 功能还有更小的输入上限，不能直接照搬上传上限。",
+      "spoken_text": "后续 人工智能 功能还有更小的输入上限，不能直接照搬上传上限。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6a87cb3bd6258232a018611a.aiff",
+      "voice_duration": 7.07034,
+      "pause": 0.34,
+      "start": 25.319637999999998,
+      "duration": 7.410487000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/frame_04.png"
+    }
+  ],
+  "duration": 32.730125,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/015_15/scene.mp4",
+  "fingerprint": "9687b6fa64eb1647af857854fa7f75b6ae116a5a01dba3afe73b06138e541fcc",
+  "visual_type": "讲解卡片"
+}

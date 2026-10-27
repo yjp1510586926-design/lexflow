@@ -1,0 +1,90 @@
+- generic [ref=e2]:
+  - generic [ref=e31]:
+    - complementary [ref=e32]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: LexFlow
+        - generic [ref=e41]: 法律业务与 AI 协作平台
+      - navigation [ref=e42]:
+        - generic [ref=e43]: 核心业务
+        - button "工作台" [ref=e44] [cursor=pointer]
+        - button "案件" [ref=e52] [cursor=pointer]
+        - button "成员与权限" [ref=e58] [cursor=pointer]
+        - generic [ref=e66]: 协作与智能扩展
+        - button "文书" [ref=e67] [cursor=pointer]
+        - button "任务记录" [ref=e73] [cursor=pointer]
+        - button "律所知识库" [ref=e78] [cursor=pointer]
+        - button "AI 助手" [ref=e84] [cursor=pointer]
+        - button "AI 配置" [ref=e89] [cursor=pointer]
+      - generic [ref=e95]:
+        - generic [ref=e99]:
+          - generic "案件分析验收账号" [ref=e100]
+          - generic [ref=e101]: "机构 #910000280 · 工号 #910000280"
+        - button "退出登录" [ref=e102] [cursor=pointer]
+    - generic [ref=e106]:
+      - banner [ref=e107]:
+        - generic [ref=e108]:
+          - heading "案件详情" [level=1] [ref=e315]
+          - paragraph [ref=e110]: 创建案件、添加成员、整理材料
+        - generic [ref=e111]:
+          - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+            - generic [ref=e118]: 刷新
+          - button "服务在线" [ref=e119] [cursor=pointer]
+          - generic [ref=e124]:
+            - generic [ref=e125]: 机构
+            - generic [ref=e126]: "#910000280"
+      - main [ref=e127]:
+        - generic [ref=e316]:
+          - button "返回案件列表" [ref=e318] [cursor=pointer]
+          - generic [ref=e325]:
+            - generic [ref=e326]:
+              - generic [ref=e327]: ANALYSIS-UI-1791483169517
+              - heading "案件分析闭环验收（合成材料）" [level=2] [ref=e328]
+              - generic [ref=e329]: 草稿
+              - generic [ref=e330]: "类型: CIVIL"
+              - generic [ref=e331]: "锁版本: v0"
+            - button "转为进行中" [ref=e333] [cursor=pointer]
+          - generic [ref=e338]:
+            - button "案件分析" [ref=e339] [cursor=pointer]
+            - button "基本信息与状态" [ref=e343] [cursor=pointer]
+            - button "办案人员分配" [ref=e348] [cursor=pointer]
+            - button "文件与证据管理" [ref=e355] [cursor=pointer]
+            - button "证据目录" [ref=e360] [cursor=pointer]
+            - button "案件文书" [ref=e365] [cursor=pointer]
+            - button "案件知识库" [ref=e369] [cursor=pointer]
+          - generic [ref=e409]:
+            - generic [ref=e411]:
+              - heading "案件材料分析" [level=3] [ref=e412]
+              - paragraph [ref=e413]: 事实、待核实事项、争议、证据引用及办案建议边界
+            - region "案件分析" [ref=e415]:
+              - paragraph [ref=e416]: 选定本案件的已解析原件，分析材料事实、争议和证据缺口。结果按页或段引用固定版本。高风险、资料不足或待核实事项需人工复核。模型调用可能产生费用。
+              - button "刷新分析材料与任务" [ref=e417] [cursor=pointer]
+              - heading "选择分析材料（1–10份，总文字最多4万字）" [level=4] [ref=e419]
+              - generic [ref=e420]:
+                - checkbox "合成验收说明.txt · v1 · 解析任务 2486 · 41字" [checked] [ref=e421]
+                - text: 合成验收说明.txt · v1 · 解析任务 2486 · 41字
+              - generic [ref=e422]:
+                - checkbox "合成交付记录.txt · v1 · 解析任务 2475 · 47字" [checked] [ref=e423]
+                - text: 合成交付记录.txt · v1 · 解析任务 2475 · 47字
+              - generic [ref=e424]: 本次固定案件背景
+              - textbox "本次固定案件背景" [ref=e425]: 合成买卖争议，核对交付、验收和收货证据。
+              - generic [ref=e426]: 分析要求
+              - textbox "分析要求" [ref=e427]: 梳理材料支持的事实、待核实事项、主要争议、证据缺口和办案建议。
+              - generic [ref=e428]:
+                - checkbox "我确认本次案件分析可能产生模型费用" [ref=e429]
+                - text: 我确认本次案件分析可能产生模型费用
+              - button "提交案件分析" [disabled] [ref=e430]
+              - heading "分析记录" [level=4] [ref=e432]
+              - generic [ref=e433]:
+                - generic [ref=e434]: 任务 2541 · QUEUED
+                - button "查看分析结果" [ref=e435] [cursor=pointer]
+              - region "案件分析结果" [ref=e437]:
+                - generic [ref=e438]:
+                  - heading "案件分析结果" [level=3] [ref=e439]
+                  - button "刷新分析结果" [ref=e440] [cursor=pointer]
+                - paragraph [ref=e442]: 状态：QUEUED · 状态版本 1
+                - group [ref=e443]:
+                  - generic "本次固定背景、分析要求及材料" [ref=e444]
+                - button "恢复同一执行" [ref=e445] [cursor=pointer]
+  - alert [ref=e447]:
+    - generic [ref=e451]: 案件分析已提交，请稍后刷新结果
+    - button "关闭通知" [ref=e452] [cursor=pointer]

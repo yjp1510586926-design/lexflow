@@ -1,0 +1,222 @@
+name: lexflow-mvp
+
+x-api-environment: &api-environment
+  SERVER_ADDRESS: 0.0.0.0
+  SERVER_PORT: "8080"
+  DATABASE_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-lexflow}?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true
+  MYSQL_USER: ${MYSQL_USER:-lexflow}
+  MYSQL_PASSWORD: ${MYSQL_PASSWORD:?生成部署配置后再启动}
+  REDIS_HOST: redis
+  REDIS_PORT: "6379"
+  RABBITMQ_HOST: rabbitmq
+  RABBITMQ_PORT: "5672"
+  RABBITMQ_USER: ${RABBITMQ_DEFAULT_USER:-lexflow}
+  RABBITMQ_PASSWORD: ${RABBITMQ_DEFAULT_PASS:?缺少 RabbitMQ 密码}
+  LEXFLOW_STORAGE_ENDPOINT: http://minio:9000
+  LEXFLOW_STORAGE_ACCESS_KEY: ${MINIO_ROOT_USER:-lexflow}
+  LEXFLOW_STORAGE_SECRET_KEY: ${MINIO_ROOT_PASSWORD:?缺少 MinIO 密码}
+  LEXFLOW_STORAGE_BUCKET: ${LEXFLOW_STORAGE_BUCKET:-lexflow-files}
+  LEXFLOW_INTERNAL_SECRET: ${LEXFLOW_INTERNAL_SECRET:?缺少内部服务凭据}
+  LEXFLOW_AI_MASTER_KEY: ${LEXFLOW_AI_MASTER_KEY:?缺少 AI 配置加密主密钥}
+  AI_SERVICE_URL: http://ai-service:3001
+  COOKIE_SECURE: ${COOKIE_SECURE:-false}
+  AUDIT_BUFFER_DIRECTORY: /app/audit/buffer
+  EXPORT_RETENTION_DAYS: ${EXPORT_RETENTION_DAYS:-0}
+  CLEANUP_COMPACT_AFTER_DAYS: ${CLEANUP_COMPACT_AFTER_DAYS:-0}
+  JAVA_TOOL_OPTIONS: -XX:MaxRAMPercentage=70
+
+x-ai-environment: &ai-environment
+  AI_HOST: 0.0.0.0
+  AI_PORT: "3001"
+  JAVA_CORE_URL: http://api:8080
+  INTERNAL_SECRET: ${LEXFLOW_INTERNAL_SECRET:?缺少内部服务凭据}
+  RABBITMQ_URL: amqp://${RABBITMQ_DEFAULT_USER:-lexflow}:${RABBITMQ_DEFAULT_PASS:?缺少 RabbitMQ 密码}@rabbitmq:5672
+  AI_WORKFLOW_DATABASE_URL: mysql://lexflow_ai:${AI_WORKFLOW_MYSQL_PASSWORD:?缺少独立 AI 工作流密码}@mysql:3306/lexflow_ai
+  LEXFLOW_AI_ALLOWED_HOSTS: ${LEXFLOW_AI_ALLOWED_HOSTS:-}
+  MILVUS_ADDRESS: milvus:19530
+  AI_TASK_QUEUES: document.parse,contract.review,knowledge.ingest,document.generate,case.analysis
+
+services:
+  mysql:
+    image: mysql:8.4.6
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-lexflow}
+      MYSQL_USER: ${MYSQL_USER:-lexflow}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?缺少数据库密码}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?缺少数据库 root 密码}
+      AI_WORKFLOW_MYSQL_PASSWORD: ${AI_WORKFLOW_MYSQL_PASSWORD:?缺少独立 AI 工作流密码}
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./deploy/init-workflow-database.sh:/docker-entrypoint-initdb.d/20-lexflow-ai.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysql --protocol=TCP --host=127.0.0.1 -uroot -e 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+    mem_limit: 1g
+
+  redis:
+    image: redis:7.4.5-alpine
+    restart: unless-stopped
+    command: [redis-server, --appendonly, "yes"]
+    volumes: [redis-data:/data]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 256m
+
+  rabbitmq:
+    image: rabbitmq:4.1.4-management-alpine
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER:-lexflow}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS:?缺少 RabbitMQ 密码}
+    volumes: [rabbitmq-data:/var/lib/rabbitmq]
+    healthcheck:
+      test: [CMD, rabbitmq-diagnostics, -q, ping]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+    mem_limit: 512m
+
+  minio:
+    image: milvusdb/minio:RELEASE.2024-12-18T13-15-44Z
+    restart: unless-stopped
+    command: [minio, server, /data, --console-address, ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-lexflow}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?缺少 MinIO 密码}
+    volumes: [minio-data:/data]
+    healthcheck:
+      test: [CMD, mc, ready, local]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+
+  workflow-setup:
+    image: lexflow-ai:${LEXFLOW_IMAGE_TAG:-mvp}
+    build: {context: ., dockerfile: deploy/ai.Dockerfile}
+    restart: "no"
+    environment: *ai-environment
+    command: [node, dist/graphs/persistence/setup-workflow-store.js]
+    depends_on:
+      mysql: {condition: service_healthy}
+    mem_limit: 256m
+
+  api:
+    image: lexflow-api:${LEXFLOW_IMAGE_TAG:-mvp}
+    build: {context: ., dockerfile: deploy/api.Dockerfile}
+    restart: unless-stopped
+    environment: *api-environment
+    volumes: [audit-data:/app/audit]
+    depends_on:
+      mysql: {condition: service_healthy}
+      redis: {condition: service_healthy}
+      rabbitmq: {condition: service_healthy}
+      minio: {condition: service_healthy}
+      workflow-setup: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, curl, --fail, --silent, --max-time, "4", "http://127.0.0.1:8080/api/health"]
+      interval: 10s
+      start_period: 45s
+      timeout: 5s
+      retries: 12
+    mem_limit: 768m
+
+  ai-service:
+    image: lexflow-ai:${LEXFLOW_IMAGE_TAG:-mvp}
+    build: {context: ., dockerfile: deploy/ai.Dockerfile}
+    restart: unless-stopped
+    environment: *ai-environment
+    depends_on:
+      api: {condition: service_healthy}
+      rabbitmq: {condition: service_healthy}
+      workflow-setup: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3001/internal/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 10s
+      start_period: 20s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+
+  web:
+    image: lexflow-web:${LEXFLOW_IMAGE_TAG:-mvp}
+    build: {context: ., dockerfile: deploy/web.Dockerfile}
+    restart: unless-stopped
+    ports: ["${WEB_BIND_ADDRESS:-127.0.0.1}:${WEB_PORT:-8088}:80"]
+    depends_on:
+      api: {condition: service_healthy}
+      ai-service: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 128m
+
+  etcd:
+    profiles: [vector]
+    image: quay.io/coreos/etcd:v3.5.25
+    restart: unless-stopped
+    environment:
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      ETCD_SNAPSHOT_COUNT: "50000"
+    command: [etcd, --advertise-client-urls=http://etcd:2379, --listen-client-urls=http://0.0.0.0:2379, --data-dir=/etcd]
+    volumes: [etcd-data:/etcd]
+    healthcheck:
+      test: [CMD, etcdctl, endpoint, health]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 256m
+
+  milvus-volume-init:
+    profiles: [vector]
+    image: milvusdb/milvus:v3.0.2
+    user: "0:0"
+    network_mode: none
+    read_only: true
+    restart: "no"
+    entrypoint: [/bin/sh, -c]
+    command: ['chown -R "$$(id -u milvus):$$(id -g milvus)" /var/lib/milvus']
+    volumes: [milvus-data:/var/lib/milvus]
+
+  milvus:
+    profiles: [vector]
+    image: milvusdb/milvus:v3.0.2
+    restart: unless-stopped
+    command: [milvus, run, standalone]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+      MINIO_REGION: us-east-1
+      MINIO_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-lexflow}
+      MINIO_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:?缺少 MinIO 密码}
+    volumes: [milvus-data:/var/lib/milvus]
+    depends_on:
+      milvus-volume-init: {condition: service_completed_successfully}
+      etcd: {condition: service_healthy}
+      minio: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, curl, -f, "http://localhost:9091/healthz"]
+      interval: 30s
+      start_period: 90s
+      timeout: 20s
+      retries: 5
+    mem_limit: 2g
+
+volumes:
+  mysql-data:
+  redis-data:
+  rabbitmq-data:
+  minio-data:
+  audit-data:
+  etcd-data:
+  milvus-data:

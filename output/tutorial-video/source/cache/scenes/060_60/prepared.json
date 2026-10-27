@@ -1,0 +1,53 @@
+{
+  "id": "60",
+  "chapter": "完整练习与边界",
+  "title": "形成可靠的日常使用习惯",
+  "subtitle": "核对原文、保存版本、复核结果、保护配置",
+  "bullets": [
+    "重要操作前核对案件与版本",
+    "AI 结果沿引用人工复核",
+    "保留数据卷与私密配置备份"
+  ],
+  "narration": "日常先核对案件和来源版本，及时保存正文，沿引用检查 AI 结果，再按权限发布或导出。普通停止会保留具名数据卷，不要随意删除卷。本片完成的是虚构数据与本地模拟流程讲解，真实模型质量、向量供应商、公网 HTTPS 与生产恢复需另外验证。",
+  "visual": "slide",
+  "index": 59,
+  "segments": [
+    {
+      "text": "日常先核对案件和来源版本，及时保存正文，沿引用检查 AI 结果，再按权限发布或导出。",
+      "spoken_text": "日常先核对案件和来源版本，及时保存正文，沿引用检查 人工智能 结果，再按权限发布或导出。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/1755558c58f6940d92802baf.aiff",
+      "voice_duration": 10.743311,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.943311,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/frame_01.png"
+    },
+    {
+      "text": "普通停止会保留具名数据卷，不要随意删除卷。本片完成的是虚构数据与本地模拟流程讲解，",
+      "spoken_text": "普通停止会保留具名数据卷，不要随意删除卷。本片完成的是虚构数据与本地模拟流程讲解，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/336bd5b75797087fd6de0a25.aiff",
+      "voice_duration": 10.019773,
+      "pause": 0.2,
+      "start": 10.943311,
+      "duration": 10.219773,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/frame_02.png"
+    },
+    {
+      "text": "真实模型质量、向量供应商、公网 HTTPS 与生产恢复需另外验证。",
+      "spoken_text": "真实模型质量、向量供应商、公网 HTTPS 与生产恢复需另外验证。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/175d5128c2642c7198f46f73.aiff",
+      "voice_duration": 9.945442,
+      "pause": 0.34,
+      "start": 21.163083999999998,
+      "duration": 10.285499000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/frame_03.png"
+    }
+  ],
+  "duration": 31.448583,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/060_60/scene.mp4",
+  "fingerprint": "d3b16b729f572e0cf3403c550036aa48a0f305ccac79f63ac4af7bad4b7adb22",
+  "visual_type": "讲解卡片"
+}

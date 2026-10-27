@@ -1,0 +1,65 @@
+{
+  "id": "10",
+  "chapter": "案件与团队",
+  "title": "维护案件基础信息",
+  "subtitle": "把案件背景写成可核对的事实",
+  "bullets": [
+    "打开基本信息与状态",
+    "修改立案日期、标题和案情",
+    "核对流转状态后保存变更"
+  ],
+  "narration": "打开基本信息与状态，可以维护立案日期、案件标题、案情简介及诉求和案卷流转状态。案件编号与业务类别只读，归档后内容也只读。后续 AI 可能使用案件背景，不要把尚未核实的判断写成事实。修改后点击保存变更，再核对最新记录。",
+  "visual": "case-detail",
+  "crop": [
+    270,
+    290,
+    1140,
+    600
+  ],
+  "focus": [
+    295,
+    430,
+    1090,
+    265
+  ],
+  "index": 9,
+  "segments": [
+    {
+      "text": "打开基本信息与状态，可以维护立案日期、案件标题、案情简介及诉求和案卷流转状态。",
+      "spoken_text": "打开基本信息与状态，可以维护立案日期、案件标题、案情简介及诉求和案卷流转状态。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/eae42375a5e68e5cccee2ee6.aiff",
+      "voice_duration": 10.078231,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 10.278231,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/frame_01.png"
+    },
+    {
+      "text": "案件编号与业务类别只读，归档后内容也只读。后续 AI 可能使用案件背景，",
+      "spoken_text": "案件编号与业务类别只读，归档后内容也只读。后续 人工智能 可能使用案件背景，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5b3287d6f70de727f04c6a97.aiff",
+      "voice_duration": 8.690703,
+      "pause": 0.2,
+      "start": 10.278231,
+      "duration": 8.890702999999998,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/frame_02.png"
+    },
+    {
+      "text": "不要把尚未核实的判断写成事实。修改后点击保存变更，再核对最新记录。",
+      "spoken_text": "不要把尚未核实的判断写成事实。修改后点击保存变更，再核对最新记录。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5641ec9709a34cf27cfbd81a.aiff",
+      "voice_duration": 8.34381,
+      "pause": 0.34,
+      "start": 19.168934,
+      "duration": 8.683857999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/frame_03.png"
+    }
+  ],
+  "duration": 27.852792,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/010_10/scene.mp4",
+  "fingerprint": "a9a7eb39acb05eab4d6dd2ccf24d2216e90727d78e15dbfc61c414aaff27b937",
+  "visual_type": "真实前端截图"
+}

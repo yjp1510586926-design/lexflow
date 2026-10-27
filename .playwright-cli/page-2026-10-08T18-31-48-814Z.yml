@@ -1,0 +1,69 @@
+- generic [ref=e2]:
+  - generic [ref=e31]:
+    - complementary [ref=e32]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: LexFlow
+        - generic [ref=e41]: 法律业务与 AI 协作平台
+      - navigation [ref=e42]:
+        - generic [ref=e43]: 核心业务
+        - button "工作台" [ref=e44] [cursor=pointer]
+        - button "案件" [ref=e52] [cursor=pointer]
+        - button "成员与权限" [ref=e58] [cursor=pointer]
+        - generic [ref=e66]: 协作与智能扩展
+        - button "文书" [ref=e67] [cursor=pointer]
+        - button "任务记录" [ref=e73] [cursor=pointer]
+        - button "律所知识库" [ref=e78] [cursor=pointer]
+        - button "AI 助手" [ref=e84] [cursor=pointer]
+        - button "AI 配置" [ref=e89] [cursor=pointer]
+      - generic [ref=e95]:
+        - generic [ref=e99]:
+          - generic "案件分析验收账号" [ref=e100]
+          - generic [ref=e101]: "机构 #910000280 · 工号 #910000280"
+        - button "退出登录" [ref=e102] [cursor=pointer]
+    - generic [ref=e106]:
+      - banner [ref=e107]:
+        - generic [ref=e108]:
+          - heading "任务记录" [level=1] [ref=e491]
+          - paragraph [ref=e110]: 查看后台任务进度与失败原因
+        - generic [ref=e111]:
+          - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+            - generic [ref=e118]: 刷新
+          - button "服务在线" [ref=e119] [cursor=pointer]
+          - generic [ref=e124]:
+            - generic [ref=e125]: 机构
+            - generic [ref=e126]: "#910000280"
+      - main [ref=e127]:
+        - generic [ref=e493]:
+          - generic [ref=e495]:
+            - heading "异步任务中心" [level=3] [ref=e496]
+            - paragraph [ref=e497]: 查看文字提取、知识入库、合同审查、案件分析、AI 文书生成和导出；任务可在案件中提交
+          - generic [ref=e499]:
+            - generic [ref=e500]:
+              - combobox [ref=e501]:
+                - option "全部类型" [selected]
+                - option "文书解析"
+                - option "知识入库"
+                - option "合同审查"
+                - option "案件分析"
+                - option "AI 文书生成"
+                - option "文书导出"
+              - combobox [ref=e502]:
+                - option "全部状态" [selected]
+                - option "排队中"
+                - option "执行中"
+                - option "待人工确认"
+                - option "成功"
+                - option "失败"
+                - option "取消中"
+                - option "已取消"
+              - button "查询" [ref=e503] [cursor=pointer]
+              - button "重置" [ref=e505] [cursor=pointer]
+              - generic [ref=e513]: 共 0 个任务
+            - paragraph [ref=e667]: 暂无异步任务记录
+  - generic:
+    - alert [ref=e668]:
+      - generic [ref=e672]: 登录状态或任务权限已失效，请重新登录或联系管理员。
+      - button "关闭通知" [ref=e673] [cursor=pointer]
+    - alert [ref=e677]:
+      - generic [ref=e681]: 无权限执行此操作
+      - button "关闭通知" [ref=e682] [cursor=pointer]

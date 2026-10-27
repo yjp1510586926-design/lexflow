@@ -1,0 +1,75 @@
+{
+  "id": "37",
+  "chapter": "合同审查",
+  "title": "从案件文件发起合同审查",
+  "subtitle": "先确认合同文件可用并核对原文",
+  "bullets": [
+    "选择本案件可用合同文件",
+    "核对合同原文与版本",
+    "点击文件行的审查合同"
+  ],
+  "narration": "合同审查从案件详情的文件与证据管理进入，选择可用合同后点击审查合同。建议先提取文字并核对原文，但已有解析任务不是打开审查的必要条件。本次任务固定提交时的文件版本，后续上传不会自动替换来源。操作仍需对应案件和审查权限。",
+  "visual": "files",
+  "crop": [
+    270,
+    290,
+    1140,
+    450
+  ],
+  "focus": [
+    1260,
+    495,
+    85,
+    45
+  ],
+  "index": 36,
+  "segments": [
+    {
+      "text": "合同审查从案件详情的文件与证据管理进入，选择可用合同后点击审查合同。",
+      "spoken_text": "合同审查从案件详情的文件与证据管理进入，选择可用合同后点击审查合同。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/3586a79532aa0aad3039c918.aiff",
+      "voice_duration": 8.827937,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.027937,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/frame_01.png"
+    },
+    {
+      "text": "建议先提取文字并核对原文，但已有解析任务不是打开审查的必要条件。",
+      "spoken_text": "建议先提取文字并核对原文，但已有解析任务不是打开审查的必要条件。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/5fb65f8622d946de69e3ef29.aiff",
+      "voice_duration": 7.65415,
+      "pause": 0.2,
+      "start": 9.027937,
+      "duration": 7.85415,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/frame_02.png"
+    },
+    {
+      "text": "本次任务固定提交时的文件版本，后续上传不会自动替换来源。",
+      "spoken_text": "本次任务固定提交时的文件版本，后续上传不会自动替换来源。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9c536ca4535fe77a799a546d.aiff",
+      "voice_duration": 6.858277,
+      "pause": 0.2,
+      "start": 16.882087,
+      "duration": 7.058277,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/frame_03.png"
+    },
+    {
+      "text": "操作仍需对应案件和审查权限。",
+      "spoken_text": "操作仍需对应案件和审查权限。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/bcf77e4035efa56e51ed543d.aiff",
+      "voice_duration": 3.512653,
+      "pause": 0.34,
+      "start": 23.940364,
+      "duration": 3.852719,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/frame_04.png"
+    }
+  ],
+  "duration": 27.793083,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/037_37/scene.mp4",
+  "fingerprint": "87f012108737005b941c9aafc4a9871a0e7727e77a4db87f89e2f40643043974",
+  "visual_type": "真实前端截图"
+}

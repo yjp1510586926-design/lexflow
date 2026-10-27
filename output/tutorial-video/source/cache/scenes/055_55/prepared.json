@@ -1,0 +1,67 @@
+{
+  "id": "55",
+  "chapter": "部署与排错附录",
+  "title": "先启动基础设施并初始化工作流",
+  "subtitle": "工作流数据库和业务数据库相互独立",
+  "bullets": [
+    "等待基础服务健康",
+    "执行 workflow-setup",
+    "不要跳过独立 AI 建表"
+  ],
+  "narration": "先启动 MySQL、Redis、RabbitMQ 和 MinIO，等待健康，再运行工作流建表容器。AI 工作流使用独立数据库与账号，普通服务启动不会自动建表。已有数据卷不会重跑首次数据库脚本，所以修改环境文件不能自动改变已有账号密码，遇到差异应先核对来源。",
+  "visual": "slide",
+  "code": [
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml up -d --wait mysql redis rabbitmq minio",
+    "docker compose --env-file .env.mvp.local -f docker-compose.mvp.yml run --rm workflow-setup"
+  ],
+  "index": 54,
+  "segments": [
+    {
+      "text": "先启动 MySQL、Redis、RabbitMQ 和 MinIO，等待健康，",
+      "spoken_text": "先启动 MySQL、Redis、RabbitMQ 和 MinIO，等待健康，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/4ab09bc525c5b8a08747a572.aiff",
+      "voice_duration": 7.570159,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.7701590000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/frame_01.png"
+    },
+    {
+      "text": "再运行工作流建表容器。AI 工作流使用独立数据库与账号，普通服务启动不会自动建表。",
+      "spoken_text": "再运行工作流建表容器。人工智能 工作流使用独立数据库与账号，普通服务启动不会自动建表。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/80d3cffa7355c1508ff37dee.aiff",
+      "voice_duration": 10.247392,
+      "pause": 0.2,
+      "start": 7.7701590000000005,
+      "duration": 10.447391999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/frame_02.png"
+    },
+    {
+      "text": "已有数据卷不会重跑首次数据库脚本，所以修改环境文件不能自动改变已有账号密码，",
+      "spoken_text": "已有数据卷不会重跑首次数据库脚本，所以修改环境文件不能自动改变已有账号密码，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9999a6a7336859d731fe99b8.aiff",
+      "voice_duration": 9.276553,
+      "pause": 0.2,
+      "start": 18.217551,
+      "duration": 9.476553,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/frame_03.png"
+    },
+    {
+      "text": "遇到差异应先核对来源。",
+      "spoken_text": "遇到差异应先核对来源。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/62215a94c25f22e3860a012b.aiff",
+      "voice_duration": 2.624943,
+      "pause": 0.34,
+      "start": 27.694104,
+      "duration": 2.9650209999999984,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/frame_04.png"
+    }
+  ],
+  "duration": 30.659125,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/055_55/scene.mp4",
+  "fingerprint": "30d44e1fddbc253a16d1d0ee00046600597ea7f61e231f738b438d49217f5922",
+  "visual_type": "讲解卡片"
+}

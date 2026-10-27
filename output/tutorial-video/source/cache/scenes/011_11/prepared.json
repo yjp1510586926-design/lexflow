@@ -1,0 +1,65 @@
+{
+  "id": "11",
+  "chapter": "案件与团队",
+  "title": "配置办案团队",
+  "subtitle": "成员编辑能力与案件状态共同生效",
+  "bullets": [
+    "打开办案人员分配",
+    "添加本所成员并指定角色",
+    "按需转交主办律师"
+  ],
+  "narration": "打开办案人员分配，从本律所账号中选择协作人员，并按分工配置编辑或只读资格。需要调整负责人时使用转交主办律师功能。归档案件不能添加成员或变更主办律师。团队调整会改变后续访问能力，操作前应核对目标成员与角色。",
+  "visual": "members",
+  "crop": [
+    270,
+    135,
+    1140,
+    560
+  ],
+  "focus": [
+    1035,
+    385,
+    350,
+    130
+  ],
+  "index": 10,
+  "segments": [
+    {
+      "text": "打开办案人员分配，从本律所账号中选择协作人员，并按分工配置编辑或只读资格。",
+      "spoken_text": "打开办案人员分配，从本律所账号中选择协作人员，并按分工配置编辑或只读资格。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b04ff2eb4d97186677c55f94.aiff",
+      "voice_duration": 9.544172,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 9.744171999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/frame_01.png"
+    },
+    {
+      "text": "需要调整负责人时使用转交主办律师功能。归档案件不能添加成员或变更主办律师。",
+      "spoken_text": "需要调整负责人时使用转交主办律师功能。归档案件不能添加成员或变更主办律师。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/c6d946dd24259f7bca7c68d2.aiff",
+      "voice_duration": 9.117052,
+      "pause": 0.2,
+      "start": 9.744171999999999,
+      "duration": 9.317051999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/frame_02.png"
+    },
+    {
+      "text": "团队调整会改变后续访问能力，操作前应核对目标成员与角色。",
+      "spoken_text": "团队调整会改变后续访问能力，操作前应核对目标成员与角色。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/9f96d72d0dec44582be5db41.aiff",
+      "voice_duration": 7.140862,
+      "pause": 0.34,
+      "start": 19.061223999999996,
+      "duration": 7.480943000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/frame_03.png"
+    }
+  ],
+  "duration": 26.542167,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/011_11/scene.mp4",
+  "fingerprint": "e5a3c83c3335e3bd3b8c8bb4d31a4c14c9c1b663e1451423a3e1d10f019a263c",
+  "visual_type": "真实前端截图"
+}

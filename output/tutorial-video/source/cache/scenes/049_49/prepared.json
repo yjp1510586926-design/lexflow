@@ -1,0 +1,63 @@
+{
+  "id": "49",
+  "chapter": "管理员设置",
+  "title": "分清三类模型用途与两种密钥",
+  "subtitle": "对话、向量、排序分别配置",
+  "bullets": [
+    "LLM 用于理解与生成",
+    "Embedding 用于向量检索",
+    "加密主密钥由部署者保管"
+  ],
+  "narration": "LLM 用于对话、审查和生成，Embedding 用于向量检索，Rerank 可选用于排序，三种用途分别配置。部署环境的 AI 主密钥用于加密模型 Key，二者不同。主密钥丢失或直接更换会使旧配置无法解密，应和私密部署配置一起妥善备份。",
+  "visual": "slide",
+  "index": 48,
+  "segments": [
+    {
+      "text": "LLM 用于对话、审查和生成，Embedding 用于向量检索，",
+      "spoken_text": "LLM 用于对话、审查和生成，Embedding 用于向量检索，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/85cb33e00d075f9ab1f50baf.aiff",
+      "voice_duration": 7.221587,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.421587000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/frame_01.png"
+    },
+    {
+      "text": "Rerank 可选用于排序，三种用途分别配置。",
+      "spoken_text": "Rerank 可选用于排序，三种用途分别配置。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/86ac9ccd721619563222f562.aiff",
+      "voice_duration": 4.717732,
+      "pause": 0.2,
+      "start": 7.421587000000001,
+      "duration": 4.917732,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/frame_02.png"
+    },
+    {
+      "text": "部署环境的 AI 主密钥用于加密模型 Key，二者不同。",
+      "spoken_text": "部署环境的 人工智能 主密钥用于加密模型 Key，二者不同。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/de8704da72f5159fc81515fb.aiff",
+      "voice_duration": 5.696735,
+      "pause": 0.2,
+      "start": 12.339319,
+      "duration": 5.8967350000000005,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/frame_03.png"
+    },
+    {
+      "text": "主密钥丢失或直接更换会使旧配置无法解密，应和私密部署配置一起妥善备份。",
+      "spoken_text": "主密钥丢失或直接更换会使旧配置无法解密，应和私密部署配置一起妥善备份。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/cfd0da2a96717b592bb77b92.aiff",
+      "voice_duration": 8.540181,
+      "pause": 0.34,
+      "start": 18.236054,
+      "duration": 8.880279000000002,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/frame_04.png"
+    }
+  ],
+  "duration": 27.116333,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/049_49/scene.mp4",
+  "fingerprint": "42013e4770759bb7d4382d7e08cb6e13e898cb6f31d020163aadf83c75e85199",
+  "visual_type": "讲解卡片"
+}

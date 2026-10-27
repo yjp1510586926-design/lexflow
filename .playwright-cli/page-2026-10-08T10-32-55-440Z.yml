@@ -1,0 +1,122 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e11]:
+      - generic [ref=f1e12]: LexFlow
+      - generic [ref=f1e13]: 法律业务与 AI 协作平台
+    - navigation [ref=f1e14]:
+      - generic [ref=f1e15]: 核心业务
+      - button "工作台" [ref=f1e16] [cursor=pointer]
+      - button "案件" [ref=f1e24] [cursor=pointer]
+      - button "成员与权限" [ref=f1e30] [cursor=pointer]
+      - generic [ref=f1e38]: 协作与智能扩展
+      - button "文书" [ref=f1e39] [cursor=pointer]
+      - button "任务记录" [active] [ref=f1e45] [cursor=pointer]
+      - button "律所知识库" [ref=f1e50] [cursor=pointer]
+      - button "AI 助手" [ref=f1e56] [cursor=pointer]
+      - button "AI 配置" [ref=f1e61] [cursor=pointer]
+    - generic [ref=f1e67]:
+      - generic [ref=f1e71]:
+        - generic "合成界面验收" [ref=f1e72]
+        - generic [ref=f1e73]: "机构 #999991 · 工号 #81"
+      - button "退出登录" [ref=f1e74] [cursor=pointer]
+  - generic [ref=f1e78]:
+    - banner [ref=f1e79]:
+      - generic [ref=f1e80]:
+        - heading "任务记录" [level=1] [ref=f1e388]
+        - paragraph [ref=f1e82]: 查看后台任务进度与失败原因
+      - generic [ref=f1e83]:
+        - button "刷新当前数据" [ref=f1e84] [cursor=pointer]:
+          - generic [ref=f1e90]: 刷新
+        - button "离线/异常" [ref=f1e91] [cursor=pointer]
+        - generic [ref=f1e96]:
+          - generic [ref=f1e97]: 机构
+          - generic [ref=f1e98]: "#999991"
+    - main [ref=f1e99]:
+      - generic [ref=f1e390]:
+        - generic [ref=f1e392]:
+          - heading "异步任务中心" [level=3] [ref=f1e393]
+          - paragraph [ref=f1e394]: 查看文字提取、知识入库、合同审查、AI 文书生成和导出；文书任务可在案件文书中提交
+        - generic [ref=f1e396]:
+          - generic [ref=f1e397]:
+            - combobox [ref=f1e398]:
+              - option "全部类型" [selected]
+              - option "文书解析"
+              - option "知识入库"
+              - option "合同审查"
+              - option "AI 文书生成"
+              - option "文书导出"
+            - combobox [ref=f1e399]:
+              - option "全部状态" [selected]
+              - option "排队中"
+              - option "执行中"
+              - option "待人工确认"
+              - option "成功"
+              - option "失败"
+              - option "取消中"
+              - option "已取消"
+            - button "查询" [ref=f1e400] [cursor=pointer]
+            - button "重置" [ref=f1e402] [cursor=pointer]
+            - generic [ref=f1e410]: 共 3 个任务
+          - table [ref=f1e412]:
+            - rowgroup [ref=f1e413]:
+              - row [ref=f1e414]:
+                - columnheader "任务 ID" [ref=f1e415]
+                - columnheader "类型" [ref=f1e416]
+                - columnheader "关联对象" [ref=f1e417]
+                - columnheader "提交人" [ref=f1e418]
+                - columnheader "状态" [ref=f1e419]
+                - columnheader "重试/恢复次数" [ref=f1e420]
+                - columnheader "错误信息" [ref=f1e421]
+                - columnheader "提交时间" [ref=f1e422]
+                - columnheader "开始时间" [ref=f1e423]
+                - columnheader "完成时间" [ref=f1e424]
+                - columnheader "操作" [ref=f1e425]
+            - rowgroup [ref=f1e426]:
+              - row [ref=f1e427]:
+                - cell [ref=f1e428]:
+                  - code [ref=f1e429]: "#101"
+                - cell "文书解析" [ref=f1e430]
+                - 'cell "案件 #71 源版本 #92" [ref=f1e432]':
+                  - text: "案件 #71"
+                  - generic [ref=f1e433]: "源版本 #92"
+                - 'cell "用户 #81" [ref=f1e434]'
+                - cell "成功" [ref=f1e435]
+                - cell "0 次" [ref=f1e437]
+                - cell "—" [ref=f1e438]
+                - cell "2026-10-08 01:00:00Z" [ref=f1e439]
+                - cell "2026-10-08 01:01:00Z" [ref=f1e440]
+                - cell "2026-10-08 01:02:00Z" [ref=f1e441]
+                - cell [ref=f1e442]:
+                  - generic [ref=f1e443]:
+                    - button "处理记录" [ref=f1e444] [cursor=pointer]
+                    - button "查看原文" [ref=f1e446] [cursor=pointer]
+              - row [ref=f1e448]:
+                - cell [ref=f1e449]:
+                  - code [ref=f1e450]: "#102"
+                - cell "知识入库" [ref=f1e451]
+                - 'cell "律所知识库 源版本 #93" [ref=f1e453]':
+                  - text: 律所知识库
+                  - generic [ref=f1e454]: "源版本 #93"
+                - 'cell "用户 #81" [ref=f1e455]'
+                - cell "成功" [ref=f1e456]
+                - cell "0 次" [ref=f1e458]
+                - cell "—" [ref=f1e459]
+                - cell "2026-10-08 01:00:00Z" [ref=f1e460]
+                - cell "2026-10-08 01:01:00Z" [ref=f1e461]
+                - cell "2026-10-08 01:02:00Z" [ref=f1e462]
+                - cell [ref=f1e463]:
+                  - button "处理记录" [ref=f1e465] [cursor=pointer]
+              - row [ref=f1e467]:
+                - cell [ref=f1e468]:
+                  - code [ref=f1e469]: "#103"
+                - cell "合同审查" [ref=f1e470]
+                - cell "—" [ref=f1e472]
+                - 'cell "用户 #81" [ref=f1e473]'
+                - cell "成功" [ref=f1e474]
+                - cell "0 次" [ref=f1e476]
+                - cell "—" [ref=f1e477]
+                - cell "2026-10-08 01:00:00Z" [ref=f1e478]
+                - cell "2026-10-08 01:01:00Z" [ref=f1e479]
+                - cell "2026-10-08 01:02:00Z" [ref=f1e480]
+                - cell [ref=f1e481]:
+                  - button "查看审查" [ref=f1e483] [cursor=pointer]

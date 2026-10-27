@@ -1,0 +1,111 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e11]:
+      - generic [ref=f1e12]: LexFlow
+      - generic [ref=f1e13]: 法律业务与 AI 协作平台
+    - navigation [ref=f1e14]:
+      - generic [ref=f1e15]: 核心业务
+      - button "工作台" [ref=f1e16] [cursor=pointer]
+      - button "案件" [ref=f1e24] [cursor=pointer]
+      - button "成员与权限" [ref=f1e30] [cursor=pointer]
+      - generic [ref=f1e38]: 协作与智能扩展
+      - button "文书" [ref=f1e39] [cursor=pointer]
+      - button "任务记录" [ref=f1e45] [cursor=pointer]
+      - button "律所知识库" [ref=f1e50] [cursor=pointer]
+      - button "AI 助手" [ref=f1e56] [cursor=pointer]
+      - button "AI 配置" [ref=f1e61] [cursor=pointer]
+    - generic [ref=f1e67]:
+      - generic [ref=f1e71]:
+        - generic "合成界面验收" [ref=f1e72]
+        - generic [ref=f1e73]: "机构 #999991 · 工号 #81"
+      - button "退出登录" [ref=f1e74] [cursor=pointer]
+  - generic [ref=f1e78]:
+    - banner [ref=f1e79]:
+      - generic [ref=f1e80]:
+        - heading "案件详情" [level=1] [ref=f1e555]
+        - paragraph [ref=f1e82]: 创建案件、添加成员、整理材料
+      - generic [ref=f1e83]:
+        - button "刷新当前数据" [ref=f1e84] [cursor=pointer]:
+          - generic [ref=f1e90]: 刷新
+        - button "离线/异常" [ref=f1e91] [cursor=pointer]
+        - generic [ref=f1e96]:
+          - generic [ref=f1e97]: 机构
+          - generic [ref=f1e98]: "#999991"
+    - main [ref=f1e99]:
+      - generic [ref=f1e556]:
+        - button "返回案件列表" [ref=f1e558] [cursor=pointer]
+        - generic [ref=f1e565]:
+          - generic [ref=f1e566]:
+            - generic [ref=f1e567]: SYNTHETIC-OWNER-A
+            - heading "合成验收案件甲" [level=2] [ref=f1e568]
+            - generic [ref=f1e569]: 进行中
+            - generic [ref=f1e570]: "类型: 民事诉讼"
+            - generic [ref=f1e571]: "锁版本: v1"
+          - button "归档案件" [ref=f1e573] [cursor=pointer]
+        - generic [ref=f1e575]:
+          - button "案件分析" [ref=f1e642] [cursor=pointer]
+          - button "基本信息与状态" [ref=f1e645] [cursor=pointer]
+          - button "办案人员分配" [ref=f1e649] [cursor=pointer]
+          - button "文件与证据管理" [ref=f1e655] [cursor=pointer]
+          - button "证据目录" [ref=f1e656] [cursor=pointer]
+          - button "案件文书" [ref=f1e660] [cursor=pointer]
+          - button "案件知识库" [ref=f1e663] [cursor=pointer]
+        - generic [ref=f1e917]:
+          - generic [ref=f1e919]:
+            - heading "案件知识库" [level=3] [ref=f1e920]
+            - paragraph [ref=f1e921]: 整理本案件资料，按权限检索原文并查看页码或段落来源
+          - generic [ref=f1e923]:
+            - paragraph [ref=f1e924]: 先整理已解析文件，再由律所管理员配置 Embedding API Key 后主动开始索引。完成索引后可以检索原文或提问；更换向量模型后请重建索引。重建失败或取消保留原索引，检索只使用与当前模型匹配的版本；模型调用可能产生费用。
+            - generic [ref=f1e925]:
+              - generic [ref=f1e926]: 案件知识库
+              - combobox "案件知识库" [ref=f1e927]:
+                - option "合成知识库甲" [selected]
+                - option "合成知识库乙"
+            - generic [ref=f1e928]:
+              - generic [ref=f1e929]: 选择已完成文字提取的文件
+              - generic [ref=f1e930]:
+                - combobox "选择已完成文字提取的文件" [ref=f1e931]:
+                  - option "请选择解析任务" [selected]
+                  - 'option "旧权限合成文件.txt · 任务 #101"'
+                - button "准备入库" [disabled] [ref=f1e932]
+                - button "刷新" [ref=f1e934] [cursor=pointer]
+            - generic [ref=f1e936]:
+              - generic [ref=f1e937]:
+                - heading "已整理文件" [level=4] [ref=f1e938]
+                - button "刷新状态" [ref=f1e939] [cursor=pointer]
+              - generic [ref=f1e941]:
+                - generic [ref=f1e942]: 旧库甲文件.txt · v1 · 1 段 · 可检索
+                - generic [ref=f1e943]:
+                  - button "重建索引" [ref=f1e944] [cursor=pointer]
+                  - button "查看切片" [ref=f1e946] [cursor=pointer]
+            - generic [ref=f1e976]:
+              - heading "原文切片" [level=4] [ref=f1e977]
+              - generic [ref=f1e978]:
+                - strong [ref=f1e979]: 第 1 段 · 切片 1
+                - paragraph [ref=f1e980]: 旧权限切片秘密原文
+            - generic [ref=f1e948]:
+              - heading "检索案件原文" [level=4] [ref=f1e949]
+              - paragraph [ref=f1e950]: 只查已完成索引的本案件材料。检索可能产生向量模型费用；管理员配置排序模型后，本次检索还会调用排序模型。结果是原文片段。
+              - generic [ref=f1e951]:
+                - textbox "检索问题" [ref=f1e952]:
+                  - /placeholder: 例如：合同约定何时付款？
+                  - text: 合成付款期限
+                - button "检索原文" [ref=f1e953] [cursor=pointer]
+              - generic [ref=f1e981]:
+                - paragraph [ref=f1e982]: 当前按向量相似度排列，未调用排序模型。
+                - generic [ref=f1e983]:
+                  - strong [ref=f1e984]: 旧库甲文件.txt · v1 · 第 1 段
+                  - paragraph [ref=f1e985]: 旧权限检索秘密片段
+                  - button "下载原件" [ref=f1e986] [cursor=pointer]
+            - region "案件资料问答" [ref=f1e955]:
+              - heading "问案件资料" [level=4] [ref=f1e956]
+              - paragraph [ref=f1e957]: 根据本知识库原文回答并标注出处。资料不足时，会在你有权访问的本知识库内扩大检索一次；仍不足则说明无法作答。管理员须先配置 LLM 和 Embedding Key；已配置的排序模型也会参与检索。点击提问可能产生模型费用，扩大检索可能增加调用，回答仍需你核对原件。
+              - generic [ref=f1e958]:
+                - combobox "问答会话" [ref=f1e959]:
+                  - option "新会话" [selected]
+                - button "刷新问答记录" [disabled] [ref=f1e960]
+              - generic [ref=f1e962]:
+                - textbox "资料问答问题" [ref=f1e963]:
+                  - /placeholder: 例如：合同约定何时付款？请列出原文依据。
+                - button "提问" [disabled] [ref=f1e964]
+              - paragraph [ref=f1e966]: 还没有问答记录。只有已完成索引的资料会参与回答。

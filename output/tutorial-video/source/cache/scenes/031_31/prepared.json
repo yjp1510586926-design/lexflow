@@ -1,0 +1,65 @@
+{
+  "id": "31",
+  "chapter": "知识库与问答",
+  "title": "整理案件知识资料",
+  "subtitle": "先有有效原文，再准备索引",
+  "bullets": [
+    "创建或选择案件知识库",
+    "选择已完成文字提取的文件",
+    "点击准备入库并核对切片"
+  ],
+  "narration": "进入案件知识库，首次填写名称并创建，已有库则从下拉框选择。选择已完成文字提取的文件，点击准备入库。这个步骤只整理原文切片，不调用模型。检查文件版本和切片内容后，再主动开始索引，不能把准备入库误认为已经可检索。",
+  "visual": "knowledge",
+  "crop": [
+    270,
+    290,
+    1140,
+    580
+  ],
+  "focus": [
+    295,
+    450,
+    520,
+    76
+  ],
+  "index": 30,
+  "segments": [
+    {
+      "text": "进入案件知识库，首次填写名称并创建，已有库则从下拉框选择。",
+      "spoken_text": "进入案件知识库，首次填写名称并创建，已有库则从下拉框选择。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/632061d5d61270035295cf0b.aiff",
+      "voice_duration": 7.61932,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.81932,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/frame_01.png"
+    },
+    {
+      "text": "选择已完成文字提取的文件，点击准备入库。这个步骤只整理原文切片，不调用模型。",
+      "spoken_text": "选择已完成文字提取的文件，点击准备入库。这个步骤只整理原文切片，不调用模型。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6a4d0d271f247c6f1b98634d.aiff",
+      "voice_duration": 9.430522,
+      "pause": 0.2,
+      "start": 7.81932,
+      "duration": 9.630522,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/frame_02.png"
+    },
+    {
+      "text": "检查文件版本和切片内容后，再主动开始索引，不能把准备入库误认为已经可检索。",
+      "spoken_text": "检查文件版本和切片内容后，再主动开始索引，不能把准备入库误认为已经可检索。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/2e4c70cd6dcc8d5a8e19d640.aiff",
+      "voice_duration": 9.418866,
+      "pause": 0.34,
+      "start": 17.449842,
+      "duration": 9.758907999999996,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/frame_03.png"
+    }
+  ],
+  "duration": 27.20875,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/031_31/scene.mp4",
+  "fingerprint": "1abc45752445d549ab1b00394cc3b59668f20b4716c85e9379deb2a9eea36c25",
+  "visual_type": "真实前端截图"
+}

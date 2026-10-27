@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": ["node_modules", "dist"],
+  "exec": "node --require @swc-node/register src/main.ts"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "32",
+  "chapter": "知识库与问答",
+  "title": "主动开始知识索引",
+  "subtitle": "索引需要独立 Embedding 配置与向量服务",
+  "bullets": [
+    "配置真实向量模型",
+    "确认可能产生费用",
+    "等待索引正式可检索"
+  ],
+  "narration": "索引需要管理员单独配置 Embedding 模型，并启用对应向量基础设施。对话模型名称不能直接拿来当向量模型。主动开始索引可能产生费用，刷新进度不会调用模型。只有后台结果被业务服务接受后，文档才显示可检索，不能只看向量写入过程。",
+  "visual": "knowledge",
+  "crop": [
+    270,
+    290,
+    1140,
+    580
+  ],
+  "focus": [
+    1235,
+    665,
+    90,
+    95
+  ],
+  "index": 31,
+  "segments": [
+    {
+      "text": "索引需要管理员单独配置 Embedding 模型，并启用对应向量基础设施。",
+      "spoken_text": "索引需要管理员单独配置 Embedding 模型，并启用对应向量基础设施。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6f191b7d8c1ccf5ea7dfb8bf.aiff",
+      "voice_duration": 7.105488,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 7.305488,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/frame_01.png"
+    },
+    {
+      "text": "对话模型名称不能直接拿来当向量模型。主动开始索引可能产生费用，刷新进度不会调用模型。",
+      "spoken_text": "对话模型名称不能直接拿来当向量模型。主动开始索引可能产生费用，刷新进度不会调用模型。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/7a53a00a94c935a1071ac3d9.aiff",
+      "voice_duration": 10.531474,
+      "pause": 0.2,
+      "start": 7.305488,
+      "duration": 10.731473999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/frame_02.png"
+    },
+    {
+      "text": "只有后台结果被业务服务接受后，文档才显示可检索，不能只看向量写入过程。",
+      "spoken_text": "只有后台结果被业务服务接受后，文档才显示可检索，不能只看向量写入过程。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/281847b2399b5771a453aed9.aiff",
+      "voice_duration": 8.923719,
+      "pause": 0.34,
+      "start": 18.036962,
+      "duration": 9.263788000000003,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/frame_03.png"
+    }
+  ],
+  "duration": 27.30075,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/032_32/scene.mp4",
+  "fingerprint": "ee974a3dccf0c3dc45f8f248abe90e95779f599237f7fc7dddaab01156f76ad5",
+  "visual_type": "真实前端截图"
+}

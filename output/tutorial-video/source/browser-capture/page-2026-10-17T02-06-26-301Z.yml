@@ -1,0 +1,77 @@
+- generic [ref=e31]:
+  - complementary [ref=e32]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: LexFlow
+      - generic [ref=e41]: 法律业务与 AI 协作平台
+    - navigation [ref=e42]:
+      - generic [ref=e43]: 核心业务
+      - button "工作台" [ref=e44] [cursor=pointer]
+      - button "案件" [ref=e52] [cursor=pointer]
+      - button "成员与权限" [ref=e58] [cursor=pointer]
+      - generic [ref=e66]: 协作与智能扩展
+      - button "文书" [ref=e67] [cursor=pointer]
+      - button "任务记录" [ref=e73] [cursor=pointer]
+      - button "律所知识库" [ref=e78] [cursor=pointer]
+      - button "AI 助手" [ref=e84] [cursor=pointer]
+      - button "AI 配置" [ref=e89] [cursor=pointer]
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic "林律师" [ref=e100]
+        - generic [ref=e101]: "机构 #1 · 工号 #1"
+      - button "退出登录" [ref=e102] [cursor=pointer]
+  - generic [ref=e106]:
+    - banner [ref=e107]:
+      - generic [ref=e108]:
+        - heading "AI 配置" [level=1] [ref=e1291]
+        - paragraph [ref=e110]: 管理本律所的模型服务与 Key
+      - generic [ref=e111]:
+        - button "刷新当前数据" [ref=e112] [cursor=pointer]:
+          - generic [ref=e118]: 刷新
+        - button "服务在线" [ref=e119] [cursor=pointer]
+        - generic [ref=e124]:
+          - generic [ref=e125]: 机构
+          - generic [ref=e126]: "#1"
+    - main [ref=e127]:
+      - generic [ref=e1292]:
+        - generic [ref=e1294]:
+          - heading "AI 配置" [level=3] [ref=e1295]
+          - paragraph [ref=e1296]: 仅律所管理员可修改。请使用自己的模型服务账号。
+        - generic [ref=e1297]:
+          - generic [ref=e1298]:
+            - generic [ref=e1299]:
+              - text: 用途
+              - combobox "用途" [ref=e1300]:
+                - option "资料问答与合同审查模型" [selected]
+                - option "资料向量模型"
+                - option "检索排序模型"
+            - paragraph [ref=e1301]: 已保存 Key（不回显）。替换配置时请重新输入 Key。
+            - generic [ref=e1302]:
+              - text: 服务商
+              - textbox "服务商" [ref=e1303]: 本地教学模拟服务
+            - generic [ref=e1304]:
+              - text: 接口地址
+              - textbox "接口地址" [ref=e1305]:
+                - /placeholder: https://服务商地址/v1
+                - text: https://demo.invalid/v1
+            - generic [ref=e1306]:
+              - text: 模型名称
+              - textbox "模型名称" [ref=e1307]: demo-legal-chat
+            - generic [ref=e1308]:
+              - text: API Key
+              - textbox "API Key" [ref=e1309]
+            - paragraph [ref=e1310]: 请使用支持 OpenAI 兼容接口的模型服务；问答模型还需支持 JSON 输出。 保存配置不会调用模型。
+            - button "保存配置" [ref=e1311] [cursor=pointer]
+          - region [ref=e1313]:
+            - heading "连接测试" [level=3] [ref=e1314]
+            - paragraph [ref=e1315]: 只测试已保存的配置。测试使用合成文本，用于确认接口可用，不评估法律回答质量。
+            - status [ref=e1329]:
+              - paragraph [ref=e1330]: 连接测试成功。
+              - paragraph [ref=e1331]: 用时 128 毫秒。
+            - generic [ref=e1317]:
+              - checkbox "我确认将发送少量合成文本，可能产生模型费用。" [ref=e1318]
+              - generic [ref=e1319]: 我确认将发送少量合成文本，可能产生模型费用。
+            - generic [ref=e1320]:
+              - button "重新测试连接" [disabled] [ref=e1332]
+              - button "读取测试结果" [ref=e1323] [cursor=pointer]
+            - paragraph [ref=e1325]: 读取结果或刷新页面不会调用模型。测试失败或结果未知时，系统不会自动重试模型请求。
+          - button "删除此配置" [ref=e1327] [cursor=pointer]

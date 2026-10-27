@@ -1,0 +1,20 @@
+CREATE TABLE contract_review (
+ tenant_id BIGINT NOT NULL,
+ task_id BIGINT NOT NULL,
+ stance VARCHAR(20) NOT NULL,
+ focus_text VARCHAR(500) NOT NULL,
+ knowledge_base_id BIGINT NULL,
+ model_identity VARCHAR(1000) NOT NULL,
+ report_json JSON NULL,
+ waiting_reason VARCHAR(24) NULL,
+ decision_id CHAR(36) NULL,
+ decided_by BIGINT NULL,
+ decision_note VARCHAR(500) NULL,
+ decided_at TIMESTAMP(6) NULL,
+ PRIMARY KEY (tenant_id,task_id),
+ UNIQUE (tenant_id,decision_id),
+ FOREIGN KEY (tenant_id,task_id) REFERENCES async_task(tenant_id,id),
+ FOREIGN KEY (tenant_id,decided_by) REFERENCES tenant_user(tenant_id,user_id),
+ CHECK (stance IN ('PARTY_A','PARTY_B','NEUTRAL')),
+ CHECK (waiting_reason IS NULL OR waiting_reason IN ('REVIEW','UNCERTAIN'))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,69 @@
+{
+  "id": "40",
+  "chapter": "合同审查",
+  "title": "提交人工复核决定",
+  "subtitle": "先确认任务状态，再填写意见",
+  "bullets": [
+    "阅读当前轮完整报告",
+    "填写复核意见并勾选核对声明",
+    "点击确认已复核或取消审查"
+  ],
+  "narration": "进入等待人工复核的审查任务，先核对当前轮报告、原文、建议和依据冲突，填写复核意见并勾选核对声明，再点击确认已复核。过期决定可能被拒绝，需要重新读取任务。确认会复用已有计算结果，不能用来批准不确定调用或绕过投递恢复。",
+  "visual": "contract-result",
+  "crop": [
+    385,
+    430,
+    670,
+    410
+  ],
+  "index": 39,
+  "segments": [
+    {
+      "text": "进入等待人工复核的审查任务，先核对当前轮报告、原文、建议和依据冲突，",
+      "spoken_text": "进入等待人工复核的审查任务，先核对当前轮报告、原文、建议和依据冲突，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/b3a7c832ea750e1cd38d2cc9.aiff",
+      "voice_duration": 8.606168,
+      "pause": 0.2,
+      "start": 0.0,
+      "duration": 8.806168,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/frame_01.png"
+    },
+    {
+      "text": "填写复核意见并勾选核对声明，再点击确认已复核。",
+      "spoken_text": "填写复核意见并勾选核对声明，再点击确认已复核。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/6903f0885238ba736f9d19b6.aiff",
+      "voice_duration": 5.969433,
+      "pause": 0.2,
+      "start": 8.806168,
+      "duration": 6.169433000000001,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/frame_02.png"
+    },
+    {
+      "text": "过期决定可能被拒绝，需要重新读取任务。确认会复用已有计算结果，",
+      "spoken_text": "过期决定可能被拒绝，需要重新读取任务。确认会复用已有计算结果，",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/83bb45beee9097a031e3889a.aiff",
+      "voice_duration": 7.751474,
+      "pause": 0.2,
+      "start": 14.975601000000001,
+      "duration": 7.951474,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/frame_03.png"
+    },
+    {
+      "text": "不能用来批准不确定调用或绕过投递恢复。",
+      "spoken_text": "不能用来批准不确定调用或绕过投递恢复。",
+      "audio": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/audio/215eea1078d7c0f61fa95949.aiff",
+      "voice_duration": 4.442857,
+      "pause": 0.34,
+      "start": 22.927075000000002,
+      "duration": 4.782966999999999,
+      "frame": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/frame_04.png"
+    }
+  ],
+  "duration": 27.710042,
+  "audio_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/narration.wav",
+  "concat_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/frames.ffconcat",
+  "folder": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40",
+  "video_file": "/Users/yangjinpeng/Documents/Projects/Java/lexflow/output/tutorial-video/source/cache/scenes/040_40/scene.mp4",
+  "fingerprint": "9d2c1d2f1427da34f4ff3fcbfb4a9c741274f7546e16beca8243313ff716e8f3",
+  "visual_type": "真实前端截图"
+}
