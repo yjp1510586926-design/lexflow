@@ -1,9 +1,0 @@
-- main [ref=e3]:
-  - heading "导出文件期限" [level=1] [ref=e4]
-  - generic [ref=e5]:
-    - button "任务100" [ref=e6]
-    - button "任务200" [ref=e7]
-    - button "任务300" [ref=e8]
-    - button "任务400" [ref=e9]
-  - paragraph [ref=e10]: 权限失效次数：0
-  - alert [ref=e12]: 请求失败 (500)

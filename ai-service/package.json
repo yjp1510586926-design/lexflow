@@ -6,8 +6,7 @@
     "dev": "nodemon",
     "build": "tsc",
     "start": "node dist/main.js",
-    "test": "npm run build && node --test test/*.test.cjs",
-    "setup:workflow": "npm run build && node dist/graphs/persistence/setup-workflow-store.js"
+    "setup:workflow": "npm run build && node dist/infrastructure/persistence/setup-workflow-store.js"
   },
   "dependencies": {
     "@langchain/core": "^1.2.13",

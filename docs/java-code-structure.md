@@ -45,13 +45,13 @@ api-core/src/main/java/com/lexflow/website/
 
 ## 修改时保持的约束
 
-`WebsiteApplication` 扫描 `com.lexflow`，以发现同级 DAO 中的 JDBC Repository；MyBatis 单独扫描 `com.lexflow.dao`。新增类的 `package` 必须与 Java 源码路径一致，测试与被测类的包可见访问关系也须同步维护。
+`WebsiteApplication` 扫描 `com.lexflow`，以发现同级 DAO 中的 JDBC Repository；MyBatis 单独扫描 `com.lexflow.dao`。新增类的 `package` 必须与 Java 源码路径一致。
 
 `com.lexflow.service.identity.Identity` 是 Redis 会话中序列化的认证主体，保留其类名、包名和字段，避免让既有会话因类迁移无法反序列化。审计事件与缓冲组件保留同包，以维护其受限访问和重放契约。
 
 重命名局部变量或提取私有方法时，保持校验、查询和写入顺序；尤其保留文件打开前后的二次授权、任务版本校验、消息确认顺序、模型调用的不确定结果处理及事务传播规则。SQL 参数名、DTO 字段、路由、配置属性和 Bean 名不能因可读性整理而改变。
 
-格式化使用项目根目录的 `npm run format`，提交前运行 `npm run format:check`。Java 结构调整后使用 `mvn clean verify`，避免旧包下的编译产物干扰组件扫描；真实基础设施集成测试仍须按项目既有说明单独启用。
+格式化使用项目根目录的 `npm run format`，提交前运行 `npm run format:check`。Java 结构调整后使用 `mvn clean package`，避免旧包下的编译产物干扰组件扫描。
 
 ## 开发注释约定
 
@@ -101,24 +101,4 @@ api-core/src/main/java/com/lexflow/website/
 
 案件、文件、知识库和任务页面收到 401/403 后，清空已加载的内容、操作缓存、表单或弹窗；迟到的成功响应不能重新填回已撤销的数据。切换案件、知识库或任务后丢弃旧请求结果；下载权限失效时，迟到的 blob 不能触发下载。负责人候选仅列出当前用户可访问范围，前端隐藏控件不能代替后端授权。
 
-任务时间由 Java 返回带 `Z` 的 UTC 时刻并保留微秒，浏览器按当地时间显示。历史无时区值明确标注，未知时间显示空占位；不得把无时区值当作已确认的 UTC 时间。任务记录保留关联对象、源版本、提交人、提交/开始/完成时间。对应历史专项见 [界面检查](evidence/README.md#ui-completion-checksjson)。
-
-## 固定材料评估
-
-12 项合成材料和人工示例只验证离线评分工具，尚未完成真实供应商的质量、性能和费用基准。核心 DeepSeek 业务的历史费用授权不自动扩展为该评估的授权；原件与法律质量仍需独立人工审核。
-
-评估工具位于 `ai-service/evaluation/`，使用方式见 [工具说明](../ai-service/evaluation/README.md)。默认只生成无网络计划，输出路径须不存在：
-
-```sh
-node ai-service/evaluation/run-real-materials.cjs --config ai-service/evaluation/real-evaluation.example.json --output /tmp/lexflow-evaluation-plan.json
-```
-
-实际运行前固定 runId、数据集摘要、供应商及 HTTPS 地址、Embedding/LLM 模型、token/调用/金额上限、定价来源和核对日期。示例保持 `authorized: false`；`--execute` 不能跳过授权校验，未授权时不读取凭据或访问网络，不自动替换模型或地址。
-
-真实评估使用独立空业务/AI schema、数据库账号、私有 bucket、RabbitMQ vhost 和 Redis namespace，仅用登记的合成律所、账号和材料。Key、转发器 token 和登录密码保存在独立 `0600` 文件，不进入命令参数、报告或仓库。私有 HTTPS 验收记录器仅转发批准的地址、模型和用途，不修改正常业务的工作流与重试规则。
-
-每次出站前不可覆盖地记录意图、预留费用并 fsync；失败、超时、缺少 usage 或进程中断不释放未知预留，也不自动重发。使用对应模型的本地 tokenizer 与已审阅的消息封装开销。应用估算不是供应商最终账单，实际 usage、请求 ID、状态及响应摘要应与隔离供应商项目的账单另行核对。
-
-每题通过实际 Java 登录/CSRF、上传、解析、索引、检索及问答链路，按真实 chunk/document/fileVersion 映射固定标签，不能把期望引用直接喂给模型替代检索。分别建立另一租户与未授权成员的拒绝探针、真实历史会话、公共/私有隔离材料及旧来源删除探针；拒绝请求的供应商调用增量必须为 0。延迟使用本地单调时钟，任务成功率的分母包括失败与未完成项，缺少 usage 记为未知。
-
-报告区分计划、模拟、真实执行与账单核对。机器词匹配分数不证明法律正确性；逐题人工记录审阅人、日期、判定和理由，不能把手写答案计为模型通过。工作流人工暂停、重启和重复恢复另由业务专项证明。执行后仅清理本 runId 登记资源，按归属清单核对剩余项；缺少清理证明须如实保留。
+任务时间由 Java 返回带 `Z` 的 UTC 时刻并保留微秒，浏览器按当地时间显示。历史无时区值明确标注，未知时间显示空占位；不得把无时区值当作已确认的 UTC 时间。任务记录保留关联对象、源版本、提交人、提交/开始/完成时间。

@@ -15,6 +15,7 @@ import com.lexflow.dao.model.OutboxEventModel;
 import com.lexflow.framework.context.TraceContext;
 import com.lexflow.framework.exception.BusinessException;
 import com.lexflow.service.TaskResultService.SourceSegment;
+import com.lexflow.service.ai.ModelFailureMessages;
 import com.lexflow.service.identity.Identity;
 import com.lexflow.service.permission.AccessDenied;
 import com.lexflow.service.permission.CaseAccessPolicy.Action;
@@ -497,6 +498,19 @@ public class CaseAnalysisService {
         String outcome,
         CaseAnalysisReport report
     ) {
+        return apply(tenant, id, attempt, version, outcome, report, null);
+    }
+
+    @Transactional
+    public boolean apply(
+        long tenant,
+        long id,
+        int attempt,
+        int version,
+        String outcome,
+        CaseAnalysisReport report,
+        String errorCode
+    ) {
         var task = tasks.selectByIdForUpdate(tenant, id);
         if (
             task == null ||
@@ -514,7 +528,7 @@ public class CaseAnalysisService {
         if ("FAILED".equals(outcome)) {
             status = "FAILED";
             report = null;
-            error = "案件分析未完成，请检查材料和模型服务";
+            error = ModelFailureMessages.forCaseAnalysis(errorCode);
         } else if ("UNCERTAIN".equals(outcome)) {
             status = "WAITING_HUMAN";
             reason = "UNCERTAIN";

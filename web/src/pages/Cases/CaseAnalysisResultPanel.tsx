@@ -8,6 +8,7 @@ import {
   CaseAnalysisView,
   AnalysisCitation,
 } from '../../api/case-analysis';
+import './CaseAnalysisResultPanel.css';
 
 const statusLabels: Record<string, string> = {
   QUEUED: '排队中',
@@ -31,6 +32,15 @@ export const CaseAnalysisResultPanel: React.FC<{
     [error, setError] = useState('');
   const [note, setNote] = useState(''),
     [citation, setCitation] = useState<AnalysisCitation | null>(null);
+  const [citationTarget, setCitationTarget] = useState<{ id: string; group: string } | null>(null);
+  const [readingCitation, setReadingCitation] = useState(false);
+  const [citationError, setCitationError] = useState('');
+  const citationSequence = useRef(0);
+  const citationPanel = useRef<HTMLDivElement>(null);
+  const citationOpener = useRef<HTMLButtonElement | null>(null);
+  const requestController = useRef<AbortController | null>(null);
+  const currentTask = useRef(taskId);
+  currentTask.current = taskId;
   // 每次刷新增加代次，只接受当前任务最近一次读取；decision 另绑定复核版本与意见。
   const generation = useRef(0),
     decision = useRef<{ version: number; note: string; id: string } | null>(null),
@@ -44,6 +54,10 @@ export const CaseAnalysisResultPanel: React.FC<{
       setBusy(false);
       setView(null);
       setCitation(null);
+      citationSequence.current++;
+      setCitationTarget(null);
+      setReadingCitation(false);
+      setCitationError('');
       setNote('');
       decision.current = null;
       onAccessLost?.();
@@ -51,22 +65,48 @@ export const CaseAnalysisResultPanel: React.FC<{
     setError(e.message ?? '读取案件分析失败');
     toast.error(e.message ?? '读取案件分析失败');
   };
-  const refresh = async () => {
+  const refresh = async (preserveCitationRequest = false) => {
     if (denied.current) return null;
+    if (!preserveCitationRequest) {
+      citationSequence.current++;
+      setCitation(null);
+      setCitationTarget(null);
+      setReadingCitation(false);
+      setCitationError('');
+    }
+    requestController.current?.abort();
+    const controller = new AbortController();
+    requestController.current = controller;
+    const requestedTask = taskId;
     const token = ++generation.current;
     setBusy(true);
     try {
-      const next = await getAnalysis(taskId);
-      if (!mounted.current || token !== generation.current) return null;
+      const next = await getAnalysis(taskId, controller.signal);
+      if (!mounted.current || token !== generation.current || currentTask.current !== requestedTask)
+        return null;
+      if (next.taskId !== requestedTask) throw new Error('分析任务已变化，请重新打开报告');
       setView(next);
       setError('');
       if (decision.current?.version !== next.stateVersion) decision.current = null;
       return next;
     } catch (e) {
-      if (mounted.current && token === generation.current) fail(e);
+      if (
+        !controller.signal.aborted &&
+        mounted.current &&
+        token === generation.current &&
+        currentTask.current === requestedTask
+      )
+        fail(e);
       return null;
     } finally {
-      if (mounted.current && token === generation.current) setBusy(false);
+      if (
+        mounted.current &&
+        token === generation.current &&
+        currentTask.current === requestedTask
+      ) {
+        setBusy(false);
+        requestController.current = null;
+      }
     }
   };
   useEffect(() => {
@@ -74,14 +114,25 @@ export const CaseAnalysisResultPanel: React.FC<{
     denied.current = false;
     setView(null);
     setCitation(null);
+    citationSequence.current++;
+    setCitationTarget(null);
+    setReadingCitation(false);
+    setCitationError('');
     setNote('');
     decision.current = null;
     void refresh();
     return () => {
       mounted.current = false;
       generation.current++;
+      citationSequence.current++;
+      requestController.current?.abort();
     };
   }, [taskId]);
+  useEffect(() => {
+    if (!citationTarget || !citationPanel.current) return;
+    citationPanel.current.scrollIntoView({ block: 'nearest' });
+    if (!readingCitation) citationPanel.current.focus({ preventScroll: true });
+  }, [citationTarget, citation, readingCitation, citationError]);
   const mutate = async (approve: boolean) => {
     if (!view || busy) return;
     setBusy(true);
@@ -123,25 +174,143 @@ export const CaseAnalysisResultPanel: React.FC<{
     }
   };
   // 引用跳转先重新读结果和授权，避免直接展开权限或材料状态已变化的旧缓存。
-  const jump = async (id: string) => {
-    const next = await refresh();
+  const jump = async (id: string, group: string, opener: HTMLButtonElement) => {
+    if (denied.current || busy) return;
+    const requestedTask = taskId;
+    const token = ++citationSequence.current;
+    citationOpener.current = opener;
+    setCitation(null);
+    setCitationTarget({ id, group });
+    setCitationError('');
+    setReadingCitation(true);
+    const next = await refresh(true);
+    if (
+      !mounted.current ||
+      denied.current ||
+      currentTask.current !== requestedTask ||
+      token !== citationSequence.current
+    )
+      return;
+    setReadingCitation(false);
+    if (!next) {
+      setCitationError('原文读取失败，请重新点击引用重试。');
+      return;
+    }
     const target = next?.report?.citations.find((c) => c.id === id);
-    setCitation(target ?? null);
+    const source = next.sources.find((s) => s.parseTaskId === target?.parseTaskId);
+    const segment = source?.segments.find(
+      (s) => s.index === target?.index && s.kind === target.kind,
+    );
+    if (
+      !target ||
+      !source ||
+      !segment ||
+      source.fileVersionId !== target.fileVersionId ||
+      source.sha256 !== target.sha256 ||
+      target.startOffset < segment.startOffset ||
+      target.endOffset > segment.endOffset ||
+      target.endOffset <= target.startOffset ||
+      source.text.slice(target.startOffset, target.endOffset) !== target.quote
+    ) {
+      const message = '该引用或来源已变化，无法定位原文，请刷新报告后重试。';
+      setCitationError(message);
+      setError(message);
+      toast.error(message);
+      return;
+    }
+    setCitation(target);
   };
-  const refs = (ids: string[]) =>
-    ids.map((id) => (
-      <button
-        key={id}
-        className="btn btn-ghost btn-sm"
-        type="button"
-        disabled={busy}
-        onClick={() => void jump(id)}
-      >
-        [{id}] 查看原文位置
-      </button>
-    ));
+  const closeCitation = () => {
+    const token = ++citationSequence.current;
+    if (readingCitation) {
+      generation.current++;
+      requestController.current?.abort();
+      requestController.current = null;
+      setBusy(false);
+    }
+    setCitation(null);
+    setCitationTarget(null);
+    setReadingCitation(false);
+    setCitationError('');
+    const opener = citationOpener.current;
+    const requestedTask = taskId;
+    requestAnimationFrame(() => {
+      if (
+        mounted.current &&
+        currentTask.current === requestedTask &&
+        token === citationSequence.current &&
+        opener?.isConnected
+      )
+        opener.focus({ preventScroll: true });
+    });
+  };
   const source = view?.sources.find((s) => s.parseTaskId === citation?.parseTaskId),
     segment = source?.segments.find((s) => s.index === citation?.index);
+  const refs = (ids: string[], group: string) => (
+    <div className="analysis-citation-group">
+      <div className="analysis-citation-links">
+        {ids.map((id) => {
+          const expanded = citationTarget?.group === group && citationTarget.id === id;
+          return (
+            <button
+              key={id}
+              className="btn btn-ghost btn-sm"
+              type="button"
+              disabled={busy}
+              aria-expanded={expanded}
+              aria-controls={expanded ? `analysis-citation-${taskId}-${group}` : undefined}
+              onClick={(event) => void jump(id, group, event.currentTarget)}
+            >
+              [{id}] {expanded && readingCitation ? '正在读取原文…' : '查看原文位置'}
+            </button>
+          );
+        })}
+      </div>
+      {citationTarget?.group === group && (
+        <div
+          ref={citationPanel}
+          id={`analysis-citation-${taskId}-${group}`}
+          role="region"
+          aria-label="分析引用原文"
+          aria-busy={readingCitation}
+          tabIndex={-1}
+          className="analysis-citation-preview"
+        >
+          <div className="analysis-citation-header">
+            <h4>引用原文 · {citationTarget.id}</h4>
+            <Button type="button" variant="ghost" size="sm" onClick={closeCitation}>
+              收起原文
+            </Button>
+          </div>
+          {readingCitation && <p role="status">正在读取原文并核对访问权限…</p>}
+          {citationError && (
+            <p role="alert" className="analysis-citation-error">
+              {citationError}
+            </p>
+          )}
+          {citation && source && segment && (
+            <>
+              <p className="analysis-citation-location">
+                {source.fileName} · v{source.fileVersion} ·{' '}
+                {citation.kind === 'PAGE' ? `第 ${citation.index} 页` : `第 ${citation.index} 段`}
+              </p>
+              <p className="analysis-citation-text">
+                {source.text.slice(segment.startOffset, citation.startOffset)}
+                <mark>{citation.quote}</mark>
+                {source.text.slice(citation.endOffset, segment.endOffset)}
+              </p>
+              <details className="analysis-citation-metadata">
+                <summary>文件版本校验信息</summary>
+                <p>
+                  固定文件版本 {citation.fileVersionId} · SHA-256 {citation.sha256}
+                </p>
+              </details>
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
   const headingStyle = { margin: '18px 0 6px', fontWeight: 600 };
   return (
     <section aria-label="案件分析结果" style={{ lineHeight: 1.7 }}>
@@ -201,7 +370,7 @@ export const CaseAnalysisResultPanel: React.FC<{
               {view.report.facts.map((f, n) => (
                 <article key={n} style={{ padding: '4px 0' }}>
                   <p>{f.statement}</p>
-                  {refs(f.citationIds)}
+                  {refs(f.citationIds, `fact-${n}`)}
                 </article>
               ))}
               <h4 style={headingStyle}>待核实事项</h4>
@@ -222,7 +391,7 @@ export const CaseAnalysisResultPanel: React.FC<{
                   </strong>
                   <p>{i.analysis}</p>
                   <p>建议：{i.suggestion}</p>
-                  {refs(i.citationIds)}
+                  {refs(i.citationIds, `issue-${n}`)}
                 </article>
               ))}
               <h4 style={headingStyle}>缺少的材料</h4>
@@ -234,26 +403,6 @@ export const CaseAnalysisResultPanel: React.FC<{
               <h4 style={headingStyle}>建议边界</h4>
               <p style={{ whiteSpace: 'pre-wrap' }}>{view.report.recommendationBoundary}</p>
             </>
-          )}
-          {citation && source && segment && (
-            <div
-              role="region"
-              aria-label="分析引用原文"
-              style={{ padding: 16, border: '1px solid var(--border)', marginTop: 16 }}
-            >
-              <h4>
-                [{citation.id}] {source.fileName} · v{source.fileVersion} ·{' '}
-                {citation.kind === 'PAGE' ? `第 ${citation.index} 页` : `第 ${citation.index} 段`}
-              </h4>
-              <p style={{ whiteSpace: 'pre-wrap' }}>
-                {source.text.slice(segment.startOffset, citation.startOffset)}
-                <mark>{citation.quote}</mark>
-                {source.text.slice(citation.endOffset, segment.endOffset)}
-              </p>
-              <small>
-                固定文件版本 {citation.fileVersionId} · SHA-256 {citation.sha256}
-              </small>
-            </div>
           )}
           {view.status === 'WAITING_HUMAN' && view.waitingReason === 'REVIEW' && (
             <div style={{ marginTop: 18 }}>

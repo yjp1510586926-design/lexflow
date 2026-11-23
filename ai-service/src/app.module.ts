@@ -1,62 +1,23 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { HttpModule } from '@nestjs/axios';
+import { AiModule } from './ai/ai.module';
+import { DocumentParsingModule } from './documents/document-parsing.module';
 import { HealthController } from './health/health.controller';
-import { DocumentParseConsumer } from './consumers/document-parse.consumer';
-import { ContractReviewConsumer } from './consumers/contract-review.consumer';
-import { KnowledgeIndexConsumer } from './consumers/knowledge-index.consumer';
-import { KnowledgeSearchController } from './rag/knowledge-search.controller';
-import { LegalQuestionController } from './ai/legal-question.controller';
-import { KnowledgeRerankController } from './rag/knowledge-rerank.controller';
-import { TaskCallbackService } from './services/task-callback.service';
-import { ContractWorkflowService } from './graphs/contract-workflow.service';
-import { ConfigurationTestController } from './ai/configuration-test.controller';
-import { ConfigurationTestService } from './ai/configuration-test.service';
-import { DocumentGenerationConsumer } from './consumers/document-generation.consumer';
-import { DocumentGenerationWorkflowService } from './graphs/document-generation-workflow.service';
-import { KnowledgeIndexWorkflowService } from './rag/knowledge-index-workflow.service';
-import { TaskDeliveryService } from './transport/task-delivery.service';
-import { IndexRecoveryEligibilityController } from './rag/index-recovery-eligibility.controller';
-import { IndexRecoveryEligibilityService } from './rag/index-recovery-eligibility.service';
-import { CaseAnalysisConsumer } from './consumers/case-analysis.consumer';
-import { CaseAnalysisWorkflowService } from './graphs/case-analysis-workflow.service';
-import { WorkflowRecoveryEligibilityController } from './graphs/workflow-recovery-eligibility.controller';
-import { WorkflowRecoveryEligibilityService } from './graphs/workflow-recovery-eligibility.service';
-import { KnowledgeVectorRetirementController } from './rag/knowledge-vector-retirement.controller';
+import { KnowledgeModule } from './knowledge/knowledge.module';
+import { WorkflowsModule } from './workflows/workflows.module';
 
+/**
+ * NestJS 根模块负责装配应用。各功能模块在自己的目录注册 HTTP 入口、消息消费者和执行服务。
+ * 跨功能共用的 Java 回调和消息投递由 TaskMessagingModule 提供，通过显式 imports 注入。
+ */
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    HttpModule.register({
-      timeout: 30000,
-      maxRedirects: 3,
-    }),
+    DocumentParsingModule,
+    WorkflowsModule,
+    KnowledgeModule,
+    AiModule,
   ],
-  controllers: [
-    HealthController,
-    DocumentParseConsumer,
-    ContractReviewConsumer,
-    CaseAnalysisConsumer,
-    KnowledgeIndexConsumer,
-    KnowledgeSearchController,
-    LegalQuestionController,
-    KnowledgeRerankController,
-    ConfigurationTestController,
-    DocumentGenerationConsumer,
-    IndexRecoveryEligibilityController,
-    WorkflowRecoveryEligibilityController,
-    KnowledgeVectorRetirementController,
-  ],
-  providers: [
-    TaskCallbackService,
-    ContractWorkflowService,
-    ConfigurationTestService,
-    DocumentGenerationWorkflowService,
-    KnowledgeIndexWorkflowService,
-    TaskDeliveryService,
-    IndexRecoveryEligibilityService,
-    CaseAnalysisWorkflowService,
-    WorkflowRecoveryEligibilityService,
-  ],
+  controllers: [HealthController],
 })
 export class AppModule {}

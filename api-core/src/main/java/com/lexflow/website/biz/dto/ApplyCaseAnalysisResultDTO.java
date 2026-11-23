@@ -8,5 +8,6 @@ public record ApplyCaseAnalysisResultDTO(
     int attempt,
     int stateVersion,
     String outcome,
-    CaseAnalysisReport report
+    CaseAnalysisReport report,
+    String errorCode
 ) {}

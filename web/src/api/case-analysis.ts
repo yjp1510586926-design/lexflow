@@ -70,7 +70,8 @@ export const submitAnalysis = (input: {
     method: 'POST',
     body: JSON.stringify(input),
   });
-export const getAnalysis = (id: string) => request<CaseAnalysisView>(`/api/v1/case-analyses/${id}`);
+export const getAnalysis = (id: string, signal?: AbortSignal) =>
+  request<CaseAnalysisView>(`/api/v1/case-analyses/${id}`, { signal });
 export const approveAnalysis = (
   id: string,
   stateVersion: number,

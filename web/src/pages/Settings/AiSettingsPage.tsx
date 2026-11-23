@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { request } from '../../api/client';
 import { Card } from '../../components/common/Card';
 import { Button } from '../../components/common/Button';
+import { Badge } from '../../components/common/Badge';
+import { ActivityIcon, CheckIcon, EditIcon, LockIcon } from '../../components/common/Icons';
+import './AiSettingsPage.css';
 
 type Purpose = 'LLM' | 'EMBEDDING' | 'RERANK';
 type TestStatus = 'PREPARED' | 'PROCESSING' | 'SUCCEEDED' | 'FAILED' | 'UNKNOWN' | 'STALE';
@@ -39,6 +42,17 @@ const testLabels: Record<TestStatus, string> = {
   UNKNOWN: '测试结果未知。请求可能已到达服务商；重新测试可能再次产生费用。',
   STALE: '配置已变更，这次测试结果已失效。请重新读取配置后测试。',
 };
+const testBadges: Record<
+  TestStatus,
+  { label: string; variant: 'blue' | 'emerald' | 'amber' | 'rose' }
+> = {
+  PREPARED: { label: '等待测试', variant: 'blue' },
+  PROCESSING: { label: '测试中', variant: 'blue' },
+  SUCCEEDED: { label: '连接正常', variant: 'emerald' },
+  FAILED: { label: '连接失败', variant: 'rose' },
+  UNKNOWN: { label: '结果待确认', variant: 'amber' },
+  STALE: { label: '记录已失效', variant: 'amber' },
+};
 const activeTest = (test: TestView | null) =>
   test?.status === 'PREPARED' || test?.status === 'PROCESSING';
 const forbidden = (error: unknown) =>
@@ -52,6 +66,8 @@ export const AiSettingsPage: React.FC = () => {
   const [baseUrl, setBaseUrl] = useState('');
   const [model, setModel] = useState('');
   const [key, setKey] = useState('');
+  const [editing, setEditing] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [busy, setBusy] = useState(false);
   const busyRef = useRef(false);
   const [error, setError] = useState('');
@@ -59,6 +75,8 @@ export const AiSettingsPage: React.FC = () => {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [consent, setConsent] = useState(false);
   const [test, setTest] = useState<TestView | null>(null);
+  const [testing, setTesting] = useState(false);
+  const [testUncertain, setTestUncertain] = useState(false);
   const [testNotice, setTestNotice] = useState('');
   const [readingTest, setReadingTest] = useState(false);
   const item = data?.items.find((item) => item.purpose === purpose);
@@ -68,6 +86,16 @@ export const AiSettingsPage: React.FC = () => {
   scopeRef.current = savedScope;
   const mountedRef = useRef(true);
   const readSequence = useRef(0);
+  const summaryRef = useRef<HTMLElement>(null);
+  const testBadge = testing
+    ? { label: '正在测试', variant: 'blue' as const }
+    : readingTest && !test
+      ? { label: '正在读取', variant: 'blue' as const }
+      : test
+        ? testBadges[test.status]
+        : testUncertain
+          ? testBadges.UNKNOWN
+          : { label: '尚未验证', variant: 'slate' as const };
   const unchanged =
     Boolean(item?.revision) &&
     provider === item?.provider &&
@@ -86,21 +114,34 @@ export const AiSettingsPage: React.FC = () => {
   const denyAccess = () => {
     setData(null);
     setTest(null);
+    setTestUncertain(false);
     setKey('');
+    setEditing(false);
     setConsent(false);
     setTestNotice('');
     setError('当前账号无法管理 AI 配置，请重新登录或联系律所管理员。');
   };
   const load = async () => {
+    setLoading(true);
     setError('');
     try {
       const next = await request<State>('/api/v1/settings/ai');
-      if (mountedRef.current) setData(next);
+      if (mountedRef.current) {
+        setData(next);
+        setMessage('');
+      }
+      return true;
     } catch (e) {
       if (mountedRef.current) {
-        setData(null);
-        setError(e instanceof Error ? e.message : '配置读取失败');
+        if (forbidden(e)) denyAccess();
+        else {
+          setData(null);
+          setError(e instanceof Error ? e.message : '配置读取失败');
+        }
       }
+      return false;
+    } finally {
+      if (mountedRef.current) setLoading(false);
     }
   };
   useEffect(() => {
@@ -112,8 +153,15 @@ export const AiSettingsPage: React.FC = () => {
     setBaseUrl(selected?.baseUrl ?? '');
     setModel(selected?.model ?? '');
     setKey('');
+    setEditing(false);
     setConfirmDelete(false);
   }, [data, purpose]);
+  useEffect(() => {
+    if (message && configured && !editing) {
+      summaryRef.current?.focus({ preventScroll: true });
+      summaryRef.current?.scrollIntoView({ block: 'nearest' });
+    }
+  }, [message, configured, editing]);
   useEffect(() => {
     setConsent(false);
   }, [purpose, provider, baseUrl, model, key, item?.revision]);
@@ -123,6 +171,7 @@ export const AiSettingsPage: React.FC = () => {
     selectedPurpose: Purpose,
     revision: string,
     signal?: AbortSignal,
+    uncertain = testUncertain,
   ) => {
     const sequence = ++readSequence.current;
     setReadingTest(true);
@@ -133,7 +182,14 @@ export const AiSettingsPage: React.FC = () => {
       );
       if (mountedRef.current && scopeRef.current === scope && readSequence.current === sequence) {
         setTest(result);
-        setTestNotice(result ? '' : '当前配置尚未测试。');
+        if (result) setTestUncertain(false);
+        setTestNotice(
+          result
+            ? ''
+            : uncertain
+              ? '尚未读取到测试记录。如需重新测试，请再次确认可能产生费用。'
+              : '当前配置尚未测试。',
+        );
       }
     } catch (e) {
       if (
@@ -153,13 +209,14 @@ export const AiSettingsPage: React.FC = () => {
 
   useEffect(() => {
     setTest(null);
+    setTestUncertain(false);
     setTestNotice('');
     setConsent(false);
     setReadingTest(false);
     readSequence.current += 1;
     if (!item?.revision) return;
     const controller = new AbortController();
-    void readLatest(savedScope, purpose, item.revision, controller.signal);
+    void readLatest(savedScope, purpose, item.revision, controller.signal, false);
     return () => {
       controller.abort();
       readSequence.current += 1;
@@ -225,8 +282,15 @@ export const AiSettingsPage: React.FC = () => {
         setKey('');
         setTest(null);
         setTestNotice('');
-        setMessage('配置已保存。尚未测试连接，也未调用模型。');
-        await load();
+        const refreshed = await load();
+        if (mountedRef.current) {
+          setEditing(false);
+          setMessage(
+            refreshed
+              ? '配置已保存。可在下方测试连接，确认模型是否可用。'
+              : '配置已保存，但最新状态读取失败，请重新读取配置，无需重复保存。',
+          );
+        }
       }
     } catch (e) {
       if (mountedRef.current) {
@@ -252,8 +316,14 @@ export const AiSettingsPage: React.FC = () => {
         setKey('');
         setTest(null);
         setTestNotice('');
-        setMessage('配置已删除。');
-        await load();
+        const refreshed = await load();
+        if (mountedRef.current) {
+          setMessage(
+            refreshed
+              ? '配置已删除。可重新添加此用途的模型配置。'
+              : '配置已删除，但最新状态读取失败，请重新读取配置。',
+          );
+        }
       }
     } catch (e) {
       if (mountedRef.current) {
@@ -267,6 +337,7 @@ export const AiSettingsPage: React.FC = () => {
   };
   const runTest = async () => {
     if (
+      editing ||
       busyRef.current ||
       readingTest ||
       !item?.revision ||
@@ -281,9 +352,11 @@ export const AiSettingsPage: React.FC = () => {
     busyRef.current = true;
     readSequence.current += 1;
     setBusy(true);
+    setTesting(true);
     setError('');
     setMessage('');
     setTest(null);
+    setTestUncertain(false);
     setConsent(false);
     setTestNotice('正在测试连接。本次会发送少量合成文本。');
     try {
@@ -299,130 +372,246 @@ export const AiSettingsPage: React.FC = () => {
     } catch (e) {
       if (mountedRef.current && scopeRef.current === scope) {
         if (forbidden(e)) denyAccess();
-        else
+        else {
+          setTestUncertain(true);
           setTestNotice(
             '本次测试结果未知，请先读取已提交的测试结果。重新勾选后发起新测试可能再次产生费用。',
           );
+        }
       }
     } finally {
       busyRef.current = false;
-      if (mountedRef.current) setBusy(false);
+      if (mountedRef.current) {
+        setBusy(false);
+        setTesting(false);
+      }
     }
   };
 
+  const cancelEdit = () => {
+    setProvider(item?.provider ?? '');
+    setBaseUrl(item?.baseUrl ?? '');
+    setModel(item?.model ?? '');
+    setKey('');
+    setConsent(false);
+    setError('');
+    setMessage('');
+    setEditing(false);
+  };
+
   return (
-    <Card title="AI 配置" subtitle="仅律所管理员可修改。请使用自己的模型服务账号。">
+    <Card
+      title="AI 配置"
+      subtitle="仅律所管理员可修改。请使用自己的模型服务账号。"
+      className="ai-settings-card"
+    >
       {error && (
-        <p role="alert" style={{ color: 'var(--danger-text)', marginBottom: 12 }}>
+        <p role="alert" className="ai-settings-notice ai-settings-notice-error">
           {error}
         </p>
       )}
       {message && (
-        <p role="status" style={{ marginBottom: 12 }}>
+        <p role="status" className="ai-settings-notice ai-settings-notice-success">
           {message}
         </p>
       )}
       {!data ? (
-        <Button onClick={() => void load()}>重新读取配置</Button>
+        <Button loading={loading} onClick={() => void load()}>
+          {loading ? '正在读取配置…' : '重新读取配置'}
+        </Button>
       ) : (
-        <>
+        <div className="ai-settings">
           {!data.storageReady && (
-            <p role="status" style={{ marginBottom: 16 }}>
+            <p role="status" className="ai-settings-notice ai-settings-notice-warning">
               服务端尚未启用凭据加密，请联系部署者配置后再保存。案件和文件功能不受影响。
             </p>
           )}
-          <form onSubmit={save} style={{ maxWidth: 560, display: 'grid', gap: 16 }}>
-            <label>
-              用途
-              <select
-                className="form-select"
-                value={purpose}
-                disabled={busy}
-                onChange={(e) => {
-                  setPurpose(e.target.value as Purpose);
-                  setKey('');
-                  setTest(null);
-                  setConsent(false);
-                  setMessage('');
-                  setError('');
-                }}
-              >
-                {(Object.keys(labels) as Purpose[]).map((p) => (
-                  <option key={p} value={p}>
-                    {labels[p]}
-                  </option>
-                ))}
-              </select>
+          <div className="ai-settings-purpose">
+            <label className="form-label" htmlFor="ai-purpose">
+              配置用途
             </label>
-            <p>{configured ? '已保存 Key（不回显）。替换配置时请重新输入 Key。' : '尚未配置'}</p>
-            <label>
-              服务商
-              <input
-                className="form-input"
-                required
-                maxLength={80}
-                value={provider}
-                disabled={busy}
-                onChange={(e) => setProvider(e.target.value)}
-              />
-            </label>
-            <label>
-              接口地址
-              <input
-                className="form-input"
-                required
-                type="url"
-                maxLength={500}
-                placeholder="https://服务商地址/v1"
-                value={baseUrl}
-                disabled={busy}
-                onChange={(e) => setBaseUrl(e.target.value)}
-              />
-            </label>
-            <label>
-              模型名称
-              <input
-                className="form-input"
-                required
-                maxLength={120}
-                value={model}
-                disabled={busy}
-                onChange={(e) => setModel(e.target.value)}
-              />
-            </label>
-            <label>
-              API Key
-              <input
-                className="form-input"
-                required
-                type="password"
-                autoComplete="off"
-                maxLength={8192}
-                value={key}
-                disabled={busy || !data.storageReady}
-                onChange={(e) => setKey(e.target.value)}
-              />
-            </label>
-            <p>
-              {purpose === 'RERANK'
-                ? '排序接口需兼容 Cohere v2；填写基础地址（例如 https://服务商地址/v2），系统会追加 /rerank。保存后，主动检索和提问会使用该配置；删除配置可停止排序调用。'
-                : '请使用支持 OpenAI 兼容接口的模型服务；问答模型还需支持 JSON 输出。'}{' '}
-              保存配置不会调用模型。
-            </p>
-            <Button type="submit" loading={busy} disabled={!data.storageReady}>
-              保存配置
-            </Button>
-          </form>
-          {configured && (
-            <section
-              aria-labelledby="ai-connection-test-title"
-              style={{ marginTop: 24, maxWidth: 560, display: 'grid', gap: 12 }}
+            <select
+              id="ai-purpose"
+              className="form-select"
+              value={purpose}
+              disabled={busy}
+              onChange={(e) => {
+                setPurpose(e.target.value as Purpose);
+                setEditing(false);
+                setKey('');
+                setTest(null);
+                setConsent(false);
+                setMessage('');
+                setError('');
+              }}
             >
-              <h3 id="ai-connection-test-title">连接测试</h3>
-              <p>只测试已保存的配置。测试使用合成文本，用于确认接口可用，不评估法律回答质量。</p>
-              {!unchanged && <p>表单有未保存的改动，请先保存配置再测试。</p>}
+              {(Object.keys(labels) as Purpose[]).map((p) => (
+                <option key={p} value={p}>
+                  {labels[p]}
+                </option>
+              ))}
+            </select>
+          </div>
+          {configured && !editing && item ? (
+            <section
+              ref={summaryRef}
+              tabIndex={-1}
+              aria-label="已保存的模型配置"
+              className="ai-settings-summary"
+            >
+              <div className="ai-settings-summary-header">
+                <div className="ai-settings-heading">
+                  <span className="ai-settings-saved-icon">
+                    <CheckIcon size={20} />
+                  </span>
+                  <div>
+                    <h4>配置已保存</h4>
+                    <p>当前用途使用以下配置，API Key 已加密保存。</p>
+                  </div>
+                </div>
+                <Button
+                  type="button"
+                  variant="secondary"
+                  icon={<EditIcon size={15} />}
+                  disabled={busy}
+                  onClick={() => {
+                    setEditing(true);
+                    setKey('');
+                    setConsent(false);
+                    setConfirmDelete(false);
+                    setError('');
+                    setMessage('');
+                  }}
+                >
+                  修改配置
+                </Button>
+              </div>
+              <dl className="ai-settings-details">
+                <div>
+                  <dt>服务商</dt>
+                  <dd>{item.provider}</dd>
+                </div>
+                <div>
+                  <dt>模型名称</dt>
+                  <dd>{item.model}</dd>
+                </div>
+                <div className="ai-settings-detail-wide">
+                  <dt>接口地址</dt>
+                  <dd className="ai-settings-endpoint">{item.baseUrl}</dd>
+                </div>
+                <div className="ai-settings-detail-wide">
+                  <dt>API Key</dt>
+                  <dd className="ai-settings-key-status">
+                    <LockIcon size={14} />
+                    已安全保存<span>修改配置时重新填写</span>
+                  </dd>
+                </div>
+              </dl>
+            </section>
+          ) : (
+            <form onSubmit={save} className="ai-settings-form">
+              <div className="ai-settings-section-heading">
+                <h4>{configured ? '修改模型配置' : '添加模型配置'}</h4>
+                <p>
+                  {configured
+                    ? '保存后替换当前配置。取消修改将继续使用原配置。'
+                    : '填写此用途使用的服务商、模型和 API Key。'}
+                </p>
+              </div>
+              <label>
+                <span className="form-label">服务商</span>
+                <input
+                  className="form-input"
+                  required
+                  maxLength={80}
+                  value={provider}
+                  disabled={busy}
+                  onChange={(e) => setProvider(e.target.value)}
+                />
+              </label>
+              <label>
+                <span className="form-label">接口地址</span>
+                <input
+                  className="form-input"
+                  required
+                  type="url"
+                  maxLength={500}
+                  placeholder="https://服务商地址/v1"
+                  value={baseUrl}
+                  disabled={busy}
+                  onChange={(e) => setBaseUrl(e.target.value)}
+                />
+              </label>
+              <label>
+                <span className="form-label">模型名称</span>
+                <input
+                  className="form-input"
+                  required
+                  maxLength={120}
+                  value={model}
+                  disabled={busy}
+                  onChange={(e) => setModel(e.target.value)}
+                />
+              </label>
+              <div>
+                <label>
+                  <span className="form-label">API Key</span>
+                  <input
+                    className="form-input"
+                    required
+                    type="password"
+                    autoComplete="off"
+                    maxLength={8192}
+                    aria-describedby={configured ? 'ai-key-help' : undefined}
+                    placeholder={
+                      configured ? '重新输入 API Key 以保存修改' : '请输入服务商提供的 API Key'
+                    }
+                    value={key}
+                    disabled={busy || !data.storageReady}
+                    onChange={(e) => setKey(e.target.value)}
+                  />
+                </label>
+                {configured && (
+                  <p id="ai-key-help" className="form-hint">
+                    为保护凭据，原 API Key 不会回显；保存修改时需重新填写。
+                  </p>
+                )}
+              </div>
+              <p className="ai-settings-help">
+                {purpose === 'RERANK'
+                  ? '排序接口需兼容 Cohere v2；填写基础地址（例如 https://服务商地址/v2），系统会追加 /rerank。保存后，主动检索和提问会使用该配置；删除配置可停止排序调用。'
+                  : '请使用支持 OpenAI 兼容接口的模型服务；问答模型还需支持 JSON 输出。'}{' '}
+                保存配置不会调用模型。
+              </p>
+              <div className="ai-settings-actions">
+                <Button type="submit" loading={busy} disabled={!data.storageReady}>
+                  {busy ? '正在保存…' : configured ? '保存修改' : '保存配置'}
+                </Button>
+                {configured && (
+                  <Button type="button" variant="secondary" disabled={busy} onClick={cancelEdit}>
+                    取消修改
+                  </Button>
+                )}
+              </div>
+            </form>
+          )}
+          {configured && !editing && (
+            <section aria-labelledby="ai-connection-test-title" className="ai-settings-test">
+              <div className="ai-settings-test-header">
+                <h4 id="ai-connection-test-title">
+                  <ActivityIcon size={17} />
+                  连接测试
+                </h4>
+                <Badge variant={testBadge.variant}>{testBadge.label}</Badge>
+              </div>
+              <p className="ai-settings-help">
+                保存配置后可主动测试连接。测试仅确认接口可用，不评估法律回答质量。
+              </p>
               {test && (
-                <div role="status">
+                <div
+                  role="status"
+                  className={`ai-settings-test-result ai-settings-test-result-${test.status.toLowerCase()}`}
+                >
                   <p>{testLabels[test.status]}</p>
                   {test.status === 'SUCCEEDED' && (
                     <p>
@@ -437,8 +626,12 @@ export const AiSettingsPage: React.FC = () => {
                   )}
                 </div>
               )}
-              {testNotice && <p role="status">{testNotice}</p>}
-              <label style={{ display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+              {testNotice && (
+                <p role="status" className="ai-settings-help">
+                  {testNotice}
+                </p>
+              )}
+              <label className="ai-settings-consent">
                 <input
                   type="checkbox"
                   checked={consent}
@@ -447,7 +640,7 @@ export const AiSettingsPage: React.FC = () => {
                 />
                 <span>我确认将发送少量合成文本，可能产生模型费用。</span>
               </label>
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <div className="ai-settings-actions">
                 <Button
                   type="button"
                   onClick={() => void runTest()}
@@ -460,7 +653,7 @@ export const AiSettingsPage: React.FC = () => {
                     activeTest(test)
                   }
                 >
-                  {busy ? '操作处理中…' : test ? '重新测试连接' : '测试连接'}
+                  {testing ? '正在测试…' : test || testUncertain ? '重新测试连接' : '测试连接'}
                 </Button>
                 <Button
                   type="button"
@@ -484,20 +677,20 @@ export const AiSettingsPage: React.FC = () => {
                   </Button>
                 )}
               </div>
-              <p>
+              <p className="ai-settings-help">
                 读取结果或刷新页面不会调用模型。测试失败或结果未知时，系统不会自动重试模型请求。
               </p>
             </section>
           )}
-          {configured && (
-            <div style={{ marginTop: 20 }}>
+          {configured && !editing && (
+            <div className="ai-settings-delete">
               {!confirmDelete ? (
-                <Button variant="danger" disabled={busy} onClick={() => setConfirmDelete(true)}>
+                <Button variant="ghost" disabled={busy} onClick={() => setConfirmDelete(true)}>
                   删除此配置
                 </Button>
               ) : (
                 <>
-                  <p>删除后，这一用途需要重新填写 Key 才能使用。</p>
+                  <p className="ai-settings-help">删除后，这一用途需要重新填写 Key 才能使用。</p>
                   <Button variant="danger" disabled={busy} onClick={() => void remove()}>
                     确认删除
                   </Button>{' '}
@@ -512,7 +705,7 @@ export const AiSettingsPage: React.FC = () => {
               )}
             </div>
           )}
-        </>
+        </div>
       )}
     </Card>
   );

@@ -8,6 +8,5 @@
 **/.lexflow-audit-buffer
 .idea
 .DS_Store
-docs/evidence
 ops
 

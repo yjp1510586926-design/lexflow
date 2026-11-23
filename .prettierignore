@@ -2,11 +2,8 @@
 **/target/**
 **/dist/**
 **/build/**
-**/coverage/**
 **/package-lock.json
 docs/**
 infra/**
 **/db/migration/**
-ai-service/test/fixtures/**
-ai-service/evaluation/*.json
 

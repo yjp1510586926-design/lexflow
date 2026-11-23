@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  * 当数据库不可用时，审计事件写入内存离线缓冲（{@link com.lexflow.service.audit.AuditOfflineBuffer}）。
  * 本任务每 15 秒（可通过 {@code lexflow.audit.replay-delay-ms} 调整）尝试将缓冲中的事件
  * 持久化到数据库，确保短暂故障期间的审计记录不丢失。
- * 测试环境可通过 {@code scheduling.enabled=false} 关闭以避免定时任务干扰。
  */
 @Component
 @ConditionalOnProperty(name = "scheduling.enabled", havingValue = "true", matchIfMissing = true)

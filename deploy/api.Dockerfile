@@ -8,7 +8,7 @@ COPY api-core/pom.xml api-core/pom.xml
 COPY framework/src framework/src
 COPY service/src service/src
 COPY api-core/src api-core/src
-RUN mvn -B -q -pl api-core -am -DskipTests package
+RUN mvn -B -q -pl api-core -am package
 
 FROM eclipse-temurin:21-jre-jammy
 RUN apt-get update && apt-get install -y --no-install-recommends curl \

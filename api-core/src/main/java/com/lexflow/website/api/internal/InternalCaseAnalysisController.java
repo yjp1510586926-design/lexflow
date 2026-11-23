@@ -56,7 +56,8 @@ public class InternalCaseAnalysisController {
                 request.attempt(),
                 request.stateVersion(),
                 request.outcome(),
-                request.report()
+                request.report(),
+                request.errorCode()
             )
         );
     }
